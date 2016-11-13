@@ -54,16 +54,11 @@
 <!-- attr: { style:'font-size:0.9em' } -->
 # Course Evaluation
 - Course Evaluation
-  - **Practical exam** – 42% (6 problems x 7%)
-  - **One TopCoder event** – 3%
-  - **Teamwork** – 25%
-  - **Homework and evaluation** 10%
-  - **Workshops (bgcoder.com)** 5%
-  - **Attendance in class** – 5%
-  - **Forums activity** – up to 5%
-  - **Helping others** – up to 5%
+  - **Practical exam**
+  - **Homework**
+  - **Workshops (bgcoder.com)**
+  - **Attendance in class**
 - Practical Exam
-  - 6 practical problems for 8 hours
   - Real-time feedback @ BGCoder
 
 # Pass / Excellence / Fail Criteria
