@@ -29,7 +29,6 @@
 <!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # What's Coming Next?
 - `Data Structures and Algorithms (DS&A)`
-  - Continuation of High-Quality Code course
   - Data structures (lists, trees, hash-tables, graphs), complexity, algorithms (recursion, combinatorics, dynamic programming, graphs)
 - Lectures 3 times a week
 - The course exam?
@@ -71,16 +70,6 @@
   -  Fail
     -  Low total results or low exam results
 
-# Homework Peer Reviews
--  Everyone will **get feedback** for their homework
--  Everyone will **give feedback** for few random homework submissions
-  -  Students submit homework **anonymously**
-    -  Please exclude your name from the submissions!
-  -  For each homework submitted
-    -  Students **evaluate 3 random homeworks**
-    -  From the same topic, after the deadline
-    -  Homework comments are `not obligatory`
-    
 <!-- section start -->
 <!-- attr: { id:'resources', class:'slide-section' } -->
 # Resources
@@ -136,4 +125,3 @@
 <!-- attr: { id:'questions', class:'slide-section' } -->
 # Questions
 ## Data Structures and Algorithms
-[link to the forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
