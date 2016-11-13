@@ -34,11 +34,7 @@
 - The course exam?
   - Practical exam (@ BGCoder)
 
-
-[Curriculum](http://academy.telerik.com/images/default-source/Academy_Curriculum/ta_plan_bg.png?sfvrsn=0)
-
-[link to table in Forum](http://telerikacademy.com/Forum/Questions/179433/%D0%9E%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D1%8A%D1%87%D0%BD%D0%B0-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B0-%D0%B4%D0%BE-%D0%BA%D1%80%D0%B0%D1%8F-%D0%BD%D0%B0-%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F%D1%82%D0%B0#forum-post-179433)
-
+[Curriculum](http://academy.telerik.com/academy/curriculum-detailed)
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section', id: 'databases-program'} -->
@@ -99,20 +95,20 @@
 - [Animated structures and algorithms](http://www.comp.nus.edu.sg/~stevenha/visualization/index.html)
 
 # Course Web Site & Forums
--  Register for the [Telerik Academy Forums](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+-  Register for the [Telerik Academy Forums](https://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
   -  Discuss the course exercises with your colleagues
   -  Find solutions for the exercises
   -  Share source code / discuss ideas
 -  The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
 
 # Telerik Integrated Learning System (TILS)
--  The Telerik Integrated Learning System ([TILS](http://www.telerikacademy.com))
+-  The Telerik Integrated Learning System ([TILS](https://www.telerikacademy.com))
   -  Important resource for all students
   -  Homework submissions
   -  Homework peer reviews
   -  Presence cards with barcode
   -  Reports about your results
--  [Course site](http://telerikacademy.com/Courses/Courses/Details/272)
+-  [Course site](https://telerikacademy.com/Courses/Courses/Details/399)
 
 # Required Software
 -  Software needed for this course:
