@@ -70,25 +70,25 @@
 
 # Basic Data Structures
 - Linear structures
-  - Lists: fixed size and variable size
-  - Stacks: LIFO (Last In First Out) structure
-  - Queues: FIFO (First In First Out) structure
+  - **Lists**: fixed size and variable size
+  - **Stacks**: LIFO (Last In First Out) structure
+  - **Queues**: FIFO (First In First Out) structure
 - Trees and tree-like structures
-  - Binary, ordered search trees, balanced, B-trees, etc.
-- Dictionaries (maps)
+  - **Binary**, **ordered search trees**, **balanced**, **B-trees**, etc.
+- **Dictionaries** (maps)
   - Contain pairs (key, value)
   - Hash tables: use hash functions to search/insert
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
 <!-- # Basic Data Structures -->
 - Sets and bags
-  - Set – collection of unique elements
-  - Bag – collection of non-unique elements
+  - **Set** – collection of unique elements
+  - **Bag** – collection of non-unique elements
 - Ordered sets, bags and dictionaries
-- Priority queues / heaps
+- **Priority queues** / **heaps**
 - Special tree structures
-  - Suffix tree, interval tree, index tree, trie
-- Graphs
+  - **Suffix tree**, **interval tree**, **indexed tree**, **trie**
+- **Graphs**
   - Directed / undirected
   - Weighted / un-weighted
   - Connected / non-connected, …
@@ -150,7 +150,7 @@ Example of `pseudocode`
 <!-- section start -->
 <!-- attr: { id:'algorithm-complexity', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Algorithm Complexity
-## Asymptotic Notation ##
+## Asymptotic Notation
 
 # Algorithm Analysis
 - Why we should analyze algorithms?
@@ -210,39 +210,44 @@ Example of `pseudocode`
 - For given function `g(n)`, we denote by `O(g(n))` the set of functions that are different than `g(n)` by a constant
 
 <div class="box">
-`O(g(n))` = {`f(n)`: there exist positive constants `c` and `n`<sub>`0`</sub> such that `f(n) <= c*g(n)` for all `n>=n`<sub>`0`</sub>}
+`O(g(n))` = {`f(n)`: there exist positive constants `c` and `n`<sub>`0`</sub> such that `f(n) <= c*g(n)` for all `n >= n`<sub>`0`</sub>}
 </div>
 - Examples:
-  - 3 * n<sup>2</sup> + n/2 + 12 ∈ O(n<sup>2</sup>)
-  - 4*n*log<sub>2</sub>(3*n+1) + 2*n-1 ∈ O(n * log n) 
+  - `3*n`<sup>`2`</sup> + `n/2 + 12 ∈ O(n`<sup>`2`</sup>`)`
+  - `4*n*log`<sub>`2`</sub>`(3*n+1) + 2*n-1 ∈ O(n * log n)`
 
 
-<!-- attr: { style:'font-size:0.8em' } -->
+<!-- attr: { style:'font-size:0.7em' } -->
 # Typical Complexities
-| Complexity | Notation | Description |
-|------------|----------|-------------|
-| constant | O(1) | Constant number of operations, not depending on the input data size, e.g. n = 1 000 000 &rarr; 1-2 operations |
-| logarithmic | O(log n) | Number of operations propor-tional of log2(n) where n is the size of the input data, e.g. n = 1 000 000 000 &rarr; 30 operations |
-| linear | O(n) | Number of operations proportional to the input data size, e.g. n = 10 000 &rarr; 5 000 operations |
+| Complexity  | Notation   | Description |
+|-------------|------------|-------------|
+| **constant**    | `O(1)`     | Constant number of operations, not depending on the input data size, e.g. `n = 1 000 000` &rarr; **1-2** operations |
+| **logarithmic** | `O(log n)` | Number of operations propor-tional of `log2(n)` where `n` is the size of the input data, e.g. `n = 1 000 000 000` &rarr; **30** operations |
+| **linear**      | `O(n)`     | Number of operations proportional to the input data size, e.g. `n = 10 000` &rarr; **5 000** operations |
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.7em' } -->
 <!-- # Typical Complexities -->
-| Complexity | Notation | Description |
-|------------|----------|-------------|
-| quadratic | O(n<sup>2</sup>) | Number of operations proportional to the square of the size of the input data, e.g. n = 500 &rarr; 250 000 operations
-| cubic | O(n<sup>3</sup>) | Number of operations propor-tional to the cube of the size of the input data, e.g. n = 200 &rarr; 8 000 000 operations |
-| exponential| O(2<sup>n</sup>),<br/>O(k<sup>n</sup>),<br/> O(n!) | Exponential number of operations, fast growing, e.g. n = 20 &rarr; 1 048 576 operations |
+| Complexity  | Notation | Description |
+|-------------|----------|-------------|
+| **quadratic**   | `O(n`<sup>`2`</sup>`)` | Number of operations proportional to the square of the size of the input data, e.g. `n = 500` &rarr; **250 000** operations
+| **cubic**       | `O(n`<sup>`3`</sup>`)` | Number of operations propor-tional to the cube of the size of the input data, e.g. `n = 200` &rarr; **8 000 000** operations |
+| **exponential** | `O(2`<sup>`n`</sup>`)`<br/>`O(k`<sup>`n`</sup>`)`<br/>`O(n!)` | Exponential number of operations, fast growing, e.g. `n = 20` &rarr; **1 048 576** operations |
 
 
-<!-- attr: { style:'font-size:0.65em' } -->
+<!-- attr: { style:'font-size:0.7em' } -->
 # Time Complexity and Speed
 | Complexity | 10 | 20 | 50 | 100 | 1000 | 10000 | 100000 |
 |------------|----|----|----|-----|-------|--------|---------|
-| O(1) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| O(log(n)) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| O(n) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| O(n*log(n)) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+| `O(1)` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+| `O(log(n))` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+| `O(n)` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+| `O(n*log(n))` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+
+<!-- attr: { style:'font-size:0.7em', showInPresentation:true } -->
+<!-- # Time Complexity and Speed -->
+| Complexity | 10 | 20 | 50 | 100 | 1000 | 10000 | 100000 |
+|------------|----|----|----|-----|-------|--------|---------|
 | O(n<sup>2</sup>) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | 2 s | 3-4 min |
 | O(n<sup>3</sup>) | < 1 s | < 1 s | < 1 s | < 1 s | 20 s | 5 hours | 231 days |
 | O(2<sup>n</sup>) | < 1 s | < 1 s | 260 days | hangs | hangs | hangs | hangs |
@@ -257,7 +262,7 @@ Example of `pseudocode`
   - A traversal of graph with `n` vertices and `m` edges will run in `O(n + m)`
 - Memory consumption should also be considered, for example:
   - Running time `O(n)` & memory requirement `O(n`<sup>`2`</sup>`)`
-  - n = 50 000 &rarr; `OutOfMemoryException`
+  - `n = 50 000` &rarr; `OutOfMemoryException`
 
 <!-- attr: { hasScriptWrapper:true } -->
 # The Hidden Constant
@@ -268,7 +273,7 @@ Example of `pseudocode`
   - Algorithm B makes: `n*n/2` steps &rarr; `O(n`<sup>`2`</sup>`)`
   - For `n < 200` the algorithm B is faster
 - Real-world example:
-  - Insertion sort is faster than quicksort for n <= 16
+  - Insertion sort is faster than quicksort for `n <= 16`
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:1em' } -->
 # Polynomial Algorithms
@@ -279,8 +284,8 @@ Example of `pseudocode`
 </div>
 
 - Examples:
-  - Polynomial-time: log(n), n<sup>2</sup>, 3n<sup>3</sup> + 4n, 2 * n log(n)
-  - Non polynomial-time :  2<sup>n</sup>, 3<sup>n</sup>, n<sup>k</sup>, n!
+  - Polynomial-time: `log(n)`, `n`<sup>`2`</sup>, `3n`<sup>`3`</sup>` + 4n`, `2 * n log(n)`
+  - Non polynomial-time: `2`<sup>`n`</sup>, `3`<sup>`n`</sup>, `n`<sup>`k`</sup>, `n!`
   - Non-polynomial algorithms hang for large input data sets
 
 
@@ -293,7 +298,7 @@ Example of `pseudocode`
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
 # Analyzing Complexity of Algorithms
-## Examples ##
+## Examples
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Complexity Examples
