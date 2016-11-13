@@ -12,20 +12,19 @@
 <!-- section start -->
 <!-- attr: { id:'table-of-contents' } -->
 # Table of Contents
-- What's Coming Next in the Academy?
-- The Data Structures and Algorithms Program
-- The Trainers Team
-- Exams and Evaluation
+- [What's Coming Next in the Academy?](#whats-coming-next)
+- [What Will We Cover in the Course?](#dsa-program)
+- [Exams and Evaluation](#evaluation)
   - The Practical Exam
-- Resources for the Course
+- [Resources for the Course](#resources)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'coming-next' } -->
 # Data Structures & Algorithms
 ## The Next Module in the Software Academy (The Programming Track)
 
-<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em' } -->
-# What's Coming Next?
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.9em', id:'whats-coming-next' } -->
+# <a href="whats-coming-next"></a>What's Coming Next?
 - `Data Structures and Algorithms (DS&A)`
   - Data structures (lists, trees, hash-tables, graphs), complexity, algorithms (recursion, combinatorics, dynamic programming, graphs)
 - Lectures 3 times a week
@@ -35,13 +34,13 @@
 [Curriculum](http://academy.telerik.com/academy/curriculum-detailed)
 
 <!-- section start -->
-<!-- attr: {class: 'slide-section', id: 'databases-program'} -->
-# Data Structures and Algorithms Course Program
+<!-- attr: {class: 'slide-section', id: 'dsa-program'} -->
+# <a href="dsa-program"></a>Data Structures and Algorithms
 ## What Will We Cover in the Course?
 
 <!-- section start -->
 <!-- attr: {id: 'evaluation', class: 'slide-section'} -->
-# Course Evaluation
+# <a href="evaluation"></a>Course Evaluation
 ## Thank God there are.. NO Bonuses
 
 <!-- attr: { style:'font-size:0.9em' } -->
@@ -66,9 +65,10 @@
 
 <!-- section start -->
 <!-- attr: { id:'resources', class:'slide-section' } -->
-# Resources
+# <a id="resources"></a>Resources
 ## What We Need in Addition to this Course Content?
 
+<!-- attr: {} -->
 # The C# Textbook
 - The official textbook for the course
   - **Introduction to Programming with C#**
