@@ -9,7 +9,6 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-
 <!-- section start -->
 <!-- attr: { id:'table-of-contents' } -->
 # Table of Contents
@@ -19,7 +18,6 @@
 - Exams and Evaluation
   - The Practical Exam
 - Resources for the Course
-
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'coming-next' } -->
@@ -57,14 +55,14 @@
   - Real-time feedback @ BGCoder
 
 # Pass / Excellence / Fail Criteria
--  Criteria for pass / pass with excellence / fail
-  -  Pass with excellence
-    -  Very high exam results
-    -  High total results
-  -  Pass
-    -  Average total results
-  -  Fail
-    -  Low total results or low exam results
+- Criteria for pass / pass with excellence / fail
+  - Pass with excellence
+    - Very high exam results
+    - High total results
+  - Pass
+    - Average total results
+  - Fail
+    - Low total results or low exam results
 
 <!-- section start -->
 <!-- attr: { id:'resources', class:'slide-section' } -->
@@ -95,24 +93,24 @@
 - [Animated structures and algorithms](http://www.comp.nus.edu.sg/~stevenha/visualization/index.html)
 
 # Course Web Site & Forums
--  Register for the [Telerik Academy Forums](https://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
-  -  Discuss the course exercises with your colleagues
-  -  Find solutions for the exercises
-  -  Share source code / discuss ideas
--  The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
+- Register for the [Telerik Academy Forums](https://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+  - Discuss the course exercises with your colleagues
+  - Find solutions for the exercises
+  - Share source code / discuss ideas
+- The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
 
 # Telerik Integrated Learning System (TILS)
--  The Telerik Integrated Learning System ([TILS](https://www.telerikacademy.com))
-  -  Important resource for all students
-  -  Homework submissions
-  -  Homework peer reviews
-  -  Presence cards with barcode
-  -  Reports about your results
--  [Course site](https://telerikacademy.com/Courses/Courses/Details/399)
+- The Telerik Integrated Learning System ([TILS](https://www.telerikacademy.com))
+  - Important resource for all students
+  - Homework submissions
+  - Homework peer reviews
+  - Presence cards with barcode
+  - Reports about your results
+- [Course site](https://telerikacademy.com/Courses/Courses/Details/399)
 
 # Required Software
--  Software needed for this course:
-  -  Microsoft Windows (Win8.1 / Win10)
+- Software needed for this course:
+  - Microsoft Windows (Win8.1 / Win10)
   - Microsoft **Visual Studio 2015**
   - .NET Framework 4.5 (included in Visual Studio)
   - Visual Studio 2013 is also OK
