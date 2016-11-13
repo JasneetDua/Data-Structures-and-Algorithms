@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { id:'title', class:'slide-title', hasScriptWrapper:true } -->
 # Data Structures and Algorithms
-##  Course Program, Evaluation, Exams, Resources
+## Course Program, Evaluation, Exams, Resources
 
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
@@ -80,69 +80,69 @@
 
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/nikolay-kostov.png" style="float:right" height="200" />
 -   **Nikolay Kostov**
-	-   Manager Software Engineering
-	<br />@ Telerik (Progress)
-	-   Microsoft Certified Trainer (MCT)
-	-   Champion from Telerik Academy
-	-   IT and Informatics competitions winner
-	-   Student in Sofia University (Computer Science)
-	-   Email: nikolay.kostov [at] telerik.com
-	-   Blog:
-	<a href="http://nikolay.it" title="http://nikolay.it" target="_blank">http://nikolay.it</a>
-	-   GitHub:
-	<a href="https://github.com/NikolayIT" title="https://github.com/NikolayIT" target="_blank">https://github.com/NikolayIT</a>
+  -   Manager Software Engineering
+  <br />@ Telerik (Progress)
+  -   Microsoft Certified Trainer (MCT)
+  -   Champion from Telerik Academy
+  -   IT and Informatics competitions winner
+  -   Student in Sofia University (Computer Science)
+  -   Email: nikolay.kostov [at] telerik.com
+  -   Blog:
+  <a href="http://nikolay.it" title="http://nikolay.it" target="_blank">http://nikolay.it</a>
+  -   GitHub:
+  <a href="https://github.com/NikolayIT" title="https://github.com/NikolayIT" target="_blank">https://github.com/NikolayIT</a>
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/doncho-minkov.jpg" style="float:right" height="230" />
 -   **Doncho Minkov**
-	-   Senior Technical Trainer @ Telerik Academy
-	-   Contestant in the Informatics competitions
-	-   Champion from Telerik Software Academy
-	-   Experience with Web and Mobile apps
-	-   Proficient with JavaScript and .NET
-	-   Email: doncho.minkov [at] telerik.com
-	-   Blog:
-	<a href="http://minkov.it" title="http://minkov.it" target="_blank">http://minkov.it</a>
-	-   GitHub:
-	<a href="https://github.com/Minkov" title="https://github.com/Minkov" target="_blank">https://github.com/Minkov</a>
+  -   Senior Technical Trainer @ Telerik Academy
+  -   Contestant in the Informatics competitions
+  -   Champion from Telerik Software Academy
+  -   Experience with Web and Mobile apps
+  -   Proficient with JavaScript and .NET
+  -   Email: doncho.minkov [at] telerik.com
+  -   Blog:
+  <a href="http://minkov.it" title="http://minkov.it" target="_blank">http://minkov.it</a>
+  -   GitHub:
+  <a href="https://github.com/Minkov" title="https://github.com/Minkov" target="_blank">https://github.com/Minkov</a>
 
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/ivaylo-kenov.png" style="float:right" height="240" />
 -   **Ivaylo Kenov**
-	-   Technical Trainer @ Telerik Academy
-	-   Mathematical competitions
-	<br />contestant
-	-   Champion from Telerik Software Academy
-	-   E-mail: ivaylo.kenov [at] telerik.com
-	-   Champion in OOP and DSA
-	-   Blog:
-	<a href="http://ivaylo.bgcoder.com/" title="http://ivaylo.bgcoder.com/" target="_blank">http://ivaylo.bgcoder.com/</a>
-	-   GitHub:
-	<a href="https://github.com/ivaylokenov" title="https://github.com/ivaylokenov" target="_black">https://github.com/ivaylokenov</a>
+  -   Technical Trainer @ Telerik Academy
+  -   Mathematical competitions
+  <br />contestant
+  -   Champion from Telerik Software Academy
+  -   E-mail: ivaylo.kenov [at] telerik.com
+  -   Champion in OOP and DSA
+  -   Blog:
+  <a href="http://ivaylo.bgcoder.com/" title="http://ivaylo.bgcoder.com/" target="_blank">http://ivaylo.bgcoder.com/</a>
+  -   GitHub:
+  <a href="https://github.com/ivaylokenov" title="https://github.com/ivaylokenov" target="_black">https://github.com/ivaylokenov</a>
 
 <!-- attr: {hasScriptWrapper: true} -->
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/evlogi-hristov.jpg" style="float:right" height="240" />
 -   **Evlogi Hristov**
-	-   Technical Trainer @ Telerik Academy
-	-   Graduate from the fourth season
-	<br />of Telerik Software Academy
-	-   Ex-developer, Sharepoint
-	-   E-mail: evlogi.hristov [at] telerik.com
-	
+  -   Technical Trainer @ Telerik Academy
+  -   Graduate from the fourth season
+  <br />of Telerik Software Academy
+  -   Ex-developer, Sharepoint
+  -   E-mail: evlogi.hristov [at] telerik.com
+  
 <!-- attr: {style: "font-size:40px", hasScriptWrapper: true} -->
 # The Trainers Team
 <img src="https://raw.githubusercontent.com/TelerikAcademy/Common/master/revealjs-theme/css/imgs/kristiyan-tsaklev.jpg" style="float:right" height="240" />
 -   **Kristiyan Tsaklev**
-	-   Technical Trainer @ Telerik Academy
-	-   Champion in national and international
-	<br />Informatics competitions
-	-   Student in Sofia University (Computer Science)
-	-   E-mail: kristian.tsuklev [at] telerik.com
-	-   GitHub:
-	<a href="https://github.com/cuklev" title="https://github.com/cuklev" target="_blank">https://github.com/cuklev</a>
+  -   Technical Trainer @ Telerik Academy
+  -   Champion in national and international
+  <br />Informatics competitions
+  -   Student in Sofia University (Computer Science)
+  -   E-mail: kristian.tsuklev [at] telerik.com
+  -   GitHub:
+  <a href="https://github.com/cuklev" title="https://github.com/cuklev" target="_blank">https://github.com/cuklev</a>
 
 <!-- section start -->
 <!-- attr: {id: 'evaluation', class: 'slide-section'} -->
@@ -165,25 +165,25 @@
   - Real-time feedback @ BGCoder
 
 # Pass / Excellence / Fail Criteria
--	Criteria for pass / pass with excellence / fail
-	-	Pass with excellence
-		-	Very high exam results
-		-	High total results
-	-	Pass
-		-	Average total results
-	-	Fail
-		-	Low total results or low exam results
+-  Criteria for pass / pass with excellence / fail
+  -  Pass with excellence
+    -  Very high exam results
+    -  High total results
+  -  Pass
+    -  Average total results
+  -  Fail
+    -  Low total results or low exam results
 
 # Homework Peer Reviews
--	Everyone will **get feedback** for their homework
--	Everyone will **give feedback** for few random homework submissions
-	-	Students submit homework **anonymously**
-		-	Please exclude your name from the submissions!
-	-	For each homework submitted
-		-	Students **evaluate 3 random homeworks**
-		-	From the same topic, after the deadline
-		-	Homework comments are `not obligatory`
-		
+-  Everyone will **get feedback** for their homework
+-  Everyone will **give feedback** for few random homework submissions
+  -  Students submit homework **anonymously**
+    -  Please exclude your name from the submissions!
+  -  For each homework submitted
+    -  Students **evaluate 3 random homeworks**
+    -  From the same topic, after the deadline
+    -  Homework comments are `not obligatory`
+    
 <!-- section start -->
 <!-- attr: { id:'resources', class:'slide-section' } -->
 # Resources
@@ -213,24 +213,24 @@
 - [Animated structures and algorithms](http://www.comp.nus.edu.sg/~stevenha/visualization/index.html)
 
 # Course Web Site & Forums
--	Register for the [Telerik Academy Forums](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
-	-	Discuss the course exercises with your colleagues
-	-	Find solutions for the exercises
-	-	Share source code / discuss ideas
--	The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
+-  Register for the [Telerik Academy Forums](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+  -  Discuss the course exercises with your colleagues
+  -  Find solutions for the exercises
+  -  Share source code / discuss ideas
+-  The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
 
 # Telerik Integrated Learning System (TILS)
--	The Telerik Integrated Learning System ([TILS](http://www.telerikacademy.com))
-	-	Important resource for all students
-	-	Homework submissions
-	-	Homework peer reviews
-	-	Presence cards with barcode
-	-	Reports about your results
--	[Course site](http://telerikacademy.com/Courses/Courses/Details/272)
+-  The Telerik Integrated Learning System ([TILS](http://www.telerikacademy.com))
+  -  Important resource for all students
+  -  Homework submissions
+  -  Homework peer reviews
+  -  Presence cards with barcode
+  -  Reports about your results
+-  [Course site](http://telerikacademy.com/Courses/Courses/Details/272)
 
 # Required Software
--	Software needed for this course:
-  -	Microsoft Windows (Win8.1 / Win10)
+-  Software needed for this course:
+  -  Microsoft Windows (Win8.1 / Win10)
   - Microsoft **Visual Studio 2015**
   - .NET Framework 4.5 (included in Visual Studio)
   - Visual Studio 2013 is also OK
