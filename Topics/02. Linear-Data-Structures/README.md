@@ -398,7 +398,7 @@ for (int index = 0; index < expression.Length; index++)
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!--# Matching Brackets -->
+<!-- # Matching Brackets -->
 ## [Demo]()
 
 
@@ -495,7 +495,7 @@ static void Main()
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# Sequence N, N+1, 2*N
+# Sequence N, N+1, 2\*N
 - We are given the sequence:
  
 <img class="slide-image" src="imgs/sequence.png" style="position:initial; margin:0" />
@@ -572,4 +572,3 @@ while (queue.Count > 0)
 <!-- attr: { id:'', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 <!-- # Linear Data Structures
 ## Questions -->
-[link to our Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)

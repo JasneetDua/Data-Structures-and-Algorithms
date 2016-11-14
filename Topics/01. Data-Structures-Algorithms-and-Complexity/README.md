@@ -463,4 +463,3 @@ decimal Fibonacci(int n)
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
 <!-- # Questions
 ## Data Structures, Algorithms and Complexity -->
-[link to the forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
