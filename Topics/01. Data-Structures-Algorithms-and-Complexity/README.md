@@ -306,7 +306,7 @@ Example of `pseudocode`
 int FindMaxElement(int[] array)
 {
     int max = array[0];
-    for (int i = 0; i < array.length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > max)
         {
