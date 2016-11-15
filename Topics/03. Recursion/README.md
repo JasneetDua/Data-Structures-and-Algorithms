@@ -53,7 +53,7 @@ n! = n x (n-1)! for n >= 0
 # Recursive Factorial - Example
 - Calculating factorial:
   - 0! = 1
-  - n! = nx (n-1)!, n>0
+  - n! = n x (n-1)!, n > 0
 
 ```cs
 static decimal Factorial(decimal num)
@@ -414,6 +414,7 @@ static decimal Fibonacci(int n)
   - _Examples_: **permutations**, all **paths in labyrinth**
   - If you have only **one recursive call** in the body of a recursive method, it can directly become iterative (like calculating factorial)
 
+<!-- section start -->
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Summary
 - Recursion means to call a method from itself
