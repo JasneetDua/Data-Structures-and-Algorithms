@@ -494,6 +494,7 @@
 * Book: http://goo.gl/Z2Knl
 * Nakov’s book: Programming = ++Algorithms;
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Combinatorics
-* http://algoacademy.telerik.com
+<!-- section start -->
+<!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Questions
+## Combinatorics

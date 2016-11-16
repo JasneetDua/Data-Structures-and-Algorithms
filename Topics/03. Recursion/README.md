@@ -428,4 +428,3 @@ static decimal Fibonacci(int n)
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Questions
 ## Recursion
-[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
