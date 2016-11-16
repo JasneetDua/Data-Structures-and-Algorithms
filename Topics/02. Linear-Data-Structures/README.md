@@ -111,7 +111,7 @@ static void Main()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 <!-- # `List<T>` – Simple Example -->
-## [Demo]()
+## [Demo](./demos)
 
 
 <!-- attr: { hasScriptWrapper:true } -->
@@ -169,7 +169,7 @@ static List<int> FindPrimes(int start, int end)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Primes in an Interval -->
-## [Demo]()
+## [Demo](./demos)
 
 
 <!-- attr: { hasScriptWrapper:true } -->
@@ -197,7 +197,7 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Union and Intersection -->
-## [Demo]()
+## [Demo](./demos)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
@@ -236,7 +236,7 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # LinkedList<T> -->
-## [Demo]()
+## [Demo](./demos)
 
 
 <!-- section start -->
@@ -266,7 +266,7 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Sorting Lists -->
-##  [Demo]()
+##  [Demo](./demos)
 
 
 <!-- section start -->
@@ -358,7 +358,7 @@ static void Main()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # `Stack<T>` -->
-## [Demo]()
+## [Demo](./demos)
 
 
 # Matching Brackets – Example
@@ -388,7 +388,7 @@ for (int index = 0; index < expression.Length; index++)
     else if (ch == ')')
     {
         int startIndex = stack.Pop();
-        int length = index startIndex + 1;
+        int length = index - startIndex + 1;
         string contents =
             expression.Substring(startIndex, length);
         Console.WriteLine(contents);
@@ -399,7 +399,7 @@ for (int index = 0; index < expression.Length; index++)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Matching Brackets -->
-## [Demo]()
+## [Demo](./demos)
 
 
 <!-- section start -->
@@ -452,7 +452,7 @@ for (int index = 0; index < expression.Length; index++)
   - `T` can be any type, e.g. `Queue<int>` 
   - Size is dynamically increased as needed
 - Basic functionality:
-  - `Enqueue(T)` – adds an element to theend of the queue
+  - `Enqueue(T)` – adds an element to the end of the queue
   - `Dequeue()` – removes and returns the element at the beginning of the queue
 
 
@@ -491,7 +491,7 @@ static void Main()
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The `Queue<T>` Class -->
-##  [Demo]()
+##  [Demo](./demos)
 
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
