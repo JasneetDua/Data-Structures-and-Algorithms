@@ -5,7 +5,7 @@
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
     <p class="signature-initiative">http://academy.telerik.com </p>
-    <a href = "Telerik Software Academy" class="signature-link">Telerik Software Academy</a>
+    <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
 <!-- attr: { showInPresentation:true, style:'' } -->

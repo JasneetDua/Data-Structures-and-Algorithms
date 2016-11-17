@@ -1,5 +1,4 @@
 <!-- section start -->
-
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Sorting Algorithms
 ## QuickSort, MergeSort, etc...
@@ -7,7 +6,7 @@
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
     <p class="signature-initiative">Telerik Software Academy</p>
-    <a href = "http://academy.telerik.com " class="signature-link">http://academy.telerik.com </a>
+    <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
 
@@ -17,14 +16,13 @@
 * Sorting
   * Sorting and classification
 * Review of the most popular sorting algorithms
-  * Quick sort
-  * Merge sort
   * Bubble sort
   * Bucket sort
+  * Quick sort
+  * Merge sort
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-
 # What is a Sorting Algorithm?
 
 # What is a Sorting Algorithm?
