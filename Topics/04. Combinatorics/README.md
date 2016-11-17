@@ -25,15 +25,15 @@
 # Combinatorics
 - `Combinatorics` is a branch of mathematics
   - Concerning the study of finite or countable discrete structures
-- Combinatorial problems arise inmany areas of pure mathematics
-  - Notably in algebra, probabilitytheory, topology, geometry,physics, chemistry, biology, etc.
+- Combinatorial problems arise in many areas of pure mathematics
+  - Notably in algebra, probability theory, topology, geometry,physics, chemistry, biology, etc.
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Combinations
 - "My fruit salad is a combination of grapes, strawberries and bananas" 
-  - We don't care what orderthe fruits are in
-    - "bananas, grapesand strawberries" or"grapes, bananas andstrawberries" &rarr; it isthe same salad
-- If the `order doesn't `matter, it is a `combination`
+  - We don't care what order the fruits are in
+    - "bananas, grapes and strawberries" or "grapes, bananas and strawberries" &rarr; it is the same salad
+- If the `order doesn't` matter, it is a `combination`
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Permutations / Variations
@@ -41,7 +41,7 @@
   - Now we do care about the `order`
   - "8453" would not work,nor would "4538"
   - It has to be exactly 4-3-8-5
-- If the `order does matter `it is a `permutation` / `variation`
+- If the `order does matter` it is a `permutation` / `variation`
   - A permutation / variation is an ordered Combination
 - Easy to remember: "Permutation ... Position"
 
@@ -84,8 +84,8 @@ static long Factorial(int n)
 # Variations
 - `Variations (with repetitions)`
   - Easiest to calculate
-- When you have `n` things tochoose from ... you have`n` choices each time!
-- When choosing k of them,the variations are:
+- When you have `n` things to choose from... You have `n` choices each time!
+- When choosing k of them, the variations are:
   - `n` × `n` × ... × `n` (k times)
   - 	       nk
 
@@ -133,13 +133,13 @@ static void GenerateVariations(int index)
 # Variations without Repetition
 - Example: 
   - How many words of 2 `different `letters can you make with 4 letters { a, b, c, d }?
-- How to generate variationswithout repetitions?
+- How to generate variations without repetitions?
   - The same way like variations with repetitions
   - Just use each element at most once
 - ab, ac, ad, ba, bc, bd, ca, cb, cd, da, db, dc
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Variationswithout Repetitions
+# Generating Variations without Repetitions
 
 ```cs
 static void GenerateVariationsNoReps(int index)
@@ -263,7 +263,7 @@ static void PermuteRep(int[] arr, int start, int n)
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Combinations without Repetition
 - Back to the 3 of 16 billiard balls
-  - Many comb. will be the same
+  - Many combinations will be the same
   - We don't care about the order
 - Permutations w/o repetitions reduced by how many ways the objects could be in order:
 - This is how lotteries work (TOTO 6/49)
@@ -367,7 +367,7 @@ for (i = 0; i <= n; i++) {
   - There are k + (n-1) positions, and we want to choose k of them to have circles
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generate Combinationswith Repetitions
+# Generate Combinations with Repetitions
 
 ```cs
 static void Main()
@@ -388,7 +388,7 @@ static void CombReps(int index, int start)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Combinationswith Repetitions
+# Generating Combinations with Repetitions
 ##  [Demo]()
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
