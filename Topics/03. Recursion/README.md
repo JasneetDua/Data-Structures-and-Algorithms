@@ -33,42 +33,44 @@
     - Prevents infinite recursion
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # Recursive Factorial - Example
 - Recursive definition of `n!` (`n factorial`):
 
 ```cs
-n! = n x (n-1)! for n >= 0
+n! = n x (n-1)! for n > 0
 0! = 1
 ```
-  - 5! = 5 x 4! = 5 x 4 x 3 x 2 x 1 x 1 = 120
-  - 4! = 4 x 3! = 4 x 3 x 2 x 1 x 1 = 24
-  - 3! = 3 x 2! = 3 x 2 x 1 x 1 = 6
-  - 2! = 2 x 1! = 2 x 1 x 1 = 2
-  - 1! = 1 x 0! = 1 x 1 = 1
-  - 0! = 1
+
+- `5! = 5 x 4! = 5 x 4 x 3 x 2 x 1 x 1 = 120`
+- `4! = 4 x 3! = 4 x 3 x 2 x 1 x 1 = 24`
+- `3! = 3 x 2! = 3 x 2 x 1 x 1 = 6`
+- `2! = 2 x 1! = 2 x 1 x 1 = 2`
+- `1! = 1 x 0! = 1 x 1 = 1`
+- `0! = 1`
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Recursive Factorial - Example
 - Calculating factorial:
-  - 0! = 1
-  - n! = n x (n-1)!, n > 0
+  - `0! = 1`
+  - `n! = n x (n-1)!, n > 0`
 
 ```cs
 static decimal Factorial(decimal num)
 {
-    if (num == 0) 
+    if (num == 0)
+	{
         return 1;
-    else
-        return num * Factorial(num - 1);
+	}
+	return num * Factorial(num - 1);
 } 
 ```
 - Don't try this at home!
   - Use iteration instead
 
-<div class="fragment balloon" style="width:300px; top:51%; left:32%">The bottom of the recursion</div>
-<div class="fragment balloon" style="width:200px; top:66%; left:55%">Recursive call: the method calls itself</div>
+<div class="fragment balloon" style="width:300px; top:51%; left:35%">The bottom of the recursion</div>
+<div class="fragment balloon" style="width:200px; top:66%; left:65%">Recursive call: the method calls itself</div>
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Recursive Factorial -->
@@ -76,7 +78,7 @@ static decimal Factorial(decimal num)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Generating 0/1 Vectors
-- How to generate all 8-bit vectors recursively?
+- How to generate all **8-bit** vectors recursively?
   - 00000000
   - 00000001
   - ...
@@ -85,17 +87,17 @@ static decimal Factorial(decimal num)
   - ...
   - 11111110
   - 11111111
-- How to generate all n-bit vectors?
+- How to generate all **n-bit** vectors?
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
-# Generating 0/1 Vectors (2)
-- Algorithm `Gen01(n)`: put 0 and 1 at the last position `n` and call `Gen01(n-1)` for the rest:
+<!-- # Generating 0/1 Vectors -->
+- Algorithm `Gen01(n)`: put `0` and `1` at the last position `n` and call `Gen01(n-1)` for the rest:
 
 <img class="slide-image" src="imgs/generating-01-vectors.png" style="position:initial; width:80%; margin-left:10%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating 0/1 Vectors (3)
+<!-- # Generating 0/1 Vectors -->
 
 ```cs
 static void Gen01(int index, int[] vector)
@@ -103,17 +105,17 @@ static void Gen01(int index, int[] vector)
    if (index == -1)
       Print(vector);
    else
-      for (int i=0; i<=1; i++)
+      for (int i = 0; i <= 1; i++)
       {
          vector[index] = i;
-         Gen01(index-1, vector);
+         Gen01(index - 1, vector);
       }
 }
 static void Main()
 {
    int size = 8;
    int[] vector = new int[size];
-   Gen01(size-1, vector);
+   Gen01(size - 1, vector);
 }
 ```
 
@@ -133,11 +135,11 @@ static void Main()
 # Generating Combinations
 - Combinations are give the ways to select a subset of larger set of elements
   - Select `k` members from a set of `n` elements
-  - Example: there are 10 ways to select 3 different elements from the set `{4,5,6,7,8}`:
-    - (4, 5, 6)	(4, 5, 7)	(4, 5, 8)	(4, 6, 7)	(4, 6, 8)<br/>(4, 7, 8)	(5, 6, 7)	(5, 6, 8)	(5, 7, 8)	(6, 7, 8)
+  - Example: there are **10** ways to select **3** different elements from the set `{4,5,6,7,8}`:
+    - (4, 5, 6) (4, 5, 7) (4, 5, 8) (4, 6, 7) (4, 6, 8)<br/>(4, 7, 8) (5, 6, 7) (5, 6, 8) (5, 7, 8) (6, 7, 8)
 - Combinations with and without repetitions can be easily generated with `recursion`
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.95em' } -->
 <!-- # Generating Combinations -->
 - Algorithm `GenCombs(k)`: put the numbers [1..n] at position `k` the and call `GenCombs(k+1)` recursively for the rest of the elements:
 
@@ -199,9 +201,9 @@ static void PutQueens(int count)
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.95em' } -->
 # Finding All Paths in a Labyrinth
 - We are given a labyrinth
-  - Represented as matrix of cells of size M x N
-  - Empty cells are passable, the others (\*) are not
-- We start from the top left corner and can move in the all 4 directions: left, right, up, down
+  - Represented as matrix of cells of size `M x N`
+  - Empty cells are passable, the others (__\*__) are not
+- We start from the top left corner and can move in the all 4 directions: **left**, **right**, **up**, **down**
 - We need to find all paths to the bottom right corner
 
 <div class="fragments balloon" style="top:70%; left:10%">Start position</div>
@@ -227,7 +229,7 @@ static void PutQueens(int count)
   - Find recursively all paths to the exit from all neighbor cells: `(x-1,y)` ,` (x+1,y)` ,` (x,y+1)` ,` (x,y-1)`
   - Mark position `(x,y)` as free (can be visited again)
 
-<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
+<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
 # Find All Paths: Algorithm
 - Representing the labyrinth as matrix of characters (in this example 5 rows and 7 columns):
 
@@ -241,9 +243,9 @@ static char[,] lab =
     {' ', ' ', ' ', ' ', ' ', ' ', 'е'},
 };
 ```
-- Spaces ('` `') are passable cells
-- Asterisks ('`x`') are  not passable cells
-- The symbol '`e`' is the exit (can occur multiple times)
+- Spaces (`' '`) are passable cells
+- Asterisks (`'x'`) are  not passable cells
+- The symbol (`'e'`) is the exit (can occur multiple times)
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
 <!-- # Find All Paths: Algorithm -->
@@ -278,10 +280,10 @@ static void FindExit(int row, int col)
     lab[row, col] = 's';
 
     // Invoke recursion to explore all possible directions
-    FindExit(row, col-1); // left
-    FindExit(row-1, col); // up
-    FindExit(row, col+1); // right
-    FindExit(row+1, col); // down
+    FindExit(row, col - 1); // left
+    FindExit(row - 1, col); // up
+    FindExit(row, col + 1); // right
+    FindExit(row + 1, col); // down
 
     // Mark back the current cell as free
     lab[row, col] = ' ';
@@ -310,7 +312,7 @@ static void Main()
 static List<char> path = new List<char>();
 ```
 
-<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
+<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
 <!-- # Find All Paths and Print Them -->
 
 ```cs
