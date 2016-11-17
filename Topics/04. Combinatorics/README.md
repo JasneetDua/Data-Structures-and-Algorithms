@@ -29,7 +29,7 @@
   - Notably in algebra, probability theory, topology, geometry, physics, chemistry, biology, etc.
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Combinations
+<!-- # Combinations -->
 - "My fruit salad is a combination of grapes, strawberries and bananas" 
   - We don't care what order the fruits are in
     - "bananas, grapes and strawberries" or "grapes, bananas and strawberries" &rarr; it is the same salad
@@ -54,7 +54,7 @@
     - 7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Factorial - Source code
+<!-- # Factorial -->
 - Factorial - iterative
 
 ```cs
@@ -81,7 +81,7 @@ static long Factorial(int n)
 # Variations
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Variations
+# Variations with Repetitions
 - `Variations (with repetitions)`
   - Easiest to calculate
 - When you have `n` things to choose from... You have `n` choices each time!
@@ -90,13 +90,13 @@ static long Factorial(int n)
   - 	       nk
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Variations (2)
+<!-- # Variations -->
 - Example: in the lock below, there are 10 numbers to choose from (0, 1, … 9) and you choose 3 of them:
   - 10 × 10 × 10 (3 times) = `103` = 1 000 variations
 - All variations from (0, 0, 0) to (9, 9, 9) 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Variations
+<!-- # Variations with Repetitions -->
 
 ```cs
 static void Main()
@@ -117,8 +117,8 @@ static void GenerateVariations(int index)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Variations with Repetitions
-##  [Demo]()
+<!-- # Variations with Repetitions
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Variations without Repetition
@@ -130,7 +130,7 @@ static void GenerateVariations(int index)
 - where n is the number of things to choose from, and you choose k of them (no repetition, order matters) 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Variations without Repetition
+<!-- # Variations without Repetition -->
 - Example: 
   - How many words of 2 `different` letters can you make with 4 letters { a, b, c, d }?
 - How to generate variations without repetitions?
@@ -139,7 +139,7 @@ static void GenerateVariations(int index)
 - ab, ac, ad, ba, bc, bd, ca, cb, cd, da, db, dc
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Variations without Repetitions
+<!-- # Variations without Repetitions -->
 
 ```cs
 static void GenerateVariationsNoReps(int index)
@@ -160,15 +160,15 @@ GenerateVariationsNoReps(0);
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Variations without Repetitions
-##  [Demo]()
+<!-- # Variations without Repetitions
+##  [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Permutations
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Permutations
+<!-- # Permutations -->
 - Less number of available choices each time
 - What order could `16` pool balls be in?
 - After choosing, ball 9 we can't choose the same ball again
@@ -178,7 +178,7 @@ GenerateVariationsNoReps(0);
   - 16 × 15 × 14 ×...× 2 × 1 = `16! `= 20 922 789 888 000
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Permutations
+<!-- # Permutations -->
 
 ```cs
 static void Perm<T>(T[] arr, int k)
@@ -199,8 +199,8 @@ static void Perm<T>(T[] arr, int k)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Permutations
-##  [Demo]()
+<!-- # Permutations
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Permutations with Repetitions
@@ -215,7 +215,7 @@ static void Perm<T>(T[] arr, int k)
 - We want to efficiently avoid the repeating ones, i.e. to work fast for { 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5}
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Permutations with Repetitions
+<!-- # Permutations with Repetitions -->
 
 ```cs
 var arr = new int[] { 3, 5, 1, 5, 5 };
@@ -241,15 +241,15 @@ static void PermuteRep(int[] arr, int start, int n)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Permutations with Repetitions
-##  [Demo]()
+<!-- # Permutations with Repetitions
+##  [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Combinations
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Combinations
+<!-- # Combinations -->
 - Order does not matter!
 - Two types of combinations:
   - `Repetition is allowed`
@@ -270,7 +270,7 @@ static void PermuteRep(int[] arr, int start, int n)
 - Often called "n choose k"
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generate Combinations without Repetitions
+<!-- # Combinations without Repetitions -->
 
 ```cs
 static void Main()
@@ -291,8 +291,8 @@ static void Comb(int index, int start)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Combinations without Repetitions
-##  [Demo]()
+<!-- # Combinations without Repetitions
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Pascal's Triangle
@@ -303,7 +303,7 @@ static void Comb(int index, int start)
 - Build the triangle: start with "1" at the top, then continue placing numbers below it in a triangular pattern
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Pascal's Triangle's (2)
+<!-- # Pascal's Triangle's -->
 - The triangle is symmetrical
   - Numbers on the left side have identical matching numbers on the right side, like a mirror image
 - Diagonals:
@@ -349,7 +349,7 @@ for (i = 0; i <= n; i++) {
   - {b, v, v} (one of banana, two of vanilla)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Combinations with Repetition
+<!-- # Combinations with Repetition -->
 - Ice-cream example
   - n=5 things to choose from, choose k=3 of them
   - Order does not matter, and we can repeat
@@ -360,14 +360,14 @@ for (i = 0; i <= n; i++) {
   - {b, v, v} (banana, two of vanilla)
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Combinations with Repetition
+<!-- # Combinations with Repetition -->
 - We have a simpler problem to solve
   - How many different ways can you arrange arrows and circles?
   - 3 circles (3 scoops) and 4 arrows (we need to move 4 times to go from the 1st to 5th container)
   - There are k + (n-1) positions, and we want to choose k of them to have circles
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generate Combinations with Repetitions
+<!-- # Combinations with Repetitions -->
 
 ```cs
 static void Main()
@@ -388,8 +388,8 @@ static void CombReps(int index, int start)
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Generating Combinations with Repetitions
-##  [Demo]()
+<!-- # Combinations with Repetitions
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Combinatorial Formulas
@@ -402,7 +402,7 @@ static void CombReps(int index, int start)
 # Binary Vectors
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Binary Vectors
+<!-- # Binary Vectors -->
 - Some problems can be reformulated in terms of `binary vectors `-` `(1, 0, 1, 1, 1, 0, …)
 - Combinatorial properties of binary vectors:
   - Number of binary vectors of length n: 2n.
@@ -413,7 +413,7 @@ static void CombReps(int index, int start)
 - Gray code (a.k.a. reflected binary code) is a binary numeral system where two successive values differ by only one bit
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Gray Code - Source Code 
+<!-- # Gray Code -->
 
 ```cs
 static int n = 4, a[1000], i;
@@ -435,8 +435,8 @@ static int Main() { Forwgray(n); return 0; }
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Gray Code
-##  [Demo]()
+<!-- # Gray Code
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Resources
