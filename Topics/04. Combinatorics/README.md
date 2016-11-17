@@ -127,12 +127,12 @@ static void GenerateVariations(int index)
     - 16 × 15 × 14 = 3360
     - There are 3360 different ways that 3 pool balls could be selected out of 16 balls
   - 16! / 13! = 16 × 15 × 14
-- where n is the number of things to choose from, and you choose k of them(No repetition, order matters) 
+- where n is the number of things to choose from, and you choose k of them (no repetition, order matters) 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Variations without Repetition
 - Example: 
-  - How many words of 2 `different `letters can you make with 4 letters { a, b, c, d }?
+  - How many words of 2 `different` letters can you make with 4 letters { a, b, c, d }?
 - How to generate variations without repetitions?
   - The same way like variations with repetitions
   - Just use each element at most once
@@ -171,7 +171,7 @@ GenerateVariationsNoReps(0);
 # Permutations
 - Less number of available choices each time
 - What order could `16` pool balls be in?
-- After choosing, ball 9we can't choose the same ball again
+- After choosing, ball 9 we can't choose the same ball again
   - First choice  = `16` possibilities
   - Second choice = `15` possibilities, etc., etc.
 - Total permutations:
@@ -205,7 +205,7 @@ static void Perm<T>(T[] arr, int k)
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Permutations with Repetitions
 - We have a set of elements, with repetitions
-  - E. g. set = { 3, 5, 1, 5, 5 }
+  - E.g. set = { 3, 5, 1, 5, 5 }
 - We want to generate all unique permutations (without duplicates):
   - { 1, 3, 5, 5, 5 }   { 1, 5, 3, 5, 5 }   { 1, 5, 5, 3, 5 }   { 1, 5, 5, 5, 3 }
   - { 3, 1, 5, 5, 5 }   { 3, 5, 1, 5, 5 }   { 3, 5, 5, 1, 5 }   { 3, 5, 5, 5, 1 }
