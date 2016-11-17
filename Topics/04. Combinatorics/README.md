@@ -26,7 +26,7 @@
 - `Combinatorics` is a branch of mathematics
   - Concerning the study of finite or countable discrete structures
 - Combinatorial problems arise in many areas of pure mathematics
-  - Notably in algebra, probability theory, topology, geometry,physics, chemistry, biology, etc.
+  - Notably in algebra, probability theory, topology, geometry, physics, chemistry, biology, etc.
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Combinations
