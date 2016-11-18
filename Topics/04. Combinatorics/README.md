@@ -23,7 +23,7 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Combinatorics
-- `Combinatorics` is a branch of mathematics
+- **Combinatorics** is a branch of mathematics
   - Concerning the study of finite or countable discrete structures
 - Combinatorial problems arise in many areas of pure mathematics
   - Notably in algebra, probability theory, topology, geometry, physics, chemistry, biology, etc.
@@ -33,15 +33,15 @@
 - "My fruit salad is a combination of grapes, strawberries and bananas" 
   - We don't care what order the fruits are in
     - "bananas, grapes and strawberries" or "grapes, bananas and strawberries" &rarr; it is the same salad
-- If the `order doesn't` matter, it is a `combination`
+- If the **order doesn't** matter, it is a **combination**
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Permutations / Variations
 - "The combination to the safe is 4385".
-  - Now we do care about the `order`
+  - Now we do care about the **order**
   - "8453" would not work,nor would "4538"
   - It has to be exactly 4-3-8-5
-- If the `order does matter` it is a `permutation` / `variation`
+- If the **order does matter** it is a **permutation** / **variation**
   - A permutation / variation is an ordered Combination
 - Easy to remember: "Permutation ... Position"
 
@@ -207,11 +207,11 @@ static void Perm<T>(T[] arr, int k)
 - We have a set of elements, with repetitions
   - E.g. set = { 3, 5, 1, 5, 5 }
 - We want to generate all unique permutations (without duplicates):
-  - { 1, 3, 5, 5, 5 }   { 1, 5, 3, 5, 5 }   { 1, 5, 5, 3, 5 }   { 1, 5, 5, 5, 3 }
-  - { 3, 1, 5, 5, 5 }   { 3, 5, 1, 5, 5 }   { 3, 5, 5, 1, 5 }   { 3, 5, 5, 5, 1 }
-  - { 5, 1, 3, 5, 5 }   { 5, 1, 5, 3, 5 }   { 5, 1, 5, 5, 3 }   { 5, 3, 1, 5, 5 }
-  - { 5, 3, 5, 1, 5 }   { 5, 3, 5, 5, 1 }   { 5, 5, 1, 3, 5 }   { 5, 5, 1, 5, 3 }
-  - { 5, 5, 3, 1, 5 }   { 5, 5, 3, 5, 1 }   { 5, 5, 5, 1, 3 }   { 5, 5, 5, 3, 1 }
+  - { 1, 3, 5, 5, 5 }   { 1, 5, 3, 5, 5 }   { 1, 5, 5, 3, 5 }   { 1, 5, 5, 5, 3 }<br/>
+    { 3, 1, 5, 5, 5 }   { 3, 5, 1, 5, 5 }   { 3, 5, 5, 1, 5 }   { 3, 5, 5, 5, 1 }<br/>
+    { 5, 1, 3, 5, 5 }   { 5, 1, 5, 3, 5 }   { 5, 1, 5, 5, 3 }   { 5, 3, 1, 5, 5 }<br/>
+    { 5, 3, 5, 1, 5 }   { 5, 3, 5, 5, 1 }   { 5, 5, 1, 3, 5 }   { 5, 5, 1, 5, 3 }<br/>
+    { 5, 5, 3, 1, 5 }   { 5, 5, 3, 5, 1 }   { 5, 5, 5, 1, 3 }   { 5, 5, 5, 3, 1 }
 - We want to efficiently avoid the repeating ones, i.e. to work fast for { 1, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5}
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -351,7 +351,7 @@ for (i = 0; i <= n; i++) {
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Combinations with Repetition -->
 - Ice-cream example
-  - n=5 things to choose from, choose k=3 of them
+  - `n=5` things to choose from, choose `k=3` of them
   - Order does not matter, and we can repeat
 - Think about the ice cream being in boxes
   - arrow means move, circle means scoop
@@ -364,7 +364,7 @@ for (i = 0; i <= n; i++) {
 - We have a simpler problem to solve
   - How many different ways can you arrange arrows and circles?
   - 3 circles (3 scoops) and 4 arrows (we need to move 4 times to go from the 1st to 5th container)
-  - There are k + (n-1) positions, and we want to choose k of them to have circles
+  - There are `k + (n-1)` positions, and we want to choose `k` of them to have circles
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Combinations with Repetitions -->
