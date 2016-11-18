@@ -23,13 +23,13 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # What is Recursion?
-- `Recursion` is when a methods calls itself
+- **Recursion** is when a methods calls itself
   - Very powerful technique for implementing combinatorial and other algorithms
 - Recursion should have
-  - `Direct` or `indirect` recursive call
+  - **Direct** or **indirect** recursive call
     - The method calls itself directly
     - Оr through other methods
-  - Exit criteria (`bottom`)
+  - Exit criteria (**bottom**)
     - Prevents infinite recursion
 
 
@@ -161,7 +161,7 @@ static void Main()
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Backtracking
-- What is `backtracking`?
+- What is **backtracking**?
   - Backtracking is a class of algorithms for finding all solutions to some computational problem
   - E.g. find all paths from Sofia to Varna
 - How does backtracking work?
