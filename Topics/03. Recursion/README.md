@@ -156,7 +156,7 @@ static void Main()
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Backtracking
-##  Solving Computational Problemsby Generating All Candidates
+##  Solving Computational Problems by Generating All Candidates
 
 
 <!-- attr: { showInPresentation:true, style:'' } -->
