@@ -3,15 +3,12 @@
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Sorting Algorithms
 ## QuickSort, MergeSort, etc...
-
-<div class="signature">
+<aside class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
     <p class="signature-initiative">Telerik Software Academy</p>
     <a href = "http://academy.telerik.com " class="signature-link">http://academy.telerik.com </a>
-</div>
+</aside>
 
-
-<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
 - Sorting
