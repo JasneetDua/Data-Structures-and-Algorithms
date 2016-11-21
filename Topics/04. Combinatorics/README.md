@@ -39,7 +39,7 @@
 # Permutations / Variations
 - "The combination to the safe is 4385".
   - Now we do care about the **order**
-  - "8453" would not work,nor would "4538"
+  - "8453" would not work, nor would "4538"
   - It has to be exactly 4-3-8-5
 - If the **order does matter** it is a **permutation** / **variation**
   - A permutation / variation is an ordered Combination
