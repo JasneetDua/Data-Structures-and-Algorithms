@@ -185,6 +185,8 @@ public static class RandomProvider
 }
 ```
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Sorting and Searching Algorithms
-* http://academy.telerik.com
+<!-- section start -->
+<!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
+# Questions
+## Sorting and Searching Algorithms
+[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
