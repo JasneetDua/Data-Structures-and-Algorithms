@@ -10,11 +10,11 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-* Searching
-  * Linear search
-  * Binary search
-  * Interpolation search
-* Shuffling
+- Searching
+  - Linear search
+  - Binary search
+  - Interpolation search
+- Shuffling
 
 
 <!-- section start -->
@@ -24,24 +24,24 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Search Algorithm
-* An algorithm for finding an item with specified properties among a collection of items
-* Different types of searching algorithms
-  * For virtual search spaces
-    * satisfy specific mathematical equations
-    * try to exploit partial knowledge about structure
-  * For sub-structures of a given structure
-    * graph, a string, a finite group
-  * Search for the max (min) of a function
-  * etc.
+- An algorithm for finding an item with specified properties among a collection of items
+- Different types of searching algorithms
+  - For virtual search spaces
+    - satisfy specific mathematical equations
+    - try to exploit partial knowledge about structure
+  - For sub-structures of a given structure
+    - graph, a string, a finite group
+  - Search for the max (min) of a function
+  - etc.
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Linear Search
 
-* Method for finding a particular value in a list
-  * Checking every one of the elements
-  * One at a time in sequence
-  * Until the desired one is found
-* Worst and average performance: `O(n)`
+- Method for finding a particular value in a list
+  - Checking every one of the elements
+  - One at a time in sequence
+  - Until the desired one is found
+- Worst and average performance: `O(n)`
 
 ```cs
  for each item in the list:
@@ -59,18 +59,18 @@
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Binary Search
 
-* Finds the position of a specified value within an **ordered** data structure
-* In each step, compare the input with the middle
-  * The algorithm repeats its action to the left or right sub-structure
-* Average performance: `O(log(n))`
+- Finds the position of a specified value within an **ordered** data structure
+- In each step, compare the input with the middle
+  - The algorithm repeats its action to the left or right sub-structure
+- Average performance: `O(log(n))`
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Recursive Binary Search
 
-* _Example:_ Recursive binary search
+- _Example:_ Recursive binary search
 
 ```cs
-function binarySearch(int items[], int key, int from, int to)
+function binarySearch(int items[],int key,int from,int to)
   if (to < from):
     // set is empty, so return value showing not found
     return KEY_NOT_FOUND;
@@ -87,10 +87,11 @@ function binarySearch(int items[], int key, int from, int to)
     return middle;
 ```
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # Iterative Binary Search
 
-* _Example:_ Iterative binary search
+- _Example:_ Iterative binary search
+
 ```cs
 int binarySearch(int a[], int key, int from, int to)
   // continue searching while [imin,imax] is not empty
@@ -119,14 +120,14 @@ int binarySearch(int a[], int key, int from, int to)
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Interpolation Search
-* An algorithm for searching for a given key value in an indexed array that has been ordered by the values of the key
-  * Parallels how humans search through a telephone book
-  * Calculates where in the remaining search space the sought item might be
-    * Binary search always chooses the middle element
-* Average case: `log(log(n))`, Worst case: `O(n)`
-* http://youtube.com/watch?v=l1ed_bTv7Hw
+- An algorithm for searching for a given key value in an indexed array that has been ordered by the values of the key
+  - Parallels how humans search through a telephone book
+  - Calculates where in the remaining search space the sought item might be
+    - Binary search always chooses the middle element
+- Average case: `log(log(n))`, Worst case: `O(n)`
+- http://youtube.com/watch?v=l1ed_bTv7Hw
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, style:'font-size:0.85em' } -->
 # Interpolation SearchSample Implementation
 
 ```cs
@@ -157,9 +158,9 @@ public int interpolationSearch(int[] sortedArray, int toFind){
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Shuffling
-* A procedure used to randomize the order of items in a collection
-  * Generating random permutation
-* http://en.wikipedia.org/wiki/Shuffling
+- A procedure used to randomize the order of items in a collection
+  - Generating random permutation
+- http://en.wikipedia.org/wiki/Shuffling
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Fisher–Yates shuffle algorithm
@@ -171,7 +172,7 @@ public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source)
     var n = array.Length;
     for (var i = 0; i < n; i++)
     {
-*         // Exchange a[i] with random element in a[i..n-1]
+        // Exchange a[i] with random element in a[i..n-1]
         int r = i + RandomProvider.Instance.Next(0, n - i);
         var temp = array[i];
         array[i] = array[r];
@@ -185,6 +186,8 @@ public static class RandomProvider
 }
 ```
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Sorting and Searching Algorithms
-* http://academy.telerik.com
+<!-- section start -->
+<!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
+# Questions
+## Sorting and Searching Algorithms
+[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)

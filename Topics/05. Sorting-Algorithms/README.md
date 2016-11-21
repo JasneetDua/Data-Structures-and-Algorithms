@@ -1,63 +1,62 @@
 <!-- section start -->
+
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Sorting Algorithms
 ## QuickSort, MergeSort, etc...
-
-<div class="signature">
+<aside class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
     <p class="signature-initiative">Telerik Software Academy</p>
-    <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
-</div>
+    <a href = "http://academy.telerik.com " class="signature-link">http://academy.telerik.com </a>
+</aside>
 
-
-<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-* Sorting
-  * Sorting and classification
-* Review of the most popular sorting algorithms
-  * Bubble sort
-  * Bucket sort
-  * Quick sort
-  * Merge sort
+- Sorting
+  - Sorting and classification
+- Review of the most popular sorting algorithms
+  - Quick sort
+  - Merge sort
+  - Bubble sort
+  - Bucket sort
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# What is a Sorting Algorithm?
 
 # What is a Sorting Algorithm?
 
-* Sorting algorithm
-  * An algorithm that **puts elements** of a list in a **certain order** (most common lexicographically)
-* More formally:
-  * The output is **in some (non-decreasing) order**
-  * The output is **a permutation** of the input
-* Efficient sorting is important for
-  * Producing human-readable output
-  * Canonicalizing data
-  * Optimizing the use of other algorithms
-* Sorting presents many important techniques
+# What is a Sorting Algorithm?
+
+- Sorting algorithm
+  - An algorithm that **puts elements** of a list in a **certain order** (most common lexicographically)
+- More formally:
+  - The output is **in some (non-decreasing) order**
+  - The output is **a permutation** of the input
+- Efficient sorting is important for
+  - Producing human-readable output
+  - Canonicalizing data
+  - Optimizing the use of other algorithms
+- Sorting presents many important techniques
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Classification
 
-* Sorting algorithms are often classified by
-  * Computational **complexity**
-    * **worst**, **average** and **best** behavior
-  * **Memory** usage
-  * Recursive or non-recursive
-  * **Stability**
-  * Whether or not they are a comparison sort
-  * General method
-    * insertion, exchange (bubble sort and quicksort), selection (heapsort), merging, serial or parallel…
+- Sorting algorithms are often classified by
+  - Computational **complexity**
+    - **worst**, **average** and **best** behavior
+  - **Memory** usage
+  - Recursive or non-recursive
+  - **Stability**
+  - Whether or not they are a comparison sort
+  - General method
+    - insertion, exchange (bubble sort and quicksort), selection (heapsort), merging, serial or parallel…
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Stability of Sorting
 
-* Stable sorting algorithms <!-- .element: style="width:70%" -->
-  * Maintain the relative order of records with equal values
-* If two items compare as equal, then their relative order will be preserved <!-- .element: style="width:70%" -->
-  * When sorting only part of the data is examined when determining the sort order
+- Stable sorting algorithms <!-- .element: style="width:70%" -->
+  - Maintain the relative order of records with equal values
+- If two items compare as equal, then their relative order will be preserved <!-- .element: style="width:70%" -->
+  - When sorting only part of the data is examined when determining the sort order
 
 <img class="slide-image" src="imgs/stability.png" style="width:25%; top:15%; right:0%" />
 
@@ -70,13 +69,13 @@
 <!-- attr: { hasScriptWrapper:true, style:'font-size:42px' } -->
 # Selection sort
 
-* Very simple and very inefficient algorithm
-  * Best, worst and average case: `n`<sup>`2`</sup>
-  * Memory: `1` (constant, only for the min element)
-  * Stable: No
-  * Method: Selection
+- Very simple and very inefficient algorithm
+  - Best, worst and average case: `n`<sup>`2`</sup>
+  - Memory: `1` (constant, only for the min element)
+  - Stable: No
+  - Method: Selection
 
-  ```cs
+```cs
   for j = 0 ... n-2
       // find the best element in a[j .. n-1]
       best = j;
@@ -85,13 +84,13 @@
             best = i;
       if best is not j
         swap a[j], a[best]
-  ```
+```
 
-  * http://en.wikipedia.org/wiki/Selection_sort
+  - http://en.wikipedia.org/wiki/Selection_sort
 
 <!-- attr: {class: 'slide-section'} -->
 # Selection sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 <!-- section start -->
 
@@ -102,11 +101,11 @@
 
 # Bubble sort
 
-* Repeatedly stepping through the list
-  * Comparing each pair of adjacent items
-    * Swap them if they are in the wrong order
-  * Best case: `n`, worst and average case: `n`<sup>`2`</sup>
-  * Memory: `1`, Stable: Yes, Method: Exchanging
+- Repeatedly stepping through the list
+  - Comparing each pair of adjacent items
+    - Swap them if they are in the wrong order
+  - Best case: `n`, worst and average case: `n`<sup>`2`</sup>
+  - Memory: `1`, Stable: Yes, Method: Exchanging
 
 ```cs
 while swapIsDone
@@ -117,11 +116,11 @@ while swapIsDone
       swapIsDone = true
 ```
 
-* http://en.wikipedia.org/wiki/Bubble_sort
+- http://en.wikipedia.org/wiki/Bubble_sort
 
 <!-- attr: {class: 'slide-section'} -->
 # Bubble sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 
 <!-- section start -->
@@ -131,9 +130,9 @@ while swapIsDone
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # Insertion sort
 
-* Builds the final sorted array one item at a time
-  * Best case: `n`, worst and average case: `n`<sup>`2`</sup>
-  * Memory: `1`, Stable: Yes, Method: Insertion
+- Builds the final sorted array one item at a time
+  - Best case: `n`, worst and average case: `n`<sup>`2`</sup>
+  - Memory: `1`, Stable: Yes, Method: Insertion
 
 ```cs
 for i = 1 ... n - 1
@@ -145,12 +144,12 @@ for i = 1 ... n - 1
   A[holePos] = valueToInsert
 ```
 
-* http://en.wikipedia.org/wiki/Insertion_sort
+- http://en.wikipedia.org/wiki/Insertion_sort
 
 
 <!-- attr: {class: 'slide-section'} -->
 # Insertion sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 <!-- section start -->
 
@@ -158,13 +157,13 @@ for i = 1 ... n - 1
 
 # Quicksort
 
-<!-- attr: {style:'font-size:40px'} -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.75em'} -->
 # Quicksort
-* First divides a large list into two smaller sub-lists then recursively sort the sub-lists
-  * Best and average case: `n*log(n)`, worst: `n`<sup>`2`</sup>
-  * Memory: `log(n)` stack space
-  * Stable: Depends
-  * Method: Partitioning
+- First divides a large list into two smaller sub-lists then recursively sort the sub-lists
+  - Best and average case: `n*log(n)`, worst: `n`<sup>`2`</sup>
+  - Memory: `log(n)` stack space
+  - Stable: Depends
+  - Method: Partitioning
 
 ```cs
 function quicksort('array')
@@ -180,32 +179,33 @@ function quicksort('array')
   return concatenate (quicksort('less'), 'pivot', quicksort('greater'))
 ```
 
-  * http://en.wikipedia.org/wiki/Quicksort
-<div class="fragments balloon" style="width:250px; top:57%; left:50%">Stable implementation</div>
+  - http://en.wikipedia.org/wiki/Quicksort
+<div class="fragments balloon" style="width:250px; top:50%; left:50%">Stable implementation</div>
 
 <!-- attr: {class: 'slide-section'} -->
 
 # Quick sort
-## [Demo](http://)
+## [Demo](./demos)
 
 <!-- section start -->
 
 <!-- attr: { class:'slide-section' } -->
 # Merge sort
 
-<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
 # Merge Sort
-* Conceptually, a merge sort works as follows
-  * Divide the unsorted list into `n` sublists, each containing `1` element (list of 1 element is sorted)
-  * Repeatedly merge sublists to produce new sublists until there is only 1 sublist remaining
-* Best, average and worst case: `n*log(n)`
-* Memory: Depends; worst case is `n`
-* Stable: Yes;
-* Method: Merging
-* Highly parallelizable (up to `O(log(n)`) using the Three Hungarian's Algorithm
-* http://en.wikipedia.org/wiki/Merge_sort
+- Conceptually, a merge sort works as follows
+  - Divide the unsorted list into `n` sublists, each containing `1` element (list of 1 element is sorted)
+  - Repeatedly merge sublists to produce new sublists until there is only 1 sublist remaining
+- Best, average and worst case: `n*log(n)`
+- Memory: Depends; worst case is `n`
+- Stable: Yes;
+- Method: Merging
+- Highly parallelizable (up to `O(log(n)`)
+  - using the Three Hungarian's Algorithm
+- http://en.wikipedia.org/wiki/Merge_sort
 
-<img class="slide-image" src="imgs/mergesort.png" style="width:40%; top:45%; left:70%" />
+<img class="slide-image" src="imgs/mergesort.png" style="width:40%; top:35%; left:73%" />
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
 # Merge Sort Pseudocode
@@ -259,7 +259,7 @@ function merge(left, right)
 
 <!-- attr: {class: 'slide-section'} -->
 # Merge sort
-## [Demo](http://)
+## [Demo](./demos)
 
 <!-- section start -->
 
@@ -291,7 +291,7 @@ function merge(left, right)
 
 <!-- attr: {class: 'slide-section'} -->
 # Heap sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 <!-- section start -->
 
@@ -313,7 +313,7 @@ function merge(left, right)
 
 <!-- attr: {class: 'slide-section'} -->
 # Counting sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 
 <!-- section start -->
@@ -339,7 +339,7 @@ function merge(left, right)
 
 <!-- attr: {class: 'slide-section'} -->
 # Bucket sort
-##  [Demo](http://)
+##  [Demo](./demos)
 
 <!-- section start -->
 
