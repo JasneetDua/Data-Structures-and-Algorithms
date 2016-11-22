@@ -51,22 +51,19 @@
 ```
 
 <!-- section start -->
-
 <!-- attr: {class: 'slide-section'} -->
 # Binary search
 ##  Searching in an ordered collection
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Binary Search
-
+<!-- # Binary Search -->
 - Finds the position of a specified value within an **ordered** data structure
 - In each step, compare the input with the middle
   - The algorithm repeats its action to the left or right sub-structure
 - Average performance: `O(log(n))`
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Recursive Binary Search
-
+<!-- # Binary Search -->
 - _Example:_ Recursive binary search
 
 ```cs
@@ -88,8 +85,7 @@ function binarySearch(int items[],int key,int from,int to)
 ```
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-# Iterative Binary Search
-
+<!-- # Binary Search -->
 - _Example:_ Iterative binary search
 
 ```cs
@@ -111,15 +107,12 @@ int binarySearch(int a[], int key, int from, int to)
   return KEY_NOT_FOUND;
 ```
 
-<!-- attr: {class: 'slide-section'} -->
-
 <!-- section start -->
-
 <!-- attr: {class: 'slide-section'} -->
 # Interpolation Search
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Interpolation Search
+<!-- # Interpolation Search -->
 - An algorithm for searching for a given key value in an indexed array that has been ordered by the values of the key
   - Parallels how humans search through a telephone book
   - Calculates where in the remaining search space the sought item might be
@@ -128,7 +121,8 @@ int binarySearch(int a[], int key, int from, int to)
 - http://youtube.com/watch?v=l1ed_bTv7Hw
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.85em' } -->
-# Interpolation SearchSample Implementation
+<!-- # Interpolation Search -->
+- Sample Implementation
 
 ```cs
 public int interpolationSearch(int[] sortedArray, int toFind){
@@ -157,7 +151,7 @@ public int interpolationSearch(int[] sortedArray, int toFind){
 # Shuffling
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Shuffling
+<!-- # Shuffling -->
 - A procedure used to randomize the order of items in a collection
   - Generating random permutation
 - http://en.wikipedia.org/wiki/Shuffling
@@ -190,4 +184,3 @@ public static class RandomProvider
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
 # Questions
 ## Sorting and Searching Algorithms
-[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
