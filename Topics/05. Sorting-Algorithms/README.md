@@ -260,24 +260,24 @@ function merge(left, right)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Heap -->
-* Specialized tree-based data structure that satisfies the heap property:
-  * Parent nodes are always greater (less) than or equal to the children
-    * No implied ordering between siblings or cousins
+- Specialized tree-based data structure that satisfies the heap property:
+  - Parent nodes are always greater (less) than or equal to the children
+    - No implied ordering between siblings or cousins
 
 <img class="slide-image" src="imgs/heap.png" style="position:initial; width:60%; margin:-10px 0;" />
-* https://en.wikipedia.org/wiki/Heap_data_structure
+- https://en.wikipedia.org/wiki/Heap_data_structure
 <img class="slide-image" src="imgs/heap-tree.png" style="width:30%; top:52%; left:67%" />
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Heapsort -->
-* Can be divided into two parts
-  * In the first step, a heap is built out of the data
-  * A sorted array is created by repeatedly removing the top element from the heap
-* Best, average and worst case: `n*log(n)`
-* Memory: Constant - `O(1)`
-* Stable: No
-* Method: Selection
-* http://en.wikipedia.org/wiki/Heapsort
+- Can be divided into two parts
+  - In the first step, a heap is built out of the data
+  - A sorted array is created by repeatedly removing the top element from the heap
+- Best, average and worst case: `n*log(n)`
+- Memory: Constant - `O(1)`
+- Stable: No
+- Method: Selection
+- http://en.wikipedia.org/wiki/Heapsort
 
 <!-- attr: {showInPresentation:true, class: 'slide-section'} -->
 <!-- # Heap sort
@@ -289,15 +289,15 @@ function merge(left, right)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Counting sort -->
-* Algorithm for sorting a collection of objects according to keys that are small integers
-  * Or big integers and a `map`
-* Not a comparison sort
-* Average case: `n + r`
-* Worst case: `n + r`
-  * `r` is the range of numbers to be sorted
-* Stable: Yes
-* Memory: `n + r`
-* http://en.wikipedia.org/wiki/Counting_sort
+- Algorithm for sorting a collection of objects according to keys that are small integers
+  - Or big integers and a `map`
+- Not a comparison sort
+- Average case: `n + r`
+- Worst case: `n + r`
+  - `r` is the range of numbers to be sorted
+- Stable: Yes
+- Memory: `n + r`
+- http://en.wikipedia.org/wiki/Counting_sort
 <img class="slide-image" src="imgs/counting-sort.png" style="width:35%; top:27%; right:0%" />
 
 <!-- attr: {showInPresentation:true, class: 'slide-section'} -->
@@ -311,15 +311,15 @@ function merge(left, right)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Bucket sort -->
-* Partitioning an array into a number of buckets
-  * Each bucket is then sorted individually
-* Not a comparison sort
-* Average case: `n + k`
-  * `k` = the number of buckets
-* Worst case: `n2 * k`
-* Stable: Yes
-* Memory: `n * k`
-* http://en.wikipedia.org/wiki/Bucket_sort
+- Partitioning an array into a number of buckets
+  - Each bucket is then sorted individually
+- Not a comparison sort
+- Average case: `n + k`
+  - `k` = the number of buckets
+- Worst case: `n2 * k`
+- Stable: Yes
+- Memory: `n * k`
+- http://en.wikipedia.org/wiki/Bucket_sort
 
 <img class="slide-image" src="imgs/bucket-sort.png" style="width:40%; top:26%; right:0" />
 
@@ -333,8 +333,8 @@ function merge(left, right)
 
 <!-- attr: {hasScriptWrapper:true, showInPresentation:true, style:'font-size:40px' } -->
 <!-- # Comparison of Sorting Algorithms -->
-* There are hundreds of sorting algorithms
-  * Some of them are:
+- There are hundreds of sorting algorithms
+  - Some of them are:
 
 | Name      | Best       | Avg           | Worst         | Memory | Stable  |
 |:----------|:-----------|:--------------|:--------------|:-------|:--------|
