@@ -25,7 +25,7 @@
 ##  Not "just" Looking for a Solution
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Optimization Problems
+<!-- # Optimization Problems -->
 - Finding the best solution of a problem
   - From all solution candidates
   - i.e. most optimal solution candidate
@@ -35,7 +35,7 @@
   - Discrete - a.k.a. Combinatorial
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Optimization Problems
+<!-- # Optimization Problems -->
 - Importance of optimization problems
   - Optimal solutions reduce cost
   - Optimal solutions are more likely to be realistically possible
@@ -50,7 +50,7 @@
 ##  Picking Locally Best Solution
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms
+<!-- # Greedy Algorithms -->
 - Greedy algorithms are a category of algorithms
   - Can solve some optimization problems
   - Usually more efficient than all other algorithms
@@ -67,7 +67,7 @@
 - Your goal is to have as much coins as possible
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms: Example
+<!-- # Greedy Algorithms: Example -->
 - Things to notice in the way you played to win
 - Always take the max number of coins
   - i.e. make the current optimal solution
@@ -76,7 +76,7 @@
 - The greedy algorithm works optimally here
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms
+<!-- # Greedy Algorithms -->
 - A greedy algorithm solves a problem in steps
   - At each step
     - Algorithm picks the best action available
@@ -86,7 +86,7 @@
     - Leads to the global optimum
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms
+<!-- # Greedy Algorithms -->
 - Main components of a Greedy algorithm
   - A candidate set
   - A selection function
@@ -98,7 +98,7 @@
   - A way to determine the solution is reached
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms
+<!-- # Greedy Algorithms -->
 - Greedy algorithms exploit problem structure
   - E.g. where the solution is the sum of the optimal solutions to subproblems
   - E.g. where greedy choices don't lead to bad overall positions
@@ -106,7 +106,7 @@
   - Ironic, isn't it?
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Greedy Algorithms: Example
+<!-- # Greedy Algorithms: Example -->
 - Consider the US currency denominations
 - Problem: gather a sum of money, using the least possible number of bills/coins
   - Suppose you have infinite supplies of each denomination
@@ -122,7 +122,7 @@
 ```
 
 <!-- attr: { showInPresentation:true, style:'font-size:0.8em' } -->
-# Greedy Algorithms: Example
+<!-- # Greedy Algorithms: Example -->
 - Greedy algorithm to make a sum
   - With minimum number of coins
   - Given the US currency system
@@ -154,7 +154,7 @@
 ##  Optimal Substructure, Greedy Choice Property, Proving Optimality of a Greedy Approach
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Optimal Greedy Algorithms
+<!-- # Optimal Greedy Algorithms -->
 - Suitable problems for greedy algorithms often have these properties:
   - Greedy choice property
   - Optimal substructure
@@ -164,14 +164,14 @@
   - If a problem has the properties of a matroid, it is guaranteed to have an optimal greedy solution
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Optimal Greedy Algorithms
+<!-- # Optimal Greedy Algorithms -->
 - Greedy choice property
   - An optimal solution to the problem begins with a greedy choice
   - Subproblems that arise can be solved by consequent choices
     - Also enforced by optimal substructure
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Optimal Greedy Algorithms
+<!-- # Optimal Greedy Algorithms -->
 - Optimal substructure
   - After each greedy choice
   - The problem remains an optimization problem
@@ -194,14 +194,14 @@
     - i.e. which is the largest list of compatible activities that can be scheduled
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - The Activity Selection Problem
   - Can have several optimal solutions
     - In the following case `{a1, a4, a8, a11}` is optimal
     - Another optimal is `{a2, a4, a9, a11}`
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - A greedy algorithm for the task:
 - Greedy characteristic of above algorithm
   - Taking the earliest finish activity gives more time for other activities
@@ -212,7 +212,7 @@
 - Repeat the until no activities remain in `S`
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - To prove the discussed greedy is optimal
   - Need to prove the problem has a greedy choice property
   - Need to prove the problem has optimal substructure
@@ -221,7 +221,7 @@
   - In any solution, the first activity to start is the first to finish
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - Let A be an optimal solution (subset of S)
   - Sort activities in `A` by finish time. Let `k` be the index of the earliest activity in `A`
   - If `k = 1` => `A` begins with a greedy choice
@@ -232,7 +232,7 @@
       - Hence, `B` is also optimal
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - So far we proved that:
   - A solution starting with a greedy choice exists
   - The greedy choice solution is also optimal
@@ -241,7 +241,7 @@
 - Now, we need to prove the problem has optimal substructure
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - We have selected activity 1 (greedy 1st choice)
   - Thus, we reduced to the same problem form
     - Without activities in `S` which intersect activity 1
@@ -252,7 +252,7 @@
     - Adding activity 1 to `B'` gives `B` with more activities (from `S`) than `A` -> contradiction
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- # Proving Greedy Optimality -->
 - We just proved the problem has `optimal substructure`
   - Each greedy choice leads us to a problem of the same form
   - The new problem's solution is a subset of the initial problem's solution
@@ -265,11 +265,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# The Set Cover Problem
+# Set Cover Problem
 ##  Using Greedy for Approximation
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Set Cover Problem
+<!-- # Set Cover Problem -->
 - Greedy algorithms can sometimes find optimal solutions
   - This is not their only application
 - There exist problems, for which
@@ -278,7 +278,7 @@
   - Sometimes greedy algorithms provide good approximations of the optimal result
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Set Cover Problem
+<!-- # Set Cover Problem -->
 - The Set Cover Problem (SCP) is such a problem
 - SCP formulation:
   - Given a set `{1,2,…,m}` called "the Universe" (`U`)
@@ -288,7 +288,7 @@
     - How do we find the smallest number of sets, which in union make the target set
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Set Cover Problem
+<!-- # Set Cover Problem -->
 - The SCP turns out very complex
   - The optimal solution is **NP-complete**
   - i.e. infeasible for calculations (unless **P = NP**)
@@ -301,7 +301,7 @@
 ##  Several Common Greedy Algorithms
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Notable Greedy Algorithms
+<!-- # Notable Greedy Algorithms -->
 - Dijkstra's algorithm for finding the shortest path between two vertices
   - in a weighted graph (with no negative cycles)
 - At each step, of all reached edges, pick:
@@ -311,7 +311,7 @@
     - i.e. no need to traverse all vertices
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Notable Greedy Algorithms
+<!-- # Notable Greedy Algorithms -->
 - Prim and Kruskal's algorithms for a minimum spanning tree (MST) are greedy algorithms
   - Prim:
     - pick the smallest edge, not in the MST so far
@@ -320,7 +320,7 @@
   - Both algorithms have the same complexity
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Notable Greedy Algorithms
+<!-- # Notable Greedy Algorithms -->
 - The prefix tree generation algorithm in Huffman coding is greedy
   - Greedy: pick the two smallest-value leaves/nodes and combine them
   - Left move: `0`, Right move: `1`
