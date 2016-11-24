@@ -60,20 +60,22 @@
   - From their current position & point of view
   - i.e. they make local solutions
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Greedy Algorithms: Example
 - Playing against someone, alternating turns
 - Per turn, you can take up to three coins
 - Your goal is to have as much coins as possible
 
+<img src="imgs/1.png">
+
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Greedy Algorithms: Example -->
 - Things to notice in the way you played to win
-- Always take the max number of coins
-  - i.e. make the current optimal solution
-- You don't consider what the other player does
-- You don't consider your actions' consequences
-- The greedy algorithm works optimally here
+  - Always take the max number of coins
+    - i.e. make the current optimal solution
+  - You don't consider what the other player does
+  - You don't consider your actions' consequences
+  - The greedy algorithm works optimally here
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Greedy Algorithms -->
@@ -142,11 +144,14 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # Greedy Failure Cases
-- Greedy algorithms are often not optimal
+- Greedy algorithms are **often not optimal**
   - Even can reach the unique worst possible solutions for some problems
   - Example: Largest sum path (starting at top)
   - Example: Coin denominations `4`, `10`, `25`
     - Greedy will fail to make the sum `41` which is `25 + 4 x 4`
+
+<img src="imgs/41.png" width="35%" style="position:absolute;left:10%">
+<img src="imgs/42.png" width="35%" style="position:absolute;left:55%">
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
@@ -160,8 +165,8 @@
   - Optimal substructure
 - Any problem having the above properties
   - Guaranteed to have an optimal greedy solution
-- Matroids - way to prove greedy optimality
-  - If a problem has the properties of a matroid, it is guaranteed to have an optimal greedy solution
+- **Matroids** - way to prove greedy optimality
+  - If a problem has the properties of a **matroid**, it is guaranteed to have an optimal greedy solution
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Optimal Greedy Algorithms -->
@@ -193,12 +198,14 @@
   - What is the maximum-size subset of compatible activities?
     - i.e. which is the largest list of compatible activities that can be scheduled
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Proving Greedy Optimality -->
 - The Activity Selection Problem
   - Can have several optimal solutions
     - In the following case `{a1, a4, a8, a11}` is optimal
     - Another optimal is `{a2, a4, a9, a11}`
+
+<img src="imgs/5.png">
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Proving Greedy Optimality -->
@@ -222,7 +229,7 @@
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Proving Greedy Optimality -->
-- Let A be an optimal solution (subset of S)
+- Let `A` be an optimal solution (subset of `S`)
   - Sort activities in `A` by finish time. Let `k` be the index of the earliest activity in `A`
   - If `k = 1` => `A` begins with a greedy choice
   - If `k != 1` =>
@@ -319,11 +326,13 @@
     - pick the smallest edge, connecting two vertices, not in the same tree
   - Both algorithms have the same complexity
 
-<!-- attr: { showInPresentation:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Notable Greedy Algorithms -->
 - The prefix tree generation algorithm in Huffman coding is greedy
   - Greedy: pick the two smallest-value leaves/nodes and combine them
   - Left move: `0`, Right move: `1`
+
+<img src="imgs/6.png">
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
