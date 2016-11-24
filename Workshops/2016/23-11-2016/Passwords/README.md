@@ -49,6 +49,12 @@ It turns out that his intention is to cheat and use a program. Guess what! He ca
 1234567890
 ```
 
+#### Explanation
+```
+There is only one possible password:
+1 > 2 > 3 > 4 > 5 > 6 > 7 > 8 > 9 > 0
+```
+
 ### Sample test 2
 
 #### Input
@@ -61,6 +67,12 @@ It turns out that his intention is to cheat and use a program. Guess what! He ca
 #### Output
 ```
 0987654321
+```
+
+#### Explanation
+```
+There is only one possible password:
+0 < 9 < 8 < 7 < 6 < 5 < 4 < 3 < 2 < 1
 ```
 
 ### Sample test 3
@@ -77,6 +89,16 @@ It turns out that his intention is to cheat and use a program. Guess what! He ca
 25
 ```
 
+#### Explanation
+```
+Sequence of the first 12 combinations:
+10   12   13   14   15   16
+17   18   19   20   23   24
+The next 8 combinations:
+25  <- 13th
+26   27   28   29   30   34   35
+```
+
 ### Sample test 4
 
 #### Input
@@ -89,4 +111,9 @@ It turns out that his intention is to cheat and use a program. Guess what! He ca
 #### Output
 ```
 0112665
+```
+
+#### Explanation
+```
+0 < 1 = 1 > 2 > 6 = 6 < 5
 ```
