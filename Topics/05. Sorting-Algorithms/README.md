@@ -8,22 +8,27 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com </a>
 </aside>
 
+<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-- Sorting
-  - Sorting and classification
-- Review of the most popular sorting algorithms
-  - Quick sort
-  - Merge sort
-  - Bubble sort
-  - Bucket sort
+- [Sorting](#sortingAlgorithm)
+  - [Sorting and classification](#classification)
+- [Review of the most popular sorting algorithms](#selection)
+  - [Selection sort](#selection)
+  - [Bubble sort](#bubble)
+  - [Insertion sort](#insertion)
+  - [Quick sort](#quick)
+  - [Merge sort](#merge)
+  - [Heap sort](#heap)
+  - [Counting sort](#counting)
+  - [Bucket sort](#bucket)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# What is a Sorting Algorithm?
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # What is a Sorting Algorithm? -->
+
+<!-- attr: { id:'sortingAlgorithm', showInPresentation:true, hasScriptWrapper:true } -->
+# <a id="sortingAlgorithm"></a>What is a Sorting Algorithm?
 
 - Sorting algorithm
   - An algorithm that **puts elements** of a list in a **certain order** (most common lexicographically)
@@ -36,8 +41,8 @@
   - Optimizing the use of other algorithms
 - Sorting presents many important techniques
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Classification
+<!-- attr: { id:'classification', showInPresentation:true, style:'' } -->
+# <a id="classification"></a>Classification
 
 - Sorting algorithms are often classified by
   - Computational **complexity**
@@ -54,18 +59,18 @@
 
 - Stable sorting algorithms <!-- .element: style="width:70%" -->
   - Maintain the relative order of records with equal values
-- If two items compare as equal, then their relative order will be preserved <!-- .element: style="width:70%" -->
+- If two items compare as equal, then their relative order will be preserved
   - When sorting only part of the data is examined when determining the sort order
 
-<img class="slide-image" src="imgs/stability.png" style="width:25%; top:15%; right:0%" />
+<img class="slide-image" src="imgs/stability.png" style="width:25%; top:15%; right:-20%" />
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Selection sort
+<!-- # Selection sort -->
 
 <!-- attr: { hasScriptWrapper:true } -->
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:42px' } -->
-<!-- # Selection sort -->
+<!-- attr: { id:'selection', showInPresentation:true, hasScriptWrapper:true, style:'font-size:42px' } -->
+# <a id="selection"></a>Selection sort
 
 - Very simple and very inefficient algorithm
   - Best, worst and average case: `n`<sup>`2`</sup>
@@ -87,15 +92,15 @@
   - http://en.wikipedia.org/wiki/Selection_sort
 
 <!-- attr: {class: 'slide-section'} -->
-# Selection sort
-##  [Demo](./demos)
+<!-- # Selection sort
+##  [Demo](./demos) -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Bubble sort
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
 <!-- # Bubble sort -->
+
+<!-- attr: { id:'bubble', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
+# <a id="bubble"></a>Bubble sort
 
 - Repeatedly stepping through the list
   - Comparing each pair of adjacent items
@@ -121,10 +126,10 @@ while swapIsDone
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Insertion sort
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 <!-- # Insertion sort -->
+
+<!-- attr: { id:'insertion', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# <a id="insertion"></a>Insertion sort
 
 - Builds the final sorted array one item at a time
   - Best case: `n`, worst and average case: `n`<sup>`2`</sup>
@@ -149,10 +154,10 @@ for i = 1 ... n - 1
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Quicksort
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.75em'} -->
 <!-- # Quicksort -->
+
+<!-- attr: { id:'quick', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.75em'} -->
+# <a id="quick"></a>Quicksort
 - First divides a large list into two smaller sub-lists then recursively sort the sub-lists
   - Best and average case: `n*log(n)`, worst: `n`<sup>`2`</sup>
   - Memory: `log(n)` stack space
@@ -182,10 +187,10 @@ function quicksort('array')
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Merge sort
+<!-- # Merge sort -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
-<!-- # Merge Sort -->
+<!-- attr: { id:'merge', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
+# <a id="merge"></a>Merge Sort
 - Conceptually, a merge sort works as follows
   - Divide the unsorted list into `n` sublists, each containing `1` element (list of 1 element is sorted)
   - Repeatedly merge sublists to produce new sublists until there is only 1 sublist remaining
@@ -256,10 +261,10 @@ function merge(left, right)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Heap
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Heap -->
+
+<!-- attr: { id:'heap', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="heap"></a>Heap
 - Specialized tree-based data structure that satisfies the heap property:
   - Parent nodes are always greater (less) than or equal to the children
     - No implied ordering between siblings or cousins
@@ -285,10 +290,10 @@ function merge(left, right)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Counting sort
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Counting sort -->
+
+<!-- attr: { id:'counting', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="counting"></a>Counting sort
 - Algorithm for sorting a collection of objects according to keys that are small integers
   - Or big integers and a `map`
 - Not a comparison sort
@@ -307,10 +312,10 @@ function merge(left, right)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Bucket sort
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Bucket sort -->
+
+<!-- attr: { id:'bucket', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="bucket"></a>Bucket sort
 - Partitioning an array into a number of buckets
   - Each bucket is then sorted individually
 - Not a comparison sort
@@ -329,10 +334,10 @@ function merge(left, right)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# Comparison of Sorting Algorithms
+<!-- # Comparison of Sorting Algorithms -->
 
 <!-- attr: {hasScriptWrapper:true, showInPresentation:true, style:'font-size:40px' } -->
-<!-- # Comparison of Sorting Algorithms -->
+# Comparison of Sorting Algorithms
 - There are hundreds of sorting algorithms
   - Some of them are:
 
@@ -347,5 +352,16 @@ function merge(left, right)
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-questions', showInPresentation:true, style:'' } -->
-# Questions
-## Sorting and Searching Algorithms
+<!-- # Questions
+## Sorting Algorithms -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)

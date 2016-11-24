@@ -7,23 +7,23 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-
+<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-- Searching
-  - Linear search
-  - Binary search
-  - Interpolation search
-- Shuffling
+- [Searching](#searchingAlgorithms)
+  - [Linear search](#linear)
+  - [Binary search](#binary)
+  - [Interpolation search](#interpolation)
+- [Shuffling](#shufflingAlgorithm)
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Searching
+<!-- # Searching -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Search Algorithm
+<!-- attr: { id:'searchingAlgorithms', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="searchingAlgorithms"></a>Search Algorithm
 - An algorithm for finding an item with specified properties among a collection of items
 - Different types of searching algorithms
   - For virtual search spaces
@@ -34,8 +34,8 @@
   - Search for the max (min) of a function
   - etc.
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Linear Search
+<!-- attr: { id:'linear', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="linear"></a>Linear Search
 
 - Method for finding a particular value in a list
   - Checking every one of the elements
@@ -52,11 +52,11 @@
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section'} -->
-# Binary search
-##  Searching in an ordered collection
+<!-- # Binary search
+##  Searching in an ordered collection -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Binary Search -->
+<!-- attr: { id:'binary', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="binary"></a>Binary Search
 - Finds the position of a specified value within an **ordered** data structure
 - In each step, compare the input with the middle
   - The algorithm repeats its action to the left or right sub-structure
@@ -109,10 +109,10 @@ int binarySearch(int a[], int key, int from, int to)
 
 <!-- section start -->
 <!-- attr: {class: 'slide-section'} -->
-# Interpolation Search
-
-<!-- attr: { showInPresentation:true, style:'' } -->
 <!-- # Interpolation Search -->
+
+<!-- attr: { id:'interpolation', showInPresentation:true, style:'' } -->
+# <a id="interpolation"></a>Interpolation Search
 - An algorithm for searching for a given key value in an indexed array that has been ordered by the values of the key
   - Parallels how humans search through a telephone book
   - Calculates where in the remaining search space the sought item might be
@@ -148,10 +148,10 @@ public int interpolationSearch(int[] sortedArray, int toFind){
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Shuffling
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Shuffling -->
+
+<!-- attr: { id:'shufflingAlgorithm', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="shufflingAlgorithm"></a>Shuffling
 - A procedure used to randomize the order of items in a collection
   - Generating random permutation
 - http://en.wikipedia.org/wiki/Shuffling
@@ -181,6 +181,17 @@ public static class RandomProvider
 ```
 
 <!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
-# Questions
-## Sorting and Searching Algorithms
+<!-- attr: { id:'questions', class:'slide-questions', showInPresentation:true, style:'' } -->
+<!-- # Questions
+## Searching Algorithms -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)
