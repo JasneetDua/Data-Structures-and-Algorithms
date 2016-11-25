@@ -125,7 +125,7 @@ int binarySearch(int a[], int key, int from, int to)
 - Sample Implementation
 
 ```cs
-public int interpolationSearch(int[] sortedArray, int toFind){
+public int InterpolationSearch(int[] sortedArray, int toFind){
   // Returns index of toFind in sortedArray, or -1 if not found
   int low = 0;
   int high = sortedArray.length - 1;
@@ -157,7 +157,7 @@ public int interpolationSearch(int[] sortedArray, int toFind){
 - http://en.wikipedia.org/wiki/Shuffling
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Fisher–Yates shuffle algorithm
+# Fisher-Yates shuffle algorithm
 
 ```cs
 public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source)
