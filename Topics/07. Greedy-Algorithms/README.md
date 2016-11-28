@@ -332,9 +332,8 @@
   - Greedy: pick the two smallest-value leaves/nodes and combine them
   - Left move: `0`, Right move: `1`
 
-<img src="imgs/6.png">
+<img class="slide-image" src="imgs/6.png" style="width:55%; top:40%; right:-13%">
 
-<!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
 <!-- # Huffman Coding
 - Live Demo -->
