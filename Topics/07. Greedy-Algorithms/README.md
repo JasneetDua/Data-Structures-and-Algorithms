@@ -336,7 +336,7 @@
 
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
 <!-- # Huffman Coding
-- Live Demo -->
+Live Demo -->
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, class:'slide-questions'} -->
