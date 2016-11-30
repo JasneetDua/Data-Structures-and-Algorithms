@@ -32,7 +32,11 @@ class RPN
 			stack.Push(number);
 		}
 
-		if(stack.Count != 1) throw new Exception("Incomplete expression");
+		if(stack.Count != 1)
+		{
+			throw new Exception("Incomplete expression");
+		}
+
 		Console.WriteLine(stack.Peek());
 	}
 }
