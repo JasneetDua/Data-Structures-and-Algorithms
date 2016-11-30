@@ -118,8 +118,7 @@ void MergeSort(int[] arr, int left, int right) {
 * Binary search
   * [Closest pair in 2D geometry](https://en.wikipedia.org/wiki/Closest_pair_of_points_problem)
 * Quick sort
-* Merging arrays
-  * Merge sort
+* Merge sort
 * Finding majorant
 * [Tower of Hanoi](http://interactivepython.org/runestone/static/pythonds/Recursion/TowerofHanoi.html)
 * Fast multiplication
@@ -233,147 +232,17 @@ decimal Fibonacci(int n)
     * Recurrent solution takes ~`48 315 633` steps
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Subset Sum Problem
+<!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
+# Dynammic Programming Basic Example
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Subset Sum Problems
-* Given a set of integers, is there a non-empty subset whose sum is zero?
-* Given a set of integers and an integer `S`, does any non-empty subset sum to `S`?
-* Given a set of integers, find all possible sums<!-- .element: style="width:60%" -->
-* Can you equally separate the value of coins? <!-- .element: style="width:60%" -->
+# Moving Problem
+* In many DP problems there is a moving object with some restrictions
+* For example: In how many ways you can reach from top-left corner of a grid to the bottom-right?
+    * You can move only right and down
+    * Some cells are unreachable
 
-<img class="slide-image" src="imgs/subset-sum.png" style="width:30%; top:45%; left:65%" />
-
-<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
-# Subset Sum Problem Algorithm
-* Solving the subset sum problem:
-  * numbers = `{3,5,-1,4,2}`, sum = `6`
-  * start with possible = `{0}`
-* Step 1: obtain all possible sums of `{3}`
-  * possible = `{0}` ∪ `{0+3}` = `{0,3}`
-* Step 2: obtain all possible sums of `{3,5}`
-  * possible = `{0,3}` ∪ `{0+5,3+5}` = `{0,3,5,8}` 
-* Step 3: obtain all possible sums of `{3,5,-1}`
-  * possible = `{0,3,5,8}` ∪ `{0-1,3-1,5-1,8-1}` = `{-1,0,2,3,4,5,7,8}`
-* …
-
-<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
-# Subset Sum Problem - Recursive
-
-```cs
-bool IsSubsetSumRecursive(int[] set, int n, int sum)
-{
-   // Base Cases
-   if (sum == 0)
-      return true;
-   if (n == 0 && sum != 0)
-      return false;
-
-   // If last element is greater than sum, then ignore it
-   if (set[n - 1] > sum)
-   {
-       return IsSubsetSumRecursive(set, n - 1, sum);
-   }
-   /* check if sum can be obtained by any of the following
-      (a) including the last element
-      (b) excluding the last element   */
-   return IsSubsetSumRecursive(set, n - 1, sum)
-       || IsSubsetSumRecursive(set, n - 1, sum - set[n - 1]);
-}
-```
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
-# Subset Sum Problem - DP
-
-```cs
-bool IsSubsetSum(int[] set, int sum)
-{
-    const int NotSet = -1;
-    var sumOfAll = set.Sum();
-    var last = new int[sumOfAll + 1];
-    var currentSum = 0;
-    for (var i = 1; i < sumOfAll; i++) last[i] = NotSet;
-    for (var i = 0; i < set.Length; i++)
-    {
-        for (var j = currentSum; j + 1 > 0; j--)
-        {
-            if (last[j] != NotSet &&
-                last[j + set[i]] == NotSet)
-            {
-                last[j + set[i]] = i;
-            }
-        }
-        currentSum += set[i];
-    }
-    return last[sum] != NotSet;
-}
-```
-
-<img class="slide-image" src="imgs/subset-sum-console.png" style="width:45%; bottom:5%; right:0%" />
-
-
-<!-- section start -->
-<!-- attr: { class:'sl ide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Longest Increasing Subsequence
-<img class="slide-image" src="imgs/longest-increasing-subsequence.png" style="width:80%; bottom:5%; left:10%" />
-
-<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
-# Longest Increasing Subsequence
-* Find a subsequence of a given sequence in which the subsequence elements are in increasing order, and in which the subsequence is as long as possible
-    * This subsequence is not necessarily contiguous nor unique
-* The longest increasing subsequence problem is solvable in time `O(n*log(n))` [[more info](http://stackoverflow.com/a/7614385/1862812)]
-* We will review one simple DP algorithm with complexity `O(n*n)`
-* Example: `1`, 8, `2`, 7, `3`, `4`, 1, ` 6`
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# LIS – Dynamic Programming
-
-```cs
-L[0] = 1; P[0] = NoPrevious;
-for (int i = 1; i < S.Length; i++)
-{
-    L[i] = 1;
-    P[i] = NoPrevious;
-    for (int j = i - 1; j >= 0; j--)
-    {
-        if (L[j] + 1 > L[i] && S[j] < S[i])
-        {
-            L[i] = L[j] + 1;
-            P[i] = j;
-        }
-    }
-    if (L[i] > maxLength)
-    {
-        bestIndex = i;
-        maxLength = L[i];
-    }
-}
-```
-
-<img class="slide-image" src="imgs/lis.png" style="width:50%; top:70%; left:50%" />
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# LIS – Restore the Sequence
-
-```cs
-void PrintLongestIncreasingSubsequence(
-    int[] sequence, int[] predecessor, int maxIndex)
-{
-    var lis = new List<int>();
-    while (maxIndex != NoPrevious)
-    {
-        lis.Add(sequence[maxIndex]);
-        maxIndex = predecessor[maxIndex];
-    }
-    lis.Reverse();
-    Console.WriteLine("subsequence = "
-                        + string.Join(", ", lis));
-}
-```
-
-
-<img class="slide-image" src="imgs/lis-restore.png" style="width:60%; top:65%; left:20%" />
-
+<img class="slide-image" src="imgs/labirynth.png" style="width:35%; bottom:0%; right:0%" />
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
@@ -392,8 +261,8 @@ void PrintLongestIncreasingSubsequence(
 * `S`<sub>`1`</sub> = `GCCCTAGCG`, `S`<sub>`2`</sub> = `GCGCAATG`
   * Let `C`<sub>`1`</sub> = the right-most character of `S`<sub>`1`</sub>
   * Let `C`<sub>`2`</sub> = the right-most character of `S`<sub>`2`</sub>
-  * Let `S`<sub>`1`</sub>`'` = `S`<sub>`1`</sub> with `C`<sub>`1`</sub> "chopped-off"
-  * Let `S`<sub>`2`</sub>`'` = `S`<sub>`2`</sub> with `C`<sub>`2`</sub> "chopped-off"
+  * Let `S`<sub>`1`</sub>`'` = `S`<sub>`1`</sub> without `C`<sub>`1`</sub>
+  * Let `S`<sub>`2`</sub>`'` = `S`<sub>`2`</sub> without `C`<sub>`2`</sub>
 * There are three recursive subproblems:
   * `L`<sub>`1`</sub> = `LCS(S`<sub>`1`</sub>`',S`<sub>`2`</sub>`)`
   * `L`<sub>`2`</sub> = `LCS(S`<sub>`1`</sub>`,S`<sub>`2`</sub>`')`
@@ -425,23 +294,10 @@ void PrintLongestIncreasingSubsequence(
 
 <img class="slide-image" src="imgs/lcs-table2.png" style="width:40%; top:50%; left:65%" />
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size: 0.9em' } -->
 # LCS table – base cases filled in
 * Each empty string has nothing in common with any other string, therefor the 0-length strings will have values `0` in the LCS table
-
-```cs
-for (i = 0; i <= n; i++)
-{
-    c[i, 0] = 0;
-}
-```
-
-```cs
-for (i = 0; i <= m; i++)
-{
-    c[0, i] = 0;
-}
-```
+* Integer arrays in C# are filled with `0` by default, so we're good to go
 
 <img class="slide-image" src="imgs/lcs-base.png" style="width:50%; top:40%; left:50%" />
 
@@ -497,18 +353,155 @@ void PrintLCS(int i, int j, int[,] c)
 <img class="slide-image" src="imgs/lcs-answer.png" style="width:35%; bottom:0%; right:0%" />
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Other DP Usages
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Subset Sum Problem
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Demo: Moving Problem
-* In many DP problems there is a moving object with some restrictions
-* For example: In how many ways you can reach from top-left corner of a grid to the bottom-right?
-    * You can move only right and down
-    * Some cells are unreachable
+# Subset Sum Problems
+* Given a set of integers, is there a non-empty subset whose sum is zero?
+* Given a set of integers and an integer `S`, does any non-empty subset sum to `S`?
+* Given a set of integers, find all possible sums<!-- .element: style="width:60%" -->
+* Can you equally separate the value of coins? <!-- .element: style="width:60%" -->
 
-<img class="slide-image" src="imgs/labirynth.png" style="width:35%; bottom:0%; right:0%" />
+<img class="slide-image" src="imgs/subset-sum.png" style="width:30%; top:45%; left:65%" />
 
+<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
+# Subset Sum Problem Algorithm
+* Solving the subset sum problem:
+  * numbers = `{3,5,-1,4,2}`, sum = `6`
+  * start with possible = `{0}`
+* Step 1: obtain all possible sums of `{3}`
+  * possible = `{0}` ∪ `{0+3}` = `{0,3}`
+* Step 2: obtain all possible sums of `{3,5}`
+  * possible = `{0,3}` ∪ `{0+5,3+5}` = `{0,3,5,8}` 
+* Step 3: obtain all possible sums of `{3,5,-1}`
+  * possible = `{0,3,5,8}` ∪ `{0-1,3-1,5-1,8-1}` = `{-1,0,2,3,4,5,7,8}`
+* …
+
+<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
+# Subset Sum Problem - Recursive
+
+```cs
+bool IsSubsetSumRecursive(int[] set, int n, int sum)
+{
+   // Base Cases
+   if (sum == 0)
+      return true;
+   if (n == 0 && sum != 0)
+      return false;
+
+   // If last element is greater than sum, then ignore it
+   if (set[n - 1] > sum)
+   {
+       return IsSubsetSumRecursive(set, n - 1, sum);
+   }
+   /* check if sum can be obtained by any of the following
+      (a) including the last element
+      (b) excluding the last element   */
+   return IsSubsetSumRecursive(set, n - 1, sum)
+       || IsSubsetSumRecursive(set, n - 1, sum - set[n - 1]);
+}
+```
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Subset Sum Problem - DP
+
+```cs
+bool[] IsSubsetSum(int[] set)
+{
+    var setSum = set.Sum();
+    var partials = new bool[setSum + 1];
+    var partialSum = 0;
+
+    partials[0] = true;
+    for (int i = 0; i < set.Length; i++)
+    {
+        for (int j = partialSum; j >= 0; j--)
+        {
+            if(partials[j])
+            {
+                partials[j + set[i]] = true;
+            }
+        }
+
+        partialSum += set[i];
+    }
+
+    return partials; // answer is partials[sum]
+}
+```
+
+<img class="slide-image" src="imgs/subset-sum-console.png" style="width:45%; bottom:5%; right:0%" />
+
+
+<!-- section start -->
+<!-- attr: { class:'sl ide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Longest Increasing Subsequence
+<img class="slide-image" src="imgs/longest-increasing-subsequence.png" style="width:80%; bottom:5%; left:10%" />
+
+<!-- attr: { showInPresentation:true, style:'font-size:0.9em' } -->
+# Longest Increasing Subsequence
+* Find a subsequence of a given sequence in which the subsequence elements are in increasing order, and in which the subsequence is as long as possible
+    * This subsequence is not necessarily contiguous nor unique
+* The longest increasing subsequence problem is solvable in time `O(n*log(n))` [[more info](http://stackoverflow.com/a/7614385/1862812)]
+* We will review one simple DP algorithm with complexity `O(n*n)`
+* Example: `1`, 8, `2`, 7, `3`, `4`, 1, ` 6`
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# LIS – Dynamic Programming
+
+```cs
+int[] LIS(int[] seq)
+{
+    var partials = Enumerable.Repeat(1, seq.Length).ToArray();
+
+    for(var i = 1; i < seq.Length; i++)
+    {
+        for(var j = 0; j < i; j++)
+        {
+            if(seq[j] < seq[i] && partials[i] < partials[j] + 1)
+            {
+                partials[i] = partials[j] + 1;
+            }
+        }
+    }
+
+    return partials;
+}
+```
+
+<img class="slide-image" src="imgs/lis.png" style="width:50%; top:70%; left:50%" />
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# LIS – Restore the Sequence
+
+```cs
+void PrintLongestIncreasingSubsequence(
+    int[] sequence, int[] predecessor, int maxIndex)
+{
+    var lis = new List<int>();
+    while (maxIndex != NoPrevious)
+    {
+        lis.Add(sequence[maxIndex]);
+        maxIndex = predecessor[maxIndex];
+    }
+    lis.Reverse();
+    Console.WriteLine("subsequence = "
+                        + string.Join(", ", lis));
+}
+```
+
+
+<img class="slide-image" src="imgs/lis-restore.png" style="width:60%; top:65%; left:20%" />
+
+
+<!-- section start -->
+<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
+# Summary
+* Divide-and-conquer method for algorithm design
+* Dynamic programming is a way of improving on inefficient divide-and-conquer algorithms
+* Dynamic programming is applicable when the sub-problems are dependent, that is, when sub-problems share sub-sub-problem
+* Recurrent functions can be solved efficiently
+* Longest increasing subsequence and Longest common subsequence problems can be solved efficiently using dynamic programming approach
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.8em' } -->
 # DP Applications
@@ -537,17 +530,6 @@ void PrintLCS(int i, int j, int[,] c)
 * Edit distance (Levenshtein distance)
 * Many other string and graph algorithms
 * [en.wikipedia.org/wiki/Dynamic_programming](http://en.wikipedia.org/wiki/Dynamic_programming)
-
-
-<!-- section start -->
-<!-- attr: { showInPresentation:true, style:'font-size:0.95em' } -->
-# Summary
-* Divide-and-conquer method for algorithm design
-* Dynamic programming is a way of improving on inefficient divide-and-conquer algorithms
-* Dynamic programming is applicable when the sub-problems are dependent, that is, when sub-problems share sub-sub-problem
-* Recurrent functions can be solved efficiently
-* Longest increasing subsequence and Longest common subsequence problems can be solved efficiently using dynamic programming approach
-
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->

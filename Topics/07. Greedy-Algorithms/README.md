@@ -11,21 +11,21 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Table of Contents
-- Optimization Problems
-- Greedy Algorithms and Failure Cases
-- Optimal Greedy Algorithms
-  - Optimal Substructure and Greedy Choice
-  - Demo: Proving Optimality of a Greedy Solution
-- The Set Cover Problem
-- Notable Greedy algorithms
+- [Optimization Problems](#optimization)
+- [Greedy Algorithms and Failure Cases](#greedyAlgorithms)
+- [Optimal Greedy Algorithms](#optimalGreedyAlgorithms)
+  - [Optimal Substructure and Greedy Choice](#optimalGreedyAlgorithms)
+  - [Demo: Proving Optimality of a Greedy Solution](#demoGreedy)
+- [The Set Cover Problem](#setCover)
+- [Notable Greedy algorithms](#notableGreedy)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Optimization Problems
-##  Not "just" Looking for a Solution
+<!-- # Optimization Problems
+##  Not "just" Looking for a Solution -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-<!-- # Optimization Problems -->
+<!-- attr: { id:'optimization', showInPresentation:true, style:'' } -->
+# <a id="optimization"></a>Optimization Problems
 - Finding the best solution of a problem
   - From all solution candidates
   - i.e. most optimal solution candidate
@@ -46,11 +46,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Greedy Algorithms
-##  Picking Locally Best Solution
+<!-- # Greedy Algorithms
+##  Picking Locally Best Solution -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-<!-- # Greedy Algorithms -->
+<!-- attr: { id:'greedyAlgorithms', showInPresentation:true, style:'' } -->
+# <a id="greedyAlgorithms"></a>Greedy Algorithms
 - Greedy algorithms are a category of algorithms
   - Can solve some optimization problems
   - Usually more efficient than all other algorithms
@@ -139,8 +139,8 @@
   - The number of repetitions is the number of needed coins
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Greedy for Sum of Coins -->
-##  [Demo]()
+<!-- # Greedy for Sum of Coins
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
 # Greedy Failure Cases
@@ -155,11 +155,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Optimal Greedy Algorithms
-##  Optimal Substructure, Greedy Choice Property, Proving Optimality of a Greedy Approach
+<!-- # Optimal Greedy Algorithms
+##  Optimal Substructure, Greedy Choice Property, Proving Optimality of a Greedy Approach -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-<!-- # Optimal Greedy Algorithms -->
+<!-- attr: { id:'optimalGreedyAlgorithms', showInPresentation:true, style:'' } -->
+# <a id="optimalGreedyAlgorithms"></a>Optimal Greedy Algorithms
 - Suitable problems for greedy algorithms often have these properties:
   - Greedy choice property
   - Optimal substructure
@@ -185,11 +185,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Solving a Problem Optimally with Greedy
-##  Greedy for the Activity Selection Problem and Proving its Optimality
+<!-- # Solving a Problem Optimally with Greedy
+##  Greedy for the Activity Selection Problem and Proving its Optimality -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Proving Greedy Optimality
+<!-- attr: { id:'demoGreedy', showInPresentation:true, style:'' } -->
+# <a id="demoGreedy"></a>Proving Greedy Optimality
 - The Activity Selection Problem (a.k.a. Conference Scheduling Problem)
   - Given a set of activities `S = {a1, a2, … an}`
     - Each with a start & finish time: `ai = (si, fi)`
@@ -267,16 +267,16 @@
 - We have proven both properties, so our greedy algorithm is optimal
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Activity Selection Problem -->
-##  [Demo]()
+<!-- # Activity Selection Problem
+##  [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Set Cover Problem
-##  Using Greedy for Approximation
+<!-- # Set Cover Problem
+##  Using Greedy for Approximation -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-<!-- # Set Cover Problem -->
+<!-- attr: { id:'setCover', showInPresentation:true, style:'' } -->
+# <a id="setCover"></a>Set Cover Problem
 - Greedy algorithms can sometimes find optimal solutions
   - This is not their only application
 - There exist problems, for which
@@ -304,11 +304,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Notable Greedy Algorithms
-##  Several Common Greedy Algorithms
+<!-- # Notable Greedy Algorithms
+##  Several Common Greedy Algorithms -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-<!-- # Notable Greedy Algorithms -->
+<!-- attr: { id:'notableGreedy', showInPresentation:true, style:'' } -->
+# <a id="notableGreedy"></a>Notable Greedy Algorithms
 - Dijkstra's algorithm for finding the shortest path between two vertices
   - in a weighted graph (with no negative cycles)
 - At each step, of all reached edges, pick:
@@ -332,12 +332,11 @@
   - Greedy: pick the two smallest-value leaves/nodes and combine them
   - Left move: `0`, Right move: `1`
 
-<img src="imgs/6.png">
+<img class="slide-image" src="imgs/6.png" style="width:55%; top:40%; right:-17%">
 
-<!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Huffman Coding
-- Live Demo
+<!-- # Huffman Coding
+Live Demo -->
 
 <!-- section start -->
 <!-- attr: { showInPresentation:true, class:'slide-questions'} -->
@@ -353,3 +352,14 @@
     - http://www.cis.upenn.edu/~matuszek/cit594-2005/Lectures/36-greedy.ppt
   - Book on Algorithms @ Berkeley University
     - http://www.cs.berkeley.edu/~vazirani/algorithms/chap5.pdf
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)
