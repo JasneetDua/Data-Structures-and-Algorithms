@@ -13,7 +13,7 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
   - **R** is the number of rows
   - **C** is the number of columns
   - **K** is **K**
-- On the fourth line you will receive pairs of enemy coordinates, separated by `;`
+- On the second line you will receive pairs of enemy coordinates, separated by `;`
 
 ## Output
 - On a single line, output the number of unique ways for **Doge** to reach the bottom right cell
@@ -65,4 +65,17 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 #### Output
 ```
 4692
+```
+
+### Sample test 4
+
+#### Input
+```
+5 5 1
+2 3;1 1
+```
+
+#### Output
+```
+1986
 ```
