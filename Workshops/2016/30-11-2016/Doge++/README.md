@@ -2,7 +2,7 @@
 
 ## Description
 Remember **Doge** the dog? He needs your help again. He is in the top left corner of a field that has some enemies in it.
-As you might remember, **Doge** cannot step on these cells. He can move only **down** or **right**. But he can also make at most **K** moves **up** and **right**.
+As you might remember, **Doge** cannot step on these cells. He can move only **down** or **right**. But he can also make at most **K** moves **up** and **left**.
 
 ![doge labyrinth](https://raw.githubusercontent.com/TelerikAcademy/Data-Structures-and-Algorithms/master/Topics/08.%20Dynamic-Programming/imgs/labirynth.png)
 
