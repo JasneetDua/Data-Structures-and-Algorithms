@@ -11,10 +11,10 @@
 <!-- section start -->
 <!-- attr: { hasScriptWrapper:true } -->
 # Table of Contents
-- Trees Overview
+- [Trees Overview](#tree-overview)
   - Implementation
   - Traversal
-- Search Trees
+- [Search Trees](#search-trees)
   - Balanced Search Trees
     - AVL trees
     - Red-black trees
@@ -23,21 +23,21 @@
 
 <!-- attr: { hasScriptWrapper:true, showInPresentation:true } -->
 <!-- # Table of Contents -->
-- Heaps
+- [Heaps](#heaps)
   - Binary heaps
   - Other kind of heaps
-- Indexed tree
+- [Indexed tree](#indexed-trees)
   - Compressed (Fenwick Tree)
   - Multidimensional Indexed Tree
-- Tries
+- [Tries](#tries)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', id:'tree-overview' } -->
-# Trees
+# <a id="tree-overview">Trees
 ## Overview
 
-<!-- attr: {} -->
-# Trees
+<!-- attr: { showInPresentation:true } -->
+<!-- # Trees -->
 - Tree-like data structures are:
   - Branched recursive data structures
     - Consisting of **nodes**
@@ -173,17 +173,17 @@ DFS(node)
 }
 </code></pre>
 
-<!-- attr: { class:'slide-section demo' } -->
-# Trees and Traversals
-## Live Demo
+<!-- attr: { showInPresentation:true, class:'slide-section demo' } -->
+<!-- # Trees and Traversals
+## Live Demo -->
 
 <!-- section start -->
 <!-- attr: { id:'search-trees', class:'slide-section' } -->
-# Balanced Search Trees
+# <a id="search-trees">Balanced Search Trees
 ## AVL Trees, B-Trees, Red-Black Trees, AA-Trees
 
-<!-- attr: {} -->
-# Balanced Binary Search Trees
+<!-- attr: { showInPresentation:true } -->
+<!-- # Balanced Binary Search Trees -->
 - Ordered Binary Trees (**Binary Search Trees**)
   - For each node `x` the left subtree has values `≤ x` and the right subtree has values `> x`
 - Balanced Trees
@@ -213,7 +213,7 @@ DFS(node)
 
 <!-- section start -->
 <!-- attr: { id:'heaps', class:'slide-section' } -->
-# Heaps
+# <a id="heaps"></a>Heaps
 ## Binary heaps
 
 <!-- attr: { showInPresentation:true } -->
@@ -241,13 +241,13 @@ DFS(node)
   - Fibonacci heap
   - Pairing heap
 
-<!-- attr: { class:'slide-section demo' } -->
-# Heaps
-## Live Demo
+<!-- attr: { showInPresentation:true, class:'slide-section demo' } -->
+<!-- # Heaps
+## Live Demo -->
 
 <!-- section start -->
 <!-- attr: { id:'indexed-trees', class:'slide-section' } -->
-# Indexed trees
+# <a id="indexed-trees"></a>Indexed trees
 ## Binary indexed trees
 
 <!-- attr: { showInPresentation:true } -->
@@ -281,13 +281,13 @@ DFS(node)
 - Easily made persistent
   - If implemented like a trie
  
-<!-- attr: { class:'slide-section demo' } -->
-# Indexed trees
-## Live Demo
+<!-- attr: { showInPresentation:true, class:'slide-section demo' } -->
+<!-- # Indexed trees
+## Live Demo -->
 
 <!-- section start -->
 <!-- attr: { id:'tries', class:'slide-section' } -->
-# Tries
+# <a id="tries"></a>Tries
 ## Prefix tree
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
@@ -301,11 +301,11 @@ DFS(node)
     - Without hashes
 - Easily made persistent
 
-<!-- attr: { class:'slide-section demo' } -->
-# Tries
-## Live Demo
+<!-- attr: { showInPresentation:true, class:'slide-section demo' } -->
+<!-- # Tries
+## Live Demo -->
 
 <!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section' } -->
-# Questions
-## Trees and Tree-like Data Structures
+<!-- attr: { showInPresentation:true, id:'questions', class:'slide-section' } -->
+<!-- # Questions
+## Trees and Tree-like Data Structures -->
