@@ -12,20 +12,20 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-* Graph Traversal Algorithms
-* Connectivity
-* Dijkstra’s Algorithm
-* Topological sorting
-* Prim and Kruskal
-
+- [Graph Traversal Algorithms](#graphTraversal)
+- [Connectivity](#connectivityAlgorithms)
+- [Dijkstra’s Algorithm](#dijkstraAlgorithm)
+- [Topological sorting](#topological)
+- [Prim](#primAlgorithm)
+- [Kruskal](#kruskalAlgorithm)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
 <!-- # Traversing Graphs
 ##  Good old DFS and BFS -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Graph Traversal Algorithms
+<!-- attr: { id:'graphTraversal', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="graphTraversal"></a>Graph Traversal Algorithms
 * **Depth-First Search** (DFS) and **Breadth-First Search** (BFS) can traverse graphs
   * Each vertex should be visited at most once
 
@@ -83,8 +83,8 @@ void Main()
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Graphs and Traversals -->
-##  [Demo]()
+<!-- # Graphs and Traversals
+##  [Demo]() -->
 
 
 <!-- section start -->
@@ -92,8 +92,8 @@ void Main()
 <!-- # Connectivity
 ##  Connecting the chain -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Connectivity
+<!-- attr: { id:'connectivityAlgorithms', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="connectivityAlgorithms"></a>Connectivity
 * **Connected component** of undirected graph
   *  A sub-graph in which any two nodes are connected to each other by paths
 
@@ -136,8 +136,8 @@ foreach node from graph G
 <img class="slide-image" src="imgs/connectivity4.png" style="width:30%; top:10%; left:70%" />
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Connectivity -->
-##  [Demo]()
+<!-- # Connectivity
+##  [Demo]() -->
 
 
 <!-- section start -->
@@ -145,8 +145,8 @@ foreach node from graph G
 <!-- # Dijkstra’s Algorithm
 ##  Shortest path in graph -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Dijkstra’s Algorithm
+<!-- attr: { id:'dijkstraAlgorithm', showInPresentation:true, style:'' } -->
+# <a id="dijkstraAlgorithm"></a>Dijkstra’s Algorithm
 
 * Find the **shortest path** from vertex `A` to all other vertices
   * The path is a directed path between them such that no other path has a lower weight.
@@ -239,8 +239,8 @@ while (Q is not empty)
 * Applications –GPS, Networks, Air travels, etc.
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Dijkstra’s Algorithm -->
-##  [Demo]()
+<!-- # Dijkstra’s Algorithm
+##  [Demo]() -->
 
 
 <!-- section start -->
@@ -248,8 +248,8 @@ while (Q is not empty)
 <!-- # Topological Sorting
 ##  Order it! -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Topological Sorting
+<!-- attr: { id:'topological', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="topological"></a>Topological Sorting
 * Topological ordering of a **directed graph**
   * Linear ordering of its vertices
   * For every directed edge `(U, V)`, `U` comes before `V` in the ordering
@@ -375,8 +375,8 @@ function visit(node n)
 [topological-sorting](http://www.geeksforgeeks.org/topological-sorting/)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # TS Using DFS -->
-##  [Demo]()
+<!-- # TS Using DFS
+##  [Demo]() -->
 
 
 <!-- section start -->
@@ -393,7 +393,7 @@ function visit(node n)
 <img class="slide-image" src="imgs/spanning-tree.png" style="width:60%; top:50%; left:15%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Minimum Spanning Tree
+<!-- # Minimum Spanning Tree -->
 * Minimum Spanning Tree
   * weight <= weight(all other spanning trees)
 * First used in electrical network
@@ -406,18 +406,18 @@ function visit(node n)
 <img class="slide-image" src="imgs/spanning-forest.png" style="width:70%; top:42%; left:15%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Minimum Spanning Forest
+<!-- # Minimum Spanning Forest -->
 * Minimum Spanning Forest – set of all minimum spanning trees (when the graph is not connected)
 
 <img class="slide-image" src="imgs/spanning-forest2.png" style="width:60%; top:40%; left:40%" />
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'margin-top:-10%' } -->
-# Prim’s Algorithm
-<img class="slide-image" src="imgs/prim.png" style="width:60%; top:45%; left:20%" />
+<!-- # Prim’s Algorithm
+<img class="slide-image" src="imgs/prim.png" style="width:60%; top:45%; left:20%" /> -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Prim’s Algorithm
+<!-- attr: { id:'primAlgorithm', showInPresentation:true, style:'' } -->
+# <a id="primAlgorithm"></a>Prim’s Algorithm
 * Create a tree T containing a single vertex (chosen randomly)
 * Create a set S from all the edges in the graph
 * Loop until every edge in the set connects two vertices in the tree
@@ -461,7 +461,7 @@ function visit(node n)
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Prim’s Algorithm
+<!-- # Prim’s Algorithm -->
 * Now the tree contains vertices A, B and D and the edges (4, 2) between them
 * We dequeue the first edge from the priority queue (5) and we add the edge and the other vertex (C) from that edge to the tree
 * We push all edges that connect C with other nodes in the queue <!-- .element: style="width:45%" -->
@@ -469,7 +469,7 @@ function visit(node n)
 <img class="slide-image" src="imgs/prim5.png" style="width:50%; top:55%; left:50%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Prim’s Algorithm
+<!-- # Prim’s Algorithm -->
 * Now the tree contains vertices A, B, D and C and the edges (4, 2, 5) between them
 * We dequeue the first edge from the priority queue (7) and we add the edge and the other vertex (E) from that edge to the tree
 * We push all edges that connect C with other nodes in the queue <!-- .element: style="width:45%" -->
@@ -477,7 +477,7 @@ function visit(node n)
 <img class="slide-image" src="imgs/prim6.png" style="width:50%; top:55%; left:50%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Prim’s Algorithm
+<!-- # Prim’s Algorithm -->
 * Now the tree contains vertices A, B, D, C and E and the edges (4, 2, 5, 7) between them
 * We dequeue the first edge from the priority queue (8)
 
@@ -485,7 +485,7 @@ function visit(node n)
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Prim’s Algorithm
+<!-- # Prim’s Algorithm -->
 * This edge will cost a cycle
 * So we get the next one – 9
   * This edge will also cost a cycle
@@ -498,20 +498,20 @@ function visit(node n)
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
 <!-- # Prim -->
-##  [Demo]()
+<!-- ##  [Demo]() -->
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Kruskal’s Algorithm
+<!-- # Kruskal’s Algorithm -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Kruskal’s Algorithm
+<!-- attr: { id:'kruskalAlgorithm', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="kruskalAlgorithm"></a>Kruskal’s Algorithm
 * The graph may not be connected
   * If the graph is not connected – minimum spanning forest
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Kruskal’s Algorithm
+<!-- # Kruskal’s Algorithm -->
 * Create forest F (each tree is a vertex)
 * Set S – all edges in the graph
 * While S is not empty and F is not spanning
@@ -521,7 +521,7 @@ function visit(node n)
 * The graph may not be connected
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Kruskal’s Algorithm
+<!-- # Kruskal’s Algorithm -->
 * We build a forest containing all vertices from the graph
 * We sort all edges
 * Edges are – 2, 4, 5, 7, 8, 9, 12, 20
@@ -601,12 +601,21 @@ function visit(node n)
 <img class="slide-image" src="imgs/kruskal8.png" style="width:45%; top:60%; left:30%" />
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Kruskal’s Algorithm -->
-##  [Demo]()
-
+<!-- # Kruskal’s Algorithm
+##  [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
-# Questions
-## Trees and Graphs
-[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+<!-- # Questions
+## Graphs Algorithms -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)

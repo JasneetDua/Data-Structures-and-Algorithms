@@ -14,17 +14,17 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-* Graph Definitions and Terminology
-* Representing Graphs
+- [Graph Definitions and Terminology](#graphDefinitions)
+- [Representing Graphs](#graphRepresentation)
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Graphs
-##  Definitions and Terminology
+<!-- # Graphs
+##  Definitions and Terminology -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Graph Data Structure
+<!-- attr: { id:'graphDefinitions', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="graphDefinitions"></a>Graph Data Structure
 * Set of nodes with many-to-many relationship between them is called `graph`
   * Each node has `multiple` predecessors
   * Each node has `multiple` successors
@@ -141,11 +141,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Representing Graphs
-##  Classic and OOP Ways
+<!-- # Representing Graphs
+##  Classic and OOP Ways -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Representing Graphs
+<!-- attr: { id:'graphRepresentation', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="graphRepresentation"></a>Representing Graphs
 <ul style="width:45%">
   <li>`Adjacency list`<ul>
   <li>Each node holds a list of its neighbors</li>
@@ -200,12 +200,22 @@ Graph g = new Graph(new List<int>[] {
   * `QuickGraph `- http://quickgraph.codeplex.com/
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-# Representing Graphs
-##  [Demo]()
+<!-- # Representing Graphs
+##  [Demo]() -->
 
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true, style:'' } -->
-# Questions
-## Trees and Graphs
-[link to Telerik Academy Forum](http://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+<!-- # Questions
+## Graphs -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)
