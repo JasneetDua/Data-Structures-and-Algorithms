@@ -47,14 +47,11 @@
   - **Graphs**: directed / undirected, weighted, etc.
   - **Networks**
 
-<!-- attr: { showInPresentation:true } -->
-<!-- # Trees -->
-
 <!-- attr: { class:'slide-section' } -->
 # Trees and Related Terminology
 ## Node, Edge, Root, Children, Parent, Leaf, Binary Search Tree, Balanced Tree
 
-<!-- attr: {} -->
+<!-- attr: { hasScriptWrapper:true } -->
 # Trees
 - **Tree** data structure - terminology
   - Node, edge, root, child, children, siblings, parent, ancestor, descendant, predecessor, successor, internal node, leaf, depth, height, subtree
@@ -63,8 +60,6 @@
 # Binary Trees
 - **Binary trees**: the most widespread form
   - Each node has at most 2 children
-
-<img src="img/image8.png" width="60%">
 
 <!-- attr: {} -->
 # Binary Search Trees
@@ -305,8 +300,6 @@ DFS(node)
   - Behave like hash tables
     - Without hashes
 - Easily made persistent
-
-<img src="img/250px-Trie_example.svg.png" style="position:absolute;top:55%;left:70%">
 
 <!-- attr: { class:'slide-section demo' } -->
 # Tries
