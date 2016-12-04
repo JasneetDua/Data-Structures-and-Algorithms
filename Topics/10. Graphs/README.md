@@ -98,7 +98,7 @@
     * `A,B,C` is a path
     * `A,G,K` is not a path
 
-<img class="slide-image" src="imgs/path.png" style="width:40%; top:40%; right:5%" />
+<img class="slide-image" src="imgs/path_directed.png" style="width:40%; top:40%; right:5%" />
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Graph Definitions -->
