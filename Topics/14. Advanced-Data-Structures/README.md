@@ -9,7 +9,7 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
-
+<!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
 * Standard .NET Data Structures
@@ -25,8 +25,8 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Standard .NETData Structures
-##  Built-In .NET Data Structure Implementations
+<!-- # Standard .NETData Structures
+##  Built-In .NET Data Structure Implementations -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -83,14 +83,14 @@
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Special .NET Collections
-##  [Demo]()
+<!-- # Special .NET Collections
+##  [Demo]() -->
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Wintellect Power Collections
-##  Open Source C# Implementation of All Major Data Structures: Lists, Sets, Bags, Dictionaries, etc.
+<!-- # Wintellect Power Collections
+##  Open Source C# Implementation of All Major Data Structures: Lists, Sets, Bags, Dictionaries, etc. -->
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
@@ -127,7 +127,7 @@
   * Add / Find / Remove work in time O(log(N))
   * Like .NET’s `SortedSet<T>`
   * Provides fast `.Range(from, to)` operation
-  * 
+  *
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Power Collections Classes -->
@@ -156,8 +156,8 @@
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Wintellect Power Collections
-##  [Demo]()
+<!-- # Wintellect Power Collections
+##  [Demo]() -->
 
 
 <!-- attr: { showInPresentation:true } -->
@@ -180,7 +180,7 @@
 class PriorityQueue<T> where T : IComparable<T>
 {
    private OrderedBag<T> queue;
-   public int Count 
+   public int Count
    {
       get { return this.queue.Count; }
    }
@@ -201,50 +201,14 @@ class PriorityQueue<T> where T : IComparable<T>
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Priority Queue
-##  [Demo]()
+<!-- # Priority Queue
+##  [Demo]() -->
 
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Advanced Data Structures
-##  Suffix Trees, Interval Trees, Tries, Ropes, Heaps, …
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Advanced Data Structures
-* **Suffix tree** (position tree)
-  * Represents the suffixes of given string
-  * Used to implement fast search in string
-* **Trie** (prefix tree)
-  * Special tree structure used for <br/>fastmulti-pattern matching
-* **Rope**
-  * Balanced tree structure for indexeditems with fast inserts / delete
-  * Allows fast string edit operations
-
-<img class="slide-image" src="imgs/suffix-tree.png" style="width:18%; top:12%; right:0%" />
-<img class="slide-image" src="imgs/trie.png" style="width:20%; top:40%; right:0%" />
-<img class="slide-image" src="imgs/rope.png" style="width:23%; top:73%; right:0%" />
-
-
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Advanced Data Structures -->
-* **Interval tree**
-  * Keeps intervals [a…b] in ordered balanced tree
-  * Allows to efficiently find all intervals that overlap with any given interval or point
-* **Binary heap**, **Fibonacci heap**
-  * Special tree-like data structures <br/>toefficiently implement a priority queue
-* **Index trees**
-  * Used to keep sorted indices of database records
-  * B-tree, B+ tree, T-tree
-
-<img class="slide-image" src="imgs/binary-heap.png" style="width:23%; top:36%; right:0%" />
-
-<!-- section start -->
-<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# C5 Collections
-##  Open Source Generic Collection Library for C#
-
+<!-- # C5 Collections
+##  Open Source Generic Collection Library for C# -->
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # C5 Collections
@@ -275,9 +239,51 @@ class PriorityQueue<T> where T : IComparable<T>
   * Efficient double-ended priority queue
 
 <!-- section start -->
-<!-- attr: { id:'questions', class:'slide-section' } -->
-# Questions
-## Advanced Data Structures
-[link to Telerik Academy Furum](https://telerikacademy.com/Forum/Category/15/data-structures-algorithms)
+<!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- # Advanced Data Structures
+##  Suffix Trees, Interval Trees, Tries, Ropes, Heaps, … -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# Advanced Data Structures
+* **Suffix tree** (position tree)
+  * Represents the suffixes of given string
+  * Used to implement fast search in string
+* **Trie** (prefix tree)
+  * Special tree structure used for <br/>fastmulti-pattern matching
+* **Rope**
+  * Balanced tree structure for indexeditems with fast inserts / delete
+  * Allows fast string edit operations
+
+<img class="slide-image" src="imgs/suffix-tree.png" style="width:18%; top:12%; right:0%" />
+<img class="slide-image" src="imgs/trie.png" style="width:20%; top:40%; right:0%" />
+<img class="slide-image" src="imgs/rope.png" style="width:23%; top:73%; right:0%" />
 
 
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+<!-- # Advanced Data Structures -->
+* **Interval tree**
+  * Keeps intervals [a…b] in ordered balanced tree
+  * Allows to efficiently find all intervals that overlap with any given interval or point
+* **Binary heap**, **Fibonacci heap**
+  * Special tree-like data structures <br/>to efficiently implement a priority queue
+* **Index trees**
+  * Used to keep sorted indices of database records
+  * B-tree, B+ tree, T-tree
+
+<img class="slide-image" src="imgs/binary-heap.png" style="width:23%; top:36%; right:0%" />
+
+<!-- section start -->
+<!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
+<!-- # Questions
+## Advanced Data Structures -->
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)
