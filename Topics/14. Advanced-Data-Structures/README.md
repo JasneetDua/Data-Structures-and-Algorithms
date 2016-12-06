@@ -12,15 +12,15 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Table of Contents
-* Standard .NET Data Structures
-  * Special .NET Collections
-* Wintellect Power Collections
-  * Installation
-  * Power Collection Classes
-  * Implementing Priority Queue
-* C5 Collections
-* Other Advanced Data Structures
-  * Suffix trees, interval trees, ropes, tries, etc.
+- [Standard .NET Data Structures](#standard)
+  - [Special .NET Collections](#special)
+- [Wintellect Power Collections](#wintellect)
+  - [Installation](#wintellect)
+  - [Power Collection Classes](#wintellectClasses)
+  - [Implementing Priority Queue](#priorityQueue)
+- [C5 Collections](#c5)
+- [Other Advanced Data Structures](#advanced)
+  - [Suffix trees, interval trees, ropes, tries, etc.](#advanced)
 
 
 <!-- section start -->
@@ -29,8 +29,8 @@
 ##  Built-In .NET Data Structure Implementations -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# .NET Data Structures
+<!-- attr: { id:'standard', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="standard"></a>.NET Data Structures
 * Linear structures
   * Lists: `List<T>`, `LinkedList<T>`
   * Stacks: `Stack<T>`
@@ -68,8 +68,8 @@
 <img class="slide-image" src="imgs/untyped-collections.png" style="width:80%; top:10%; left:10%" />
 
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Special .NET Collections
+<!-- attr: { id:'special', showInPresentation:true, style:'' } -->
+# <a id="special"></a>Special .NET Collections
 * `Collection<T>`
   * Inheritable `IList<T>`, virtual `Add()` / `Remove()`
 * `ObservableCollection<T>`
@@ -93,8 +93,8 @@
 ##  Open Source C# Implementation of All Major Data Structures: Lists, Sets, Bags, Dictionaries, etc. -->
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Wintellect Power Collections
+<!-- attr: { id:'wintellect', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="wintellect"></a>Wintellect Power Collections
 * Wintellect Power Collections is powerful open-source data structure library
   * Download: http://powercollections.codeplex.com
 * Installing Power Collections in Visual Studio
@@ -103,8 +103,8 @@
 <img class="slide-image" src="imgs/wintelect-power-collections.png" style="width:80%; top:55%; left:10%" />
 
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Power Collections Classes
+<!-- attr: { id:'wintellectClasses', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="wintellectClasses"></a>Power Collections Classes
 * `Bag<T>`
   * A bag (multi-set) based on hash-table
     * Unordered collection (with duplicates)
@@ -160,8 +160,8 @@
 ##  [Demo]() -->
 
 
-<!-- attr: { showInPresentation:true } -->
-# Priority Queue
+<!-- attr: { id:'priorityQueue', showInPresentation:true } -->
+# <a id="priorityQueue"></a>Priority Queue
 * What is a "`priority` `queue`"?
   * Data structure to efficiently support finding the item with the highest priority
   * Like a queue, but with priorities
@@ -210,8 +210,8 @@ class PriorityQueue<T> where T : IComparable<T>
 <!-- # C5 Collections
 ##  Open Source Generic Collection Library for C# -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# C5 Collections
+<!-- attr: { id:'c5', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="c5"></a>C5 Collections
 * What are "C5 Collections"?
   * C5 Generic Collection Library for C# and CLI
   * Open-Source Data Structures Library for .NET
@@ -243,8 +243,8 @@ class PriorityQueue<T> where T : IComparable<T>
 <!-- # Advanced Data Structures
 ##  Suffix Trees, Interval Trees, Tries, Ropes, Heaps, … -->
 
-<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Advanced Data Structures
+<!-- attr: { id:'advanced', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
+# <a id="advanced"></a>Advanced Data Structures
 * **Suffix tree** (position tree)
   * Represents the suffixes of given string
   * Used to implement fast search in string
