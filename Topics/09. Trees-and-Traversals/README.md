@@ -33,7 +33,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section' } -->
-# <a id="tree-overview">Trees
+# Trees
 ## Overview
 
 <!-- attr: { showInPresentation:true } -->
