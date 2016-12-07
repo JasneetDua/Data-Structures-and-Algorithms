@@ -32,7 +32,7 @@
 - [Tries](#tries)
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', id:'tree-overview' } -->
+<!-- attr: { class:'slide-section' } -->
 # <a id="tree-overview">Trees
 ## Overview
 
