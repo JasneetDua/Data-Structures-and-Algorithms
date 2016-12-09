@@ -1,4 +1,4 @@
-# Odd number
+# Diameter
 
 ## Description
 
