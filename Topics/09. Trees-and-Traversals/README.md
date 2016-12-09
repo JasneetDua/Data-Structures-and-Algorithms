@@ -32,8 +32,8 @@
 - [Tries](#tries)
 
 <!-- section start -->
-<!-- attr: { class:'slide-section', id:'tree-overview' } -->
-# <a id="tree-overview">Trees
+<!-- attr: { class:'slide-section' } -->
+# Trees
 ## Overview
 
 <!-- attr: { showInPresentation:true } -->
