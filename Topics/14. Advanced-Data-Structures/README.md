@@ -25,7 +25,7 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-<!-- # Standard .NETData Structures
+<!-- # Standard .NET Data Structures
 ##  Built-In .NET Data Structure Implementations -->
 
 
@@ -127,7 +127,6 @@
   * Add / Find / Remove work in time O(log(N))
   * Like .NET’s `SortedSet<T>`
   * Provides fast `.Range(from, to)` operation
-  *
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Power Collections Classes -->
