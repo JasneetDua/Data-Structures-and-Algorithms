@@ -1,6 +1,6 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', hasScriptWrapper: true, showInPresentation:true, style:'' } -->
-# Regular Expressions in C#
+# Regular Expressions in <span>C#</span>
 ##  Fast ways to search and replace string
 
 <div class="signature">
@@ -9,22 +9,20 @@
     <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
 </div>
 
+<!-- section start -->
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Table of Contents
-
-- Regular Expression Overview
-- Special Characters for beginning and end
-- Regex in JavaScript
-  - Regex literal and RegExp function constructor
-- Special Characters in Regex
+- [Regular Expression Overview](#regexOverview)
+- [Special Characters for beginning and end](#beginEnd)
+- [Special Characters in Regex](#other)
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Regular Expressions
-##  Overview
+<!-- # Regular Expressions
+##  Overview -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Regular Expressions Overview
+<!-- attr: { id:'regexOverview', showInPresentation:true, style:'' } -->
+# <a id="regexOverview"></a>Regular Expressions Overview
 - A regular expression is a set of patterns used to match character combinations in strings
   - Find and extract data from a document
   - Validate content supplied in a form before it is submitted like:
@@ -43,11 +41,11 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Regex Special Characters for Beginning and End
-##  `^` and `$`
+<!-- # Regex Special Characters for Beginning and End
+##  `^` and `$` -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Regex Special Characters for Beginning and End
+<!-- attr: { id:'beginEnd', showInPresentation:true, style:'' } -->
+# <a id="beginEnd"></a>Regex Special Characters for Beginning and End
 - Special Characters:
   - `^` - matches the beginning of input
     - `^T`
@@ -59,17 +57,17 @@
       - Does not match: 'Telerik', 'Good Telerik'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Regex Special Characters for Beginning and End -->
-##  [Demo]()
+<!-- # Regex Special Characters for Beginning and End
+##  [Demo]() -->
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true, style:'' } -->
-# Special Characters in Regular Expressions
-##  For matching all kinds of stuff
+<!-- # Special Characters in Regular Expressions
+##  For matching all kinds of stuff -->
 
-<!-- attr: { showInPresentation:true, style:'' } -->
-# Special Characters in Regex
-- The regular expressions have a set of special characters, that have a different behavior
+<!-- attr: { id:'other', hasScriptWrapper:true, showInPresentation:true, style:'' } -->
+# <a id="other"></a>Special Characters in Regex
+- The regular expressions have a set of special characters, <br>that have a different behavior
   - Characters for matching multiple characters
   - Characters for matching whitespace
   - Characters for matching digits
@@ -90,8 +88,8 @@
         - 'a' is matched 0 times
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: * -->
-##  [Demo]()
+<!-- # Special Characters: *
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: `+`
@@ -106,8 +104,8 @@
 - Da+oncho
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: + -->
-##  [Demo]()
+<!-- # Special Characters: +
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: `?`
@@ -118,8 +116,8 @@
       - Does not match: 'Academy'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: ? -->
-##  [Demo]()
+<!-- # Special Characters: ?
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: `.`(dot)
@@ -132,8 +130,8 @@
       - Matches any whole string
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: . (dot) -->
-##  [Demo]()
+<!-- # Special Characters: . (dot)
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: `|`
@@ -143,8 +141,8 @@
     - Matches: '**T**elerik **A**cademy'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: | -->
-##  [Demo]()
+<!-- # Special Characters: |
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'font-size:45px' } -->
 # Special Characters in Regex: `[ ]`
@@ -155,8 +153,8 @@
       - Matches: '**T**elerik **A**cadem**y**'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: [ ] -->
-##  [Demo]()
+<!-- # Special Characters: [ ]
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'font-size:40px' } -->
 # Special Characters in Regex: `[ ]`
@@ -173,8 +171,8 @@
     - Matches: 'John in **19**-years-old'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: [ ] Range -->
-##  [Demo]()
+<!-- # Special Characters: [ ] Range
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: [^xyx]
@@ -186,8 +184,8 @@
       - Does not match: 'eaaaaeeeaaa', 'aaaa', 'eeee'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: [^xyz] -->
-##  [Demo]()
+<!-- # Special Characters: [^xyz]
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Special Characters in Regex: {}
@@ -204,8 +202,8 @@
       - Does not match: 'Ivo is the MAN'
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Special Characters: {} -->
-##  [Demo]()
+<!-- # Special Characters: {}
+##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'font-size:40px' } -->
 # Other Special Characters in Regex
@@ -220,11 +218,21 @@
   - `\W` – matches any non-alphanumeric or underscore character
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, style:'' } -->
-<!-- # Other Special Characters in Regular Expressions -->
-##  [Demo]()
+<!-- # Other Special Characters in Regular Expressions
+##  [Demo]() -->
 
-<!-- attr: { class: "slide-questions", showInPresentation:true, style:'' } -->
-# Regular Expressions in C#
-##  Questions
+<!-- section start -->
+<!-- attr: { class: "slide-questions", hasScriptWrapper:true, showInPresentation:true, style:'' } -->
+<!-- # Regular Expressions in <span>C#</span>
+##  Questions -->
 
-*  http://academy.Telerik.com
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+# Free Trainings @ Telerik Academy
+- C# Programming @ Telerik Academy
+    - [Data Structures and Algorithms](http://academy.telerik.com/student-courses/programming/data-structures-algorithms/about)
+  - Telerik Software Academy
+    - [telerikacademy.com](https://telerikacademy.com)
+  - Telerik Academy @ Facebook
+    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+  - Telerik Software Academy Forums
+    - [forums.academy.telerik.com](forums.academy.telerik.com)
