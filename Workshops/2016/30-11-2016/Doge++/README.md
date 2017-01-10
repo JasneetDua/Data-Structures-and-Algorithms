@@ -64,7 +64,7 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 
 #### Output
 ```
-4692
+923
 ```
 
 ### Sample test 4
@@ -77,5 +77,5 @@ Your task is, by given size of the field, locations of the enemies and **K**, to
 
 #### Output
 ```
-923
+355
 ```
