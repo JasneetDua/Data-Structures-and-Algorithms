@@ -100,13 +100,13 @@
 - The course official [web site](http://academy.telerik.com/student-courses/programming/data-structures-algorithms)
 
 # Telerik Integrated Learning System (TILS)
-- The Telerik Integrated Learning System ([TILS](https://www.telerikacademy.com))
+- The [Telerik Integrated Learning System](https://www.telerikacademy.com)
   - Important resource for all students
   - Homework submissions
   - Homework peer reviews
   - Presence cards with barcode
   - Reports about your results
-- [Course site](https://telerikacademy.com/Courses/Courses/Details/399)
+- [Course site](https://telerikacademy.com/Courses/Courses/Details/399) <!-- TODO: update course -->
 
 # Required Software
 - Software needed for this course:
