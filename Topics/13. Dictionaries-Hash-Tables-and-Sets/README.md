@@ -5,7 +5,7 @@
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
     <p class="signature-initiative">Telerik Software Academy</p>
-    <a href="http://academy.telerik.com" class="signature-link">http://academy.telerik.com</a>
+    <a href="https://telerikacademy.com" class="signature-link">https://telerikacademy.com</a>
 </div>
 
 <img class="slide-image" src="imgs/pic.png" style="width:80%; top:10%; left:10%" />
