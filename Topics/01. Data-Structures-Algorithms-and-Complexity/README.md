@@ -219,41 +219,40 @@ Example of `pseudocode`
 
 <!-- attr: { style:'font-size:0.7em' } -->
 # Typical Complexities
-| Complexity  | Notation   | Description |
-|-------------|------------|-------------|
+| Complexity      | Notation   | Description |
+|-----------------|------------|-------------|
 | **constant**    | `O(1)`     | Constant number of operations, not depending on the input data size, e.g. `n = 1 000 000` &rarr; **1-2** operations |
-| **logarithmic** | `O(log n)` | Number of operations propor-tional of `log2(n)` where `n` is the size of the input data, e.g. `n = 1 000 000 000` &rarr; **30** operations |
+| **logarithmic** | `O(log n)` | Number of operations proportional of `log2(n)` where `n` is the size of the input data, e.g. `n = 1 000 000 000` &rarr; **30** operations |
 | **linear**      | `O(n)`     | Number of operations proportional to the input data size, e.g. `n = 10 000` &rarr; **5 000** operations |
 
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.7em' } -->
 <!-- # Typical Complexities -->
-| Complexity  | Notation | Description |
-|-------------|----------|-------------|
+| Complexity      | Notation               | Description |
+|-----------------|------------------------|-------------|
 | **quadratic**   | `O(n`<sup>`2`</sup>`)` | Number of operations proportional to the square of the size of the input data, e.g. `n = 500` &rarr; **250 000** operations
-| **cubic**       | `O(n`<sup>`3`</sup>`)` | Number of operations propor-tional to the cube of the size of the input data, e.g. `n = 200` &rarr; **8 000 000** operations |
+| **cubic**       | `O(n`<sup>`3`</sup>`)` | Number of operations proportional to the cube of the size of the input data, e.g. `n = 200` &rarr; **8 000 000** operations |
 | **exponential** | `O(2`<sup>`n`</sup>`)`<br/>`O(k`<sup>`n`</sup>`)`<br/>`O(n!)` | Exponential number of operations, fast growing, e.g. `n = 20` &rarr; **1 048 576** operations |
 
 
 <!-- attr: { style:'font-size:0.7em' } -->
 # Time Complexity and Speed
-| Complexity | 10 | 20 | 50 | 100 | 1000 | 10000 | 100000 |
-|------------|----|----|----|-----|-------|--------|---------|
-| `O(1)` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| `O(log(n))` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| `O(n)` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
-| `O(n*log(n))` | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s |
+| Complexity    | 10   | 20   | 50   | 100  | 1000 | 10000 | 100000 |
+|---------------|------|------|------|------|------|-------|--------|
+| `O(1)`        | < 1s | < 1s | < 1s | < 1s | < 1s | < 1s  | < 1s   |
+| `O(log(n))`   | < 1s | < 1s | < 1s | < 1s | < 1s | < 1s  | < 1s   |
+| `O(n)`        | < 1s | < 1s | < 1s | < 1s | < 1s | < 1s  | < 1s   |
+| `O(n*log(n))` | < 1s | < 1s | < 1s | < 1s | < 1s | < 1s  | < 1s   |
 
 <!-- attr: { style:'font-size:0.7em', showInPresentation:true } -->
 <!-- # Time Complexity and Speed -->
-| Complexity | 10 | 20 | 50 | 100 | 1000 | 10000 | 100000 |
-|------------|----|----|----|-----|-------|--------|---------|
-| O(n<sup>2</sup>) | < 1 s | < 1 s | < 1 s | < 1 s | < 1 s | 2 s | 3-4 min |
-| O(n<sup>3</sup>) | < 1 s | < 1 s | < 1 s | < 1 s | 20 s | 5 hours | 231 days |
-| O(2<sup>n</sup>) | < 1 s | < 1 s | 260 days | hangs | hangs | hangs | hangs |
-| O(n!) | < 1 s | hangs | hangs | hangs | hangs | hangs | hangs |
-| O(n<sup>n</sup>) | 3-4 min | hangs | hangs | hangs | hangs | hangs | hangs |
-
+| Complexity       | 10      | 20    | 50      | 100   | 1000  | 10000   | 100000   |
+|------------------|---------|-------|---------|-------|-------|---------|----------|
+| O(n<sup>2</sup>) | < 1s    | < 1s  | < 1s    | < 1s  | < 1s  | 2s      | 3-4 min  |
+| O(n<sup>3</sup>) | < 1s    | < 1s  | < 1s    | < 1s  | 20 s  | 5 hours | 231 days |
+| O(2<sup>n</sup>) | < 1s    | < 1s  | 26 days | hangs | hangs | hangs   | hangs    |
+| O(n!)            | < 1s    | hangs | hangs   | hangs | hangs | hangs   | hangs    |
+| O(n<sup>n</sup>) | 3-4 min | hangs | hangs   | hangs | hangs | hangs   | hangs    |
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Time and Memory Complexity
