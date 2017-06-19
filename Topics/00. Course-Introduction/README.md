@@ -48,7 +48,8 @@
 - Course Evaluation
   - **Practical exam**
   - **Homework**
-  - **Workshops (bgcoder.com)**
+  - **Mini exams**
+  - **Workshops**
   - **Attendance in class**
 - Practical Exam
   - Real-time feedback @ BGCoder
@@ -106,7 +107,7 @@
   - Homework peer reviews
   - Presence cards with barcode
   - Reports about your results
-- [Course site](https://telerikacademy.com/Courses/Courses/Details/399) <!-- TODO: update course -->
+- [Course site](https://telerikacademy.com/Courses/Courses/Details/437)
 
 # Required Software
 - Software needed for this course:
