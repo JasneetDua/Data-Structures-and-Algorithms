@@ -12,13 +12,13 @@
 <!-- section start -->
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Table of Contents
-- Lists
+- **Lists**
   - Static and Linked Implementation
   - `List<T>` and `LinkedList<T>`
-- Stacks
+- **Stacks**
   - Static and Linked Implementation
   - The `Stack<T>` Class
-- Queues
+- **Queues**
   - Circular and Linked Implementation
   - The `Queue<T>` Class
 
