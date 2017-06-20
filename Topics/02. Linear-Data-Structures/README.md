@@ -22,12 +22,10 @@
   - Circular and Linked Implementation
   - The `Queue<T>` Class
 
-
 <!-- section start -->
 <!-- attr: { id:'lists', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Lists
 ## Static and Dynamic Implementations
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The List ADT
@@ -39,7 +37,6 @@
     - Statically (using array &rarr; fixed size)
     - Dynamically (linked implementation)
     - Using resizable array (the `List<T>` class)
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Static List
@@ -61,7 +58,6 @@
 
 <img class="slide-image" src="imgs/linked-list.png" style="width:90%; left:2%" />
 
-
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Linked List -->
 - Doubly-linked List
@@ -69,12 +65,10 @@
 
 <img class="slide-image" src="imgs/double-linked-list.png" style="width:90%; left:2%" />
 
-
 <!-- section start -->
 <!-- attr: { id:'the-list-class', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The `List<T>` Class
 ## Auto-Resizable Indexed Lists -->
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The `List<T>` Class
@@ -85,7 +79,6 @@
 - Basic functionality:
   - `Count` – returns the number of elements
   - `Add(T)` – appends given element at the end
-
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # `List<T>` – Simple Example
@@ -108,11 +101,9 @@ static void Main()
 ```
 <div class="fragments balloon" style="width:300px; right:5%; top:32%" >Inline initialization: the compiler adds specified elements to the list</div>
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 <!-- # `List<T>` – Simple Example -->
 ## [Demo](./demos)
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # `List<T>` – Functionality
@@ -123,7 +114,6 @@ static void Main()
 - `Clear()` – removes all elements
 - `Contains(T)` – determines whether an element is part of the list
 
-
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # List<T> – Functionality -->
 - `IndexOf()` – returns the index of the first occurrence of a value in the list (zero-based)
@@ -131,7 +121,6 @@ static void Main()
 - `Sort()` – sorts the elements in the list or a portion of it
 - `ToArray()` – converts the elements of the list to an array
 - `TrimExcess()` – sets the capacity to the actual number of elements
-
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # `List<T>`: How It Works?
@@ -171,7 +160,6 @@ static List<int> FindPrimes(int start, int end)
 <!-- # Primes in an Interval -->
 ## [Demo](./demos)
 
-
 <!-- attr: { hasScriptWrapper:true } -->
 # Union and Intersection – Example
 ```cs
@@ -194,7 +182,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Union and Intersection -->
 ## [Demo](./demos)
@@ -204,7 +191,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 <!-- # The `LinkedList<T>` Class
 ## Dynamic Linked List in .NET -->
 
-
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The `LinkedList<T>` Class
 - Implements the abstract data structure list using a doubly-linked dynamic structure
@@ -213,7 +199,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - Elements can be added at both sides
 - Basic `LinkedList<T>` functionality:
   - `AddFirst(T)`, `AddLast(T)`, `AddBefore(T)`, `AddAfter(T)`, `RemoveFirst(T)`, `RemoveLast(T)`, `Count`
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # `LinkedList<T>` – Example
@@ -233,17 +218,14 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # LinkedList<T> -->
 ## [Demo](./demos)
-
 
 <!-- section start -->
 <!-- attr: { id:'sorting-lists', class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Sorting Lists
 ## Several Ways to Do It -->
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Sorting Lists
@@ -263,17 +245,14 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   list.OrderBy(date => date.Month)));
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Sorting Lists -->
 ##  [Demo](./demos)
-
 
 <!-- section start -->
 <!-- attr: { id:'stacks', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Stacks
 ## Static and Dynamic Implementation
-
 
 # The Stack ADT
 - LIFO (Last In First Out) structure 
@@ -286,7 +265,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - Dynamically (linked implementation)
   - Using the `Stack<T>` class
 
-
 <!-- attr: { hasScriptWrapper:true } -->
 # Static Stack
 - Static (array-based) implementation
@@ -294,7 +272,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - The current index (`top`) moves left / right with each pop / push
 
 <img class="slide-image" src="imgs/static-stack.png" style="width:60%; left:15%" />
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # Linked Stack
@@ -304,11 +281,9 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 
 <img class="slide-image" src="imgs/linked-stack.png" style="width:70%; left:12%" />
 
-
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The `Stack<T>` Class
 ## The Standard Stack Implementation in .NET -->
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # The `Stack<T>` Class
@@ -320,7 +295,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - `Push(T)` – inserts elements to the stack
   - `Pop()` – removes and returns the top element from the stack
 
-
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The Stack<T> Class -->
 - Basic functionality:
@@ -330,7 +304,6 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - `Contains(T)` – determines whether given element is in the stack
   - `ToArray()` – converts the stack to an array
   - `TrimExcess()` – sets the capacity to the actual number of elements 
-
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:1em' } -->
 # `Stack<T>` – Example
@@ -355,11 +328,9 @@ static void Main()
 }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # `Stack<T>` -->
 ## [Demo](./demos)
-
 
 # Matching Brackets – Example
 - We are given an arithmetical expression with brackets that can be nested
@@ -371,7 +342,6 @@ static void Main()
 - Algorithm:
   - For each '`(`' push its index in a stack
   - For each '`)`' pop the corresponding start index
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Matching Brackets – Solution
@@ -396,17 +366,14 @@ for (int index = 0; index < expression.Length; index++)
 }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Matching Brackets -->
 ## [Demo](./demos)
-
 
 <!-- section start -->
 <!-- attr: { id:'queues', class:'slide-section', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 <!-- # Queues
 ## Static and Dynamic Implementation -->
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The Queue ADT
@@ -420,7 +387,6 @@ for (int index = 0; index < expression.Length; index++)
   - Dynamically (using pointers)
   - Using the `Queue<T>` class
 
-
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Static Queue
 - Static (array-based) implementation
@@ -430,7 +396,6 @@ for (int index = 0; index < expression.Length; index++)
 
 <img class="slide-image" src="imgs/static-queue.png" style="width:60%; left:15%" />
 
-
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Linked Queue
 - Dynamic (pointer-based) implementation
@@ -439,11 +404,9 @@ for (int index = 0; index < expression.Length; index++)
 
 <img class="slide-image" src="imgs/linked-queue.png" style="width:70%; left:12%" />
 
-
 <!-- attr: { class:'slide-section', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The `Queue<T>` Class
 ##  Standard Queue Implementation in .NET -->
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # The `Queue<T>` Class
@@ -455,7 +418,6 @@ for (int index = 0; index < expression.Length; index++)
   - `Enqueue(T)` – adds an element to the end of the queue
   - `Dequeue()` – removes and returns the element at the beginning of the queue
 
-
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The Queue<T> Class -->
 - Basic functionality:
@@ -465,7 +427,6 @@ for (int index = 0; index < expression.Length; index++)
   - `Contains(T)` – determines whether given element is in the queue
   - `ToArray()` – converts the queue to an array
   - `TrimExcess()` – sets the capacity to the actual number of elements in the queue
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # `Queue<T>` – Example
@@ -488,11 +449,9 @@ static void Main()
 }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The `Queue<T>` Class -->
 ##  [Demo](./demos)
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Sequence N, N+1, 2\*N
@@ -504,8 +463,6 @@ static void Main()
 - Example: N = 3, P = 16
   - S = 3, 4, 6, 5, 8, 7, 12, 6, 10, 9, 16, 8, 14, …
   - Index of P = 11
-
-
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Sequence – Solution with a Queue
@@ -528,17 +485,14 @@ while (queue.Count > 0)
 }
 ```
 
-
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Sequence N, N+1, 2*N -->
 ## [Demo]()
-
 
 <!-- section start -->
 <!-- attr: { id:'list-interfaces', class:'slide-section', showInPresentation:true } -->
 <!-- # List Interfaces in .NET
 ## `IEnumerable`, `ICollection`, `IList`, … -->
-
 
 <!-- attr: { hasScriptWrapper:true } -->
 # List Interfaces in .NET
@@ -551,11 +505,9 @@ while (queue.Count > 0)
   - Inherits from `ICollection<T>`
   - `Item` / indexer `[]`, `Insert(…)`, `RemoveAt(…)`
 
-
 <!-- attr: { hasScriptWrapper:true } -->
 # List Interfaces Hierarchy
 <img class="slide-image" src="imgs/list-interfaces.png" style="left:20%; top:25%" />
-
 
 <!-- section start -->
 <!-- attr: { id:'summary', hasScriptWrapper:true } -->
