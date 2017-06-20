@@ -78,12 +78,12 @@
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The `List<T>` Class
-- Implements the abstract data structure list using an array 
+- Implements the abstract data structure list using an array
   - All elements are of the same type T
   - `T` can be any type, e.g. `List<int>`, `List<string>`, `List<DateTime>`
   - Size is dynamically increased as needed
 - Basic functionality:
-  - `Count` – returns the number of elements 
+  - `Count` – returns the number of elements
   - `Add(T)` – appends given element at the end
 
 
