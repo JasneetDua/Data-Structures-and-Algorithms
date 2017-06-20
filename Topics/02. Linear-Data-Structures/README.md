@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { id:'', class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Linear Data Structures
-## Arrays, Lists, Stacks, Queues Static and Dynamic Implementation
+## Arrays, Lists, Stacks, Queues<br/>Static and Dynamic Implementation
 
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
