@@ -77,11 +77,11 @@
   - `T` can be any type, e.g. `List<int>`, `List<string>`, `List<DateTime>`
   - Size is dynamically increased as needed
 - Basic functionality:
-  - `Count` – returns the number of elements
-  - `Add(T)` – appends given element at the end
+  - `Count` - returns the number of elements
+  - `Add(T)` - appends given element at the end
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# `List<T>` – Simple Example
+# `List<T>` - Simple Example
 ```cs
 static void Main()
 {
@@ -102,25 +102,25 @@ static void Main()
 <div class="fragments balloon" style="width:300px; right:5%; top:32%" >Inline initialization: the compiler adds specified elements to the list</div>
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-<!-- # `List<T>` – Simple Example -->
+<!-- # `List<T>` - Simple Example -->
 ## [Demo](./demos)
 
 <!-- attr: { hasScriptWrapper:true } -->
-# `List<T>` – Functionality
-- `list[index]` – access element by index
-- `Insert(index, T)` – inserts given element to the list at a specified position
-- `Remove(T)` – removes the first occurrence of given element
-- `RemoveAt(index)` – removes the element at the specified position
-- `Clear()` – removes all elements
-- `Contains(T)` – determines whether an element is part of the list
+# `List<T>` - Functionality
+- `list[index]` - access element by index
+- `Insert(index, T)` - inserts given element to the list at a specified position
+- `Remove(T)` - removes the first occurrence of given element
+- `RemoveAt(index)` - removes the element at the specified position
+- `Clear()` - removes all elements
+- `Contains(T)` - determines whether an element is part of the list
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # List<T> – Functionality -->
-- `IndexOf()` – returns the index of the first occurrence of a value in the list (zero-based)
-- `Reverse()` – reverses the order of the elements in the list or a portion of it
-- `Sort()` – sorts the elements in the list or a portion of it
-- `ToArray()` – converts the elements of the list to an array
-- `TrimExcess()` – sets the capacity to the actual number of elements
+<!-- # List<T> - Functionality -->
+- `IndexOf()` - returns the index of the first occurrence of a value in the list (zero-based)
+- `Reverse()` - reverses the order of the elements in the list or a portion of it
+- `Sort()` - sorts the elements in the list or a portion of it
+- `ToArray()` - converts the elements of the list to an array
+- `TrimExcess()` - sets the capacity to the actual number of elements
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 # `List<T>`: How It Works?
@@ -131,13 +131,13 @@ static void Main()
 <img class="slide-image" src="imgs/list.png" style="" />
 
 <!-- attr: {hasScriptWrapper:true, style:'font-size:0.9em' } -->
-# Primes in an Interval – Example
+# Primes in an Interval - Example
 ```cs
 static List<int> FindPrimes(int start, int end)
 {
    List<int> primesList = new List<int>();
    for (int num = start; num <= end; num++)
-   {	
+   {
       bool prime = true;
       for (int div = 2; div <= Math.Sqrt(num); div++)
       {
@@ -145,7 +145,7 @@ static List<int> FindPrimes(int start, int end)
          {
             prime = false;
             break;
-         }	
+         }
       }
       if (prime)
       {
@@ -161,7 +161,7 @@ static List<int> FindPrimes(int start, int end)
 ## [Demo](./demos)
 
 <!-- attr: { hasScriptWrapper:true } -->
-# Union and Intersection – Example
+# Union and Intersection - Example
 ```cs
 int[] Union(int[] firstArr, int[] secondArr)
 {
@@ -201,7 +201,7 @@ int[] Intersection(int[] firstArr, int[] secondArr)
   - `AddFirst(T)`, `AddLast(T)`, `AddBefore(T)`, `AddAfter(T)`, `RemoveFirst(T)`, `RemoveLast(T)`, `Count`
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# `LinkedList<T>` – Example
+# `LinkedList<T>` - Example
 ```cs
   static void Main()
   {
@@ -211,9 +211,9 @@ int[] Intersection(int[] firstArr, int[] secondArr)
       list.AddLast("Last");
       list.AddAfter(list.First, "After First");
       list.AddBefore(list.Last, "Before Last");
-  
+
       Console.WriteLine(String.Join(", ", list));
-  
+
       // Result: First, After First, Before Last, Last
   }
 ```
@@ -255,11 +255,11 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 ## Static and Dynamic Implementation
 
 # The Stack ADT
-- LIFO (Last In First Out) structure 
+- LIFO (Last In First Out) structure
 - Elements inserted (push) at "top"
 - Elements removed (pop) from "top"
 - Useful in many situations
-  - E.g. the execution stack of the program 
+  - E.g. the execution stack of the program
 - Can be implemented in several ways
   - Statically (using array)
   - Dynamically (linked implementation)
@@ -289,24 +289,24 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 # The `Stack<T>` Class
 - Implements the `stack` data structure using an array
   - Elements are from the same type `T`
-  - `T` can be any type, e.g. `Queue<int>`   
+  - `T` can be any type, e.g. `Queue<int>`
   - Size is dynamically increased as needed
 - Basic functionality:
-  - `Push(T)` – inserts elements to the stack
-  - `Pop()` – removes and returns the top element from the stack
+  - `Push(T)` - inserts elements to the stack
+  - `Pop()` - removes and returns the top element from the stack
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The Stack<T> Class -->
 - Basic functionality:
-  - `Peek()` – returns the top element of the stack without removing it
-  - `Count` – returns the number of elements
-  - `Clear()` – removes all elements
-  - `Contains(T)` – determines whether given element is in the stack
-  - `ToArray()` – converts the stack to an array
-  - `TrimExcess()` – sets the capacity to the actual number of elements 
+  - `Peek()` - returns the top element of the stack without removing it
+  - `Count` - returns the number of elements
+  - `Clear()` - removes all elements
+  - `Contains(T)` - determines whether given element is in the stack
+  - `ToArray()` - converts the stack to an array
+  - `TrimExcess()` - sets the capacity to the actual number of elements
 
 <!-- attr: { hasScriptWrapper:true, style:'font-size:1em' } -->
-# `Stack<T>` – Example
+# `Stack<T>` - Example
 - Using `Push()`, `Pop()` and `Peek()` methods
 
 ```cs
@@ -332,7 +332,7 @@ static void Main()
 <!-- # `Stack<T>` -->
 ## [Demo](./demos)
 
-# Matching Brackets – Example
+# Matching Brackets - Example
 - We are given an arithmetical expression with brackets that can be nested
 - Goal: **extract all sub-expressions in brackets**
 - Example:
@@ -344,7 +344,7 @@ static void Main()
   - For each '`)`' pop the corresponding start index
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# Matching Brackets – Solution
+# Matching Brackets - Solution
 ```cs
 string expression = "1 + (2 (2+3) * 4 / (3+1)) * 5";
 Stack<int> stack = new Stack<int>();
@@ -412,24 +412,24 @@ for (int index = 0; index < expression.Length; index++)
 # The `Queue<T>` Class
 - Implements the queue data structure using a circular resizable array
   - Elements are from the same type `T`
-  - `T` can be any type, e.g. `Queue<int>` 
+  - `T` can be any type, e.g. `Queue<int>`
   - Size is dynamically increased as needed
 - Basic functionality:
-  - `Enqueue(T)` – adds an element to the end of the queue
-  - `Dequeue()` – removes and returns the element at the beginning of the queue
+  - `Enqueue(T)` - adds an element to the end of the queue
+  - `Dequeue()` - removes and returns the element at the beginning of the queue
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # The Queue<T> Class -->
 - Basic functionality:
-  - `Peek()` – returns the element at the beginning of the queue without removing it
-  - `Count` – returns the number of elements
-  - `Clear()` – removes all elements
-  - `Contains(T)` – determines whether given element is in the queue
-  - `ToArray()` – converts the queue to an array
-  - `TrimExcess()` – sets the capacity to the actual number of elements in the queue
+  - `Peek()` - returns the element at the beginning of the queue without removing it
+  - `Count` - returns the number of elements
+  - `Clear()` - removes all elements
+  - `Contains(T)` - determines whether given element is in the queue
+  - `ToArray()` - converts the queue to an array
+  - `TrimExcess()` - sets the capacity to the actual number of elements in the queue
 
 <!-- attr: { hasScriptWrapper:true } -->
-# `Queue<T>` – Example
+# `Queue<T>` - Example
 - Using `Enqueue()` and `Dequeue()` methods
 
 ```cs
@@ -456,7 +456,7 @@ static void Main()
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Sequence N, N+1, 2\*N
 - We are given the sequence:
- 
+
 <img class="slide-image" src="imgs/sequence.png" style="position:initial; margin:0" />
 
 - Find the first index of given number P
@@ -465,7 +465,7 @@ static void Main()
   - Index of P = 11
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# Sequence – Solution with a Queue
+# Sequence - Solution with a Queue
 ```cs
 int n = 3, p = 16;
 Queue<int> queue = new Queue<int>();
