@@ -29,7 +29,7 @@
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The List ADT
-- What is "`list`"?
+- What is "**list**"?
   - A data structure (container) that contains a sequence of elements
     - Can have variable size
     - Elements are arranged linearly, in sequence
@@ -82,10 +82,12 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # `List<T>` - Simple Example
+
 ```cs
 static void Main()
 {
-   List<string> list = new List<string>() { "C#", "Java" };
+   List<string> list = new List<string>()
+		   { "C#", "Java" };
    list.Add("SQL");
    list.Add("Python");
    foreach (string item in list)
@@ -99,7 +101,8 @@ static void Main()
    //   Python
 }
 ```
-<div class="fragments balloon" style="width:300px; right:5%; top:32%" >Inline initialization: the compiler adds specified elements to the list</div>
+
+<div class="fragment balloon" style="width:300px; right:5%; top:32%" >Inline initialization: the compiler adds specified elements to the list</div>
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 <!-- # `List<T>` - Simple Example -->
@@ -160,7 +163,7 @@ static List<int> FindPrimes(int start, int end)
 <!-- # Primes in an Interval -->
 ## [Demo](./demos)
 
-<!-- attr: { hasScriptWrapper:true } -->
+<!-- attr: { hasScriptWrapper:true, style:'font-size:0.95em' } -->
 # Union and Intersection - Example
 ```cs
 int[] Union(int[] firstArr, int[] secondArr)
@@ -255,7 +258,7 @@ int[] Intersection(int[] firstArr, int[] secondArr)
 ## Static and Dynamic Implementation
 
 # The Stack ADT
-- LIFO (Last In First Out) structure
+- **LIFO** (Last In First Out) structure
 - Elements inserted (push) at "top"
 - Elements removed (pop) from "top"
 - Useful in many situations
@@ -332,6 +335,7 @@ static void Main()
 <!-- # `Stack<T>` -->
 ## [Demo](./demos)
 
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.95em' } -->
 # Matching Brackets - Example
 - We are given an arithmetical expression with brackets that can be nested
 - Goal: **extract all sub-expressions in brackets**
@@ -377,9 +381,9 @@ for (int index = 0; index < expression.Length; index++)
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # The Queue ADT
-- FIFO (First In First Out) structure
-- Elements inserted at the tail (Enqueue)
-- Elements removed from the head (Dequeue)
+- **FIFO** (First In First Out) structure
+- Elements inserted at the tail (`Enqueue`)
+- Elements removed from the head (`Dequeue`)
 - Useful in many situations
   - Print queues, message queues, etc.
 - Can be implemented in several ways
@@ -453,16 +457,16 @@ static void Main()
 <!-- # The `Queue<T>` Class -->
 ##  [Demo](./demos)
 
-<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
-# Sequence N, N+1, 2\*N
+<!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:0.9em' } -->
+# Sequence - `N, N+1, N*2`
 - We are given the sequence:
 
 <img class="slide-image" src="imgs/sequence.png" style="position:initial; margin:0" />
 
 - Find the first index of given number P
-- Example: N = 3, P = 16
-  - S = 3, 4, 6, 5, 8, 7, 12, 6, 10, 9, 16, 8, 14, …
-  - Index of P = 11
+- Example: `N = 3`, `P = 16`
+  - `S = 3`, `4`, `6`, `5`, `8`, `7`, `12`, `6`, `10`, `9`, `16`, `8`, `14`, `…`
+  - Index of `P = 11`
 
 <!-- attr: { id:'', class:'', showInPresentation:true, hasScriptWrapper:true, style:'font-size:1em' } -->
 # Sequence - Solution with a Queue
@@ -480,13 +484,13 @@ while (queue.Count > 0)
         Console.WriteLine("Index = {0}", index);
         return;
     }
-    queue.Enqueue(current+1);
-    queue.Enqueue(2*current);
+    queue.Enqueue(current + 1);
+    queue.Enqueue(current * 2);
 }
 ```
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Sequence N, N+1, 2*N -->
+<!-- # Sequence - `N, N+1, N*2` -->
 ## [Demo]()
 
 <!-- section start -->
