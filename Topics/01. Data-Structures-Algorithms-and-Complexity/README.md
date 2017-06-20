@@ -284,7 +284,7 @@ Example of `pseudocode`
 
 - Examples:
   - Polynomial-time: `log(n)`, `n`<sup>`2`</sup>, `3n`<sup>`3`</sup>` + 4n`, `2 * n log(n)`
-  - Non polynomial-time: `2`<sup>`n`</sup>, `3`<sup>`n`</sup>, `n`<sup>`k`</sup>, `n!`
+  - Non polynomial-time: `2`<sup>`n`</sup>, `3`<sup>`n`</sup>, `k`<sup>`n`</sup>, `n!`
   - Non-polynomial algorithms hang for large input data sets
 
 
@@ -456,7 +456,7 @@ decimal Fibonacci(int n)
 - Algorithms are sequences of steps for performing or calculating something
 - Algorithm complexity is rough estimation of the number of steps performed by given computation
   - Complexity can be logarithmic, linear, n log n, square, cubic, exponential, etc.
-  - Allows to estimating the speed of given code before its execution  
+  - Allows to estimating the speed of given code before its execution
 
 <!-- section start -->
 <!-- attr: { id:'questions', class:'slide-section', showInPresentation:true } -->
