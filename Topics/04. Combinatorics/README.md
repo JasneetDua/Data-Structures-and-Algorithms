@@ -30,7 +30,7 @@
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Combinations -->
-- "My fruit salad is a combination of grapes, strawberries and bananas" 
+- "My fruit salad is a combination of grapes, strawberries and bananas"
   - We don't care what order the fruits are in
     - "bananas, grapes and strawberries" or "grapes, bananas and strawberries" &rarr; it is the same salad
 - If the **order doesn't** matter, it is a **combination**
@@ -87,13 +87,13 @@ static long Factorial(int n)
 - When you have `n` things to choose from... You have `n` choices each time!
 - When choosing k of them, the variations are:
   - `n` × `n` × ... × `n` (k times)
-  - 	       nk
+  -	       nk
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Variations -->
 - Example: in the lock below, there are 10 numbers to choose from (0, 1, … 9) and you choose 3 of them:
   - 10 × 10 × 10 (3 times) = `103` = 1 000 variations
-- All variations from (0, 0, 0) to (9, 9, 9) 
+- All variations from (0, 0, 0) to (9, 9, 9)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Variations with Repetitions -->
@@ -131,7 +131,7 @@ static void GenerateVariations(int index)
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 <!-- # Variations without Repetition -->
-- Example: 
+- Example:
   - How many words of 2 `different` letters can you make with 4 letters { a, b, c, d }?
 - How to generate variations without repetitions?
   - The same way like variations with repetitions
@@ -317,7 +317,7 @@ static void Comb(int index, int start)
 - Calculate using recursion:
 
 ```cs
-static decimal Binom(int n, int k) 
+static decimal Binom(int n, int k)
 {  if (k > n) return 0;
    else if (0 == k || k == n) return 1;
    else return Binom(n-1, k-1) + Binom(n-1, k);
