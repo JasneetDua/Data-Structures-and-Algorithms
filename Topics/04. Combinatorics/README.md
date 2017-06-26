@@ -85,7 +85,7 @@ static long Factorial(int n)
 - `Variations (with repetitions)`
   - Easiest to calculate
 - When you have `n` things to choose from... You have `n` choices each time!
-- When choosing k of them, the variations are:
+- When choosing `k` of them, the variations are:
   - `n` × `n` × ... × `n` (`k` times) = `n`<sup>`k`</sup>
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true, style:'' } -->
