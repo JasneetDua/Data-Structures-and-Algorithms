@@ -81,6 +81,10 @@ _Note:_ Examples are in loose syntax for simplicity
   - _Examples:_
     - `ScanLeft ((x,y) => x+y) 0 [1,2,3,4] = [0,1,3,6,10]`
     - `ScanRight ((x,y) => x+y) 0 [1,2,3,4] = [10,9,7,4,0]`
+- `Flatten(list of lists)` - concatenates all lists
+  - _Example:_
+    - `Flatten [[1,2,3],[4,5],[],[6,8],[7]] = [1,2,3,4,5,6,8,7]`
+  - _Think about running time complexity_
 
 - `QuickSort(list)` - sorts the list using the quick sort algorithm
 - `MergeSort(list)` - sorts the list using the merge sort algorithm
