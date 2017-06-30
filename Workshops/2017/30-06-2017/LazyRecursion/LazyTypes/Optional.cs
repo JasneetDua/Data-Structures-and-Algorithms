@@ -4,7 +4,7 @@ namespace LazyTypes
 {
     public class Optional<T>
     {
-        private Lazy<T> value;
+        private readonly Lazy<T> value;
 
         public Optional()
         {

@@ -4,7 +4,7 @@ namespace LazyTypes
 {
     public class List<T>
     {
-        private Optional<Pair<T, List<T>>> head;
+        private readonly Optional<Pair<T, List<T>>> head;
 
         public List()
         {

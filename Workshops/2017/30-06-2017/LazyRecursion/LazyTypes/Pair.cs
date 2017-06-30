@@ -4,8 +4,8 @@ namespace LazyTypes
 {
     public class Pair<T1, T2>
     {
-        private Lazy<T1> first;
-        private Lazy<T2> second;
+        private readonly Lazy<T1> first;
+        private readonly Lazy<T2> second;
 
         public Pair(Lazy<T1> f, Lazy<T2> s)
         {

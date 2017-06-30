@@ -39,7 +39,7 @@ namespace LazyRecursion
             return new Optional<int>(new Lazy<int>(() => x.Value / y.Value));
         }
 
-        static void Main(string[] args)
+        static void DivisionTest()
         {
             var x = new Lazy<int>(() => 18);
             var y = new Lazy<int>(() => 0);
@@ -63,6 +63,19 @@ namespace LazyRecursion
                   );
 
             var ignore = result.Value;
+        }
+
+        static void Main()
+        {
+            var _42 = new Lazy<int>(() => 42);
+            SideEffect.ReadNumber()
+                .Bind(x => SideEffect.PrintNumber(_42).Bind((v) => SideEffect.ReadNumber())
+                    .Bind(y =>
+                    {
+                        var sum = new Lazy<int>(() => y.Value + x.Value);
+                        return SideEffect.PrintNumber(sum);
+                    }))
+                .Execute();
         }
     }
 }
