@@ -71,10 +71,9 @@ namespace LazyTypes
             });
         }
 
-        //public static Lazy<SideEffect<LazyVoid>> PrintNumbers(Lazy<List<int>> list)
-        //{
-        //    return list.Map(num => PrintNumber(num))
-        //        .FoldLeft(DoNothing, (x, y) => x.Value.Bind(v => y));
-        //}
+		public static Lazy<SideEffect<LazyVoid>> PrintNumbers(Lazy<List<int>> list)
+		{
+			return list.FoldLeft(DoNothing(), (x, y) => x.Bind(_ => PrintNumber(y)));
+		}
     }
 }

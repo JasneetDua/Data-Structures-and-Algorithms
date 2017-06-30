@@ -40,7 +40,7 @@ namespace LazyRecursion
         static void DivisionTest()
         {
             var x = 18.ToLazy();
-            var y = 2.ToLazy();
+            var y = 0.ToLazy();
             var z = 3.ToLazy();
 
             Optional.Value(x)
@@ -54,45 +54,14 @@ namespace LazyRecursion
 
         static void Main()
         {
-            //var _42 = new Lazy<int>(() => 42);
-            //SideEffect.ReadNumber()
-            //    .Bind(x => SideEffect.PrintNumber(_42).Bind((v) => SideEffect.ReadNumber())
-            //        .Bind(y =>
-            //        {
-            //            var sum = new Lazy<int>(() => y.Value + x.Value);
-            //            return SideEffect.PrintNumber(sum);
-            //        }))
-            //    .Execute();
-
-
-
-            var array = new int[] { 4, 6, 2, 7, 8, 1 };
-            //var e = array.GetEnumerator();
-            //e.MoveNext();
-            //e.MoveNext();
-            //e.MoveNext();
-            //e.MoveNext();
-            //Console.WriteLine(e.MoveNext());
-            //Console.WriteLine(e.MoveNext());
-            //Console.WriteLine(e.Current);
-            //Console.WriteLine(e.MoveNext());
-
-            //return;
-
-            Range.FromTo(0.ToLazy(), 9.ToLazy())
-                .Reverse()
-                .QuickSort()
-                .AtIndex(2.ToLazy())
-                .WithOptional(
-                    SideEffect.DoNothing(),
-                    SideEffect.PrintNumber
-                ).Execute();
-
-            //.WithOptional(
-            //    new Lazy<SideEffect<LazyVoid>>(SideEffect.DoNothing),
-            //    num => new Lazy<SideEffect<LazyVoid>>(() => SideEffect.PrintNumber(num))
-            //    ).Value
-            //    .Execute();
+			SideEffect.Wrap(() => new [] { 4, 6, 2, 7, 8, 1 }.FromIEnumerable())
+				.Bind(nums => SideEffect.PrintString("Original:")
+				 .Bind(_ => SideEffect.PrintNumbers(nums))
+				 .Bind(_ => SideEffect.PrintString("Reversed:"))
+				 .Bind(_ => SideEffect.PrintNumbers(nums.Reverse()))
+				 .Bind(_ => SideEffect.PrintString("Sorted:"))
+				 .Bind(_ => SideEffect.PrintNumbers(nums.QuickSort())))
+				.Execute();
         }
     }
 }
