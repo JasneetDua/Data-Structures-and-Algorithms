@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="LazyVoid.cs" />
     <Compile Include="List.cs" />
+    <Compile Include="ListMethods.cs" />
     <Compile Include="Optional.cs" />
     <Compile Include="Pair.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -65,17 +65,27 @@ namespace LazyRecursion
             var ignore = result.Value;
         }
 
+        static Lazy<int> MakeNumber(int n)
+        {
+            return new Lazy<int>(() => n);
+        }
+
         static void Main()
         {
-            var _42 = new Lazy<int>(() => 42);
-            SideEffect.ReadNumber()
-                .Bind(x => SideEffect.PrintNumber(_42).Bind((v) => SideEffect.ReadNumber())
-                    .Bind(y =>
-                    {
-                        var sum = new Lazy<int>(() => y.Value + x.Value);
-                        return SideEffect.PrintNumber(sum);
-                    }))
+            //var _42 = new Lazy<int>(() => 42);
+            //SideEffect.ReadNumber()
+            //    .Bind(x => SideEffect.PrintNumber(_42).Bind((v) => SideEffect.ReadNumber())
+            //        .Bind(y =>
+            //        {
+            //            var sum = new Lazy<int>(() => y.Value + x.Value);
+            //            return SideEffect.PrintNumber(sum);
+            //        }))
+            //    .Execute();
+
+            new SideEffect<int>(() => Range.FromTo(MakeNumber(0), MakeNumber(5))
+                .Value.Length())
+                .Bind(SideEffect.PrintNumber)
                 .Execute();
-        }
+       }
     }
 }
