@@ -1,13 +1,15 @@
-﻿namespace LazyTypes
+﻿using System;
+
+namespace LazyTypes
 {
     public class LazyVoid
     {
-        private static readonly LazyVoid instance = new LazyVoid();
+        private static readonly Lazy<LazyVoid> instance = new Lazy<LazyVoid>(() => new LazyVoid());
 
         private LazyVoid()
         {
         }
 
-        public static LazyVoid Instance => instance;
+        public static Lazy<LazyVoid> Instance => instance;
     }
 }

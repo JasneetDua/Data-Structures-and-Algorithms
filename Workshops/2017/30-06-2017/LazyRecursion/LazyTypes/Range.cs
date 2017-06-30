@@ -7,7 +7,7 @@ namespace LazyTypes
     {
         public static Lazy<List<int>> FromTo(Lazy<int> begin, Lazy<int> end)
         {
-            if(begin.Value >= end.Value)
+            if (begin.Value >= end.Value)
             {
                 return new Lazy<List<int>>(() => new List<int>());
             }
@@ -31,13 +31,15 @@ namespace LazyTypes
 
         private static Lazy<List<T>> FromIEnumerator<T>(IEnumerator<T> enumerator)
         {
-            if(!enumerator.MoveNext())
+            var isLast = !enumerator.MoveNext();
+            if (isLast)
             {
                 return new Lazy<List<T>>(() => new List<T>());
             }
 
-            var headValue = new Lazy<T>(() => enumerator.Current);
+            Console.WriteLine(enumerator.Current + " " + isLast);
 
+            var headValue = new Lazy<T>(() => enumerator.Current);
             var list = new List<T>(headValue, FromIEnumerator(enumerator));
             return new Lazy<List<T>>(() => list);
         }

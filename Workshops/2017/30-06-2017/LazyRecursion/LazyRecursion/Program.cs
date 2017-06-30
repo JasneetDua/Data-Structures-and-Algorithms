@@ -65,11 +65,6 @@ namespace LazyRecursion
             var ignore = result.Value;
         }
 
-        static Lazy<int> MakeNumber(int n)
-        {
-            return new Lazy<int>(() => n);
-        }
-
         static void Main()
         {
             //var _42 = new Lazy<int>(() => 42);
@@ -82,10 +77,36 @@ namespace LazyRecursion
             //        }))
             //    .Execute();
 
-            new SideEffect<int>(() => Range.FromTo(MakeNumber(0), MakeNumber(5))
-                .Value.Length())
-                .Bind(SideEffect.PrintNumber)
-                .Execute();
-       }
+
+
+            var array = new int[] { 4, 6, 2, 7, 8, 1 };
+            //var e = array.GetEnumerator();
+            //e.MoveNext();
+            //e.MoveNext();
+            //e.MoveNext();
+            //e.MoveNext();
+            //Console.WriteLine(e.MoveNext());
+            //Console.WriteLine(e.MoveNext());
+            //Console.WriteLine(e.Current);
+            //Console.WriteLine(e.MoveNext());
+
+            //return;
+
+            Range.FromTo(0.Int(), 9.Int())
+                .Reverse()
+                .QuickSort()
+                .AtIndex(2.Int())
+                .Value
+                .WithOptional(
+                    SideEffect.DoNothing(),
+                    SideEffect.PrintNumber
+                ).Value.Execute();
+
+            //.WithOptional(
+            //    new Lazy<SideEffect<LazyVoid>>(SideEffect.DoNothing),
+            //    num => new Lazy<SideEffect<LazyVoid>>(() => SideEffect.PrintNumber(num))
+            //    ).Value
+            //    .Execute();
+        }
     }
 }

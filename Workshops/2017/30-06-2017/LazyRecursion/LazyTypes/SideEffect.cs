@@ -11,9 +11,9 @@ namespace LazyTypes
             func = f;
         }
 
-        public SideEffect<RT> Bind<RT>(Func<Lazy<T>, SideEffect<RT>> secondEffect)
+        public Lazy<SideEffect<RT>> Bind<RT>(Func<Lazy<T>, Lazy<SideEffect<RT>>> secondEffect)
         {
-            return new SideEffect<RT>(() => secondEffect(func()).func());
+            return new Lazy<SideEffect<RT>>(() => secondEffect(func()).Value);
         }
 
         public void Execute()
@@ -24,22 +24,42 @@ namespace LazyTypes
 
     public static class SideEffect
     {
-        public static SideEffect<int> ReadNumber()
+        public static Lazy<SideEffect<int>> ReadNumber()
         {
-            return new SideEffect<int>(() =>
-            {
-                var line = Console.ReadLine();
-                return new Lazy<int>(() => int.Parse(line));
-            });
+            return new Lazy<SideEffect<int>>(() => new SideEffect<int>(() =>
+             {
+                 var line = Console.ReadLine();
+                 return new Lazy<int>(() => int.Parse(line));
+             }));
         }
 
-        public static SideEffect<LazyVoid> PrintNumber(Lazy<int> number)
+        public static Lazy<SideEffect<LazyVoid>> PrintNumber(Lazy<int> number)
         {
-            return new SideEffect<LazyVoid>(() =>
+            return new Lazy<SideEffect<LazyVoid>>(() => new SideEffect<LazyVoid>(() =>
             {
                 Console.WriteLine(number.Value);
-                return new Lazy<LazyVoid>(() => LazyVoid.Instance);
-            });
+                return LazyVoid.Instance;
+            }));
         }
+
+        public static Lazy<SideEffect<LazyVoid>> DoNothing()
+        {
+            return new Lazy<SideEffect<LazyVoid>>(() => new SideEffect<LazyVoid>(() => LazyVoid.Instance));
+        }
+
+        public static Lazy<SideEffect<LazyVoid>> PrintString(string str)
+        {
+            return new Lazy<SideEffect<LazyVoid>>(() => new SideEffect<LazyVoid>(() =>
+            {
+                Console.WriteLine(str);
+                return LazyVoid.Instance;
+            }));
+        }
+
+        //public static Lazy<SideEffect<LazyVoid>> PrintNumbers(Lazy<List<int>> list)
+        //{
+        //    return list.Map(num => PrintNumber(num))
+        //        .FoldLeft(DoNothing, (x, y) => x.Value.Bind(v => y));
+        //}
     }
 }
