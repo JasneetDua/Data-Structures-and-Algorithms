@@ -152,13 +152,16 @@ namespace LazyTypes
                 (head, tail) => tail.FoldLeft(f(initial, head), f));
         }
 
-        //public static Lazy<List<R>> ScanRight<T, R>(this Lazy<List<T>> list, Lazy<R> initial, Func<Lazy<T>, Lazy<R>, Lazy<R>> f)
-        //{
-        //    return list.Value.WithList(
-        //        new Lazy<List<R>>(() => new List<R>(initial, new Lazy<List<R>>(() => new List<R>()))),
-        //        (head, tail) => new Lazy<List<R>>(() => new List<R>(head, tail.ScanRight(initial, f))))
-        //   );
-        //}
+//        public static Lazy<List<R>> ScanRight<T, R>(this Lazy<List<T>> list, Lazy<R> initial, Func<Lazy<T>, Lazy<R>, Lazy<R>> f)
+//        {
+//        }
+
+		public static Lazy<List<R>> ScanLeft<T, R>(this Lazy<List<T>> list, Lazy<R> initial, Func<Lazy<R>, Lazy<T>, Lazy<R>> f)
+		{
+			return List.Cons(initial, list.WithList(
+						List.Empty<R>(),
+						(head, tail) => tail.ScanLeft(f(initial, head), f)));
+		}
 
         public static Lazy<List<T>> Flatten<T>(this Lazy<List<List<T>>> lists)
         {
