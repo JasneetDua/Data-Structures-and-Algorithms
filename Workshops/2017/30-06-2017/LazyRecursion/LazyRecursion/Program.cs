@@ -83,11 +83,10 @@ namespace LazyRecursion
                 .Reverse()
                 .QuickSort()
                 .AtIndex(2.ToLazy())
-                .Value
                 .WithOptional(
                     SideEffect.DoNothing(),
                     SideEffect.PrintNumber
-                ).Value.Execute();
+                ).Execute();
 
             //.WithOptional(
             //    new Lazy<SideEffect<LazyVoid>>(SideEffect.DoNothing),
