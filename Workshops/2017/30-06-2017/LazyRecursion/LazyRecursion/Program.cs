@@ -30,39 +30,26 @@ namespace LazyRecursion
 
     class Program
     {
-        static Optional<int> Divide(Lazy<int> x, Lazy<int> y)
+        static Lazy<Optional<int>> Divide(Lazy<int> x, Lazy<int> y)
         {
-            if (y.Value == 0)
-            {
-                return new Optional<int>();
-            }
-            return new Optional<int>(new Lazy<int>(() => x.Value / y.Value));
+            return y.Value == 0
+				? Optional.None<int>()
+				: Optional.Value(new Lazy<int>(() => x.Value / y.Value));
         }
 
         static void DivisionTest()
         {
-            var x = new Lazy<int>(() => 18);
-            var y = new Lazy<int>(() => 0);
-            var z = new Lazy<int>(() => 3);
+            var x = 18.ToLazy();
+            var y = 2.ToLazy();
+            var z = 3.ToLazy();
 
-            var result = new Optional<int>(x)
+            Optional.Value(x)
                 .Bind(v => Divide(v, y))
                 .Bind(v => Divide(v, z))
                 .WithOptional(
-                    new Lazy<int>(() =>
-                    {
-                        Console.WriteLine("Connot divide by zero");
-                        return 0;
-                    }),
-
-                    (value => new Lazy<int>(() =>
-                         {
-                             Console.WriteLine("Result is " + value.Value);
-                             return 0;
-                         }))
-                  );
-
-            var ignore = result.Value;
+					SideEffect.PrintString("Cannot divide by zero"),
+                    SideEffect.PrintNumber)
+				.Execute();
         }
 
         static void Main()
@@ -92,10 +79,10 @@ namespace LazyRecursion
 
             //return;
 
-            Range.FromTo(0.Int(), 9.Int())
+            Range.FromTo(0.ToLazy(), 9.ToLazy())
                 .Reverse()
                 .QuickSort()
-                .AtIndex(2.Int())
+                .AtIndex(2.ToLazy())
                 .Value
                 .WithOptional(
                     SideEffect.DoNothing(),
