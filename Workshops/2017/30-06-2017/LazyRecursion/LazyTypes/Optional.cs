@@ -16,24 +16,32 @@ namespace LazyTypes
             value = v;
         }
 
-        public Lazy<RT> WithOptional<RT>(Lazy<RT> whenEmpty, Func<Lazy<T>, Lazy<RT>> whenFull)
+        public Lazy<R> WithOptional<R>(Lazy<R> whenEmpty, Func<Lazy<T>, Lazy<R>> whenFull)
         {
-            if(value == null)
-            {
-                return whenEmpty;
-            }
-
-            return whenFull(value);
-        }
-
-        public Optional<RT> Bind<RT>(Func<Lazy<T>, Optional<RT>> f)
-        {
-            if(value == null)
-            {
-                return new Optional<RT>();
-            }
-
-            return f(value);
+			return value == null ? whenEmpty : whenFull(value);
         }
     }
+
+	public static class Optional
+	{
+		public static Lazy<Optional<T>> None<T>()
+		{
+			return new Lazy<Optional<T>>(() => new Optional<T>());
+		}
+
+		public static Lazy<Optional<T>> Value<T>(Lazy<T> value)
+		{
+			return new Lazy<Optional<T>>(() => new Optional<T>(value));
+		}
+
+        public static Lazy<R> WithOptional<T, R>(this Lazy<Optional<T>> opt, Lazy<R> whenEmpty, Func<Lazy<T>, Lazy<R>> whenFull)
+        {
+			return new Lazy<R>(() => opt.Value.WithOptional(whenEmpty, whenFull).Value);
+        }
+
+        public static Lazy<Optional<R>> Bind<T, R>(this Lazy<Optional<T>> opt, Func<Lazy<T>, Lazy<Optional<R>>> f)
+        {
+			return opt.WithOptional(None<R>(), f);
+        }
+	}
 }
