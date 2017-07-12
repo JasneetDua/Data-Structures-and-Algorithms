@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
 # Data Structures Efficiency
-##  Computational Complexity of FundamentalData Structures, Choosing a Data Structure
+##  Computational Complexity of Fundamental Data Structures, Choosing a Data Structure
 
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
