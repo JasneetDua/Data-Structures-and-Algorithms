@@ -151,7 +151,7 @@
       * Fast `Insert` / `Delete` operations (at any position)
       * Fast `Copy` / `Concat` / `Sub-range` operations
     * Implemented by the data structure "`Rope`"
-      * Special kind of balanced binary tree: [http://en.wikipedia.org/wiki/Rope_(data_structure)](http://en.wikipedia.org/wiki/Rope_(data_structure%29)
+      * Special kind of balanced binary tree: [http://en.wikipedia.org/wiki/Rope_(data_structure)](http://en.wikipedia.org/wiki/Rope_%28data_structure%29)
 
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
