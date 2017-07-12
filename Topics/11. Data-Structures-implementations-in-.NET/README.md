@@ -1,6 +1,6 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', showInPresentation:true, hasScriptWrapper:true, style:'' } -->
-# Advanced Data Structures
+# Data Structures implementations in .NET
 ##  Wintellect Power Collections, C5 Collections
 
 <div class="signature">
@@ -185,7 +185,7 @@ class PriorityQueue<T> where T : IComparable<T>
    }
    public PriorityQueue()
    {
-      this.queue = new OrderedBag<T>();   
+      this.queue = new OrderedBag<T>();
    }
    public void Enqueue(T element)
    {
@@ -283,6 +283,6 @@ class PriorityQueue<T> where T : IComparable<T>
   - Telerik Software Academy
     - [telerikacademy.com](https://telerikacademy.com)
   - Telerik Academy @ Facebook
-    - [facebook.com/TelerikAcademy](facebook.com/TelerikAcademy)
+    - [facebook.com/TelerikAcademy](https://facebook.com/TelerikAcademy)
   - Telerik Software Academy Forums
-    - [forums.academy.telerik.com](forums.academy.telerik.com)
+    - [forums.academy.telerik.com](https://telerikacademy.com/Forum/Home)
