@@ -6,7 +6,7 @@ Steve expirements with different professions. Today he is a train operator.
 
 The transport firm in which Steve works has an equal price for all tickets. The train can transport **M** amount of passengers (Steve is not counted).
 
-Steve works for money. Help him sell as much as possible tickets. Remember not to put more than **M** amount of passengers at the same time in the train. Consider that on each stop the people get off before others board the train.
+Steve works for money. Help him sell as many tickets as possible. Remember not to put more than **M** amount of passengers at the same time in the train. Consider that on each stop, the people get off before others board the train.
 
 ## Input
 - Input is read from the console
