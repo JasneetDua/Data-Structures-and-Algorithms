@@ -2,7 +2,7 @@
 
 Steve expirements with different professions. Today he is a train operator.
 
-To travel with Steve's train, **N** potential passengers have requested a ticket. The train route is not yet known. We can enumerate the train stops with the numbers **from 1 to L** (there will be **L** stops). Each potential passenger **i** gives two numbers: **B<sub>i</sub>** and **E<sub>i</sub>** - the stop on which he would board the train and the on which he would get off.
+**N** amount of potential passengers have requested a ticket to travel with Steve's train. The train route is not yet known. We can enumerate the train stops with the numbers **from 1 to L** (there will be **L** stops). Each potential passenger **i** gives two numbers: **B<sub>i</sub>** and **E<sub>i</sub>** - the stop on which he would board the train and the on which he would get off.
 
 The transport firm in which Steve works has an equal price for all tickets. The train can transport **M** amount of passengers (Steve is not counted).
 
