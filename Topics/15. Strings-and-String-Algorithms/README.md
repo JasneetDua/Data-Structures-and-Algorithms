@@ -85,8 +85,8 @@
 - Sorted array of all suffixes
   - Represented as indexes
 - Building
-  - Naive - <code>O(n<sup>2</sup>*log(n))</code>
-  - Prefix doubling - <code>O(n*log<sup>2</sup>(n))</code>
+  - Naive - <code>O(n<sup>2</sup>\*log(n))</code>
+  - Prefix doubling - <code>O(n\*log<sup>2</sup>(n))</code>
   - Prefix doubling and radix sort - `O(n*log(n))`
   - DFS traversal of a suffix tree - `O(n)`
   - DC3/Skew, others - `O(n)`
