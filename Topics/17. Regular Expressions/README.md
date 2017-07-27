@@ -120,7 +120,7 @@
 ##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Special Characters in Regex: `.`(dot)
+# Special Characters in Regex: `.` (dot)
 - Special Characters in Regex:
   - .(dot) – matches any single character except the newline character
     - `.`
@@ -175,11 +175,11 @@
 ##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Special Characters in Regex: [^xyx]
+# Special Characters in Regex: `[^xyx]`
 - Special Characters in Regex:
   - `[^xyx]` – A negated or complemented character set
-    - Matches anything that is not enclosed in the brackets       
-    - [^ea]+
+    - Matches anything that is not enclosed in the brackets
+    - `[^ea]+`
       - Matches: '**T**e**l**e**rik Ac**a**d**e**my**'
       - Does not match: 'eaaaaeeeaaa', 'aaaa', 'eeee'
 
@@ -188,7 +188,7 @@
 ##  [Demo]() -->
 
 <!-- attr: { showInPresentation:true, style:'' } -->
-# Special Characters in Regex: {}
+# Special Characters in Regex: `{}`
 - Special Characters in Regex:
   - `{N}` – matches exactly `N` occurrences
     - Where `N` is a positive number
