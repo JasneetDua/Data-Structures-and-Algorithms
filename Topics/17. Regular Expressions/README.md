@@ -12,8 +12,8 @@
 <!-- section start -->
 <!-- attr: { showInPresentation:true, style:'' } -->
 # Table of Contents
-- [Regular Expression Overview](#regexOverview)
-- [Special Characters for beginning and end](#beginEnd)
+- [Regular Expression Overview](#regex-overview)
+- [Special Characters for beginning and end](#begin-end)
 - [Special Characters in Regex](#other)
 
 <!-- section start -->
@@ -21,8 +21,8 @@
 <!-- # Regular Expressions
 ##  Overview -->
 
-<!-- attr: { id:'regexOverview', showInPresentation:true, style:'' } -->
-# <a id="regexOverview"></a>Regular Expressions Overview
+<!-- attr: { id:'regex-overview', showInPresentation:true, style:'' } -->
+# <a id="regex-overview"></a>Regular Expressions Overview
 - A regular expression is a set of patterns used to match character combinations in strings
   - Find and extract data from a document
   - Validate content supplied in a form before it is submitted like:
@@ -44,8 +44,8 @@
 <!-- # Regex Special Characters for Beginning and End
 ##  `^` and `$` -->
 
-<!-- attr: { id:'beginEnd', showInPresentation:true, style:'' } -->
-# <a id="beginEnd"></a>Regex Special Characters for Beginning and End
+<!-- attr: { id:'begin-end', showInPresentation:true, style:'' } -->
+# <a id="begin-end"></a>Regex Special Characters for Beginning and End
 - Special Characters:
   - `^` - matches the beginning of input
     - `^T`
