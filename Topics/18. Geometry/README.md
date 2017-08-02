@@ -56,10 +56,37 @@
     - `y = ax + b`
 - In 2D plane lines are either parallel or intersect in a single point
 
-<!-- attr: { showInPresentation:true } -->
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
 <!-- # Lines -->
 - A line segment is a finite line
-- Length can be calculated using the Pythagorean theorem
+- **Length** can be calculated using the **Pythagorean theorem**
+  - <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
+
+<img src="imgs/pyth.png" style="float:right">
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Vectors
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Vectors -->
+- **Vectors** (euclidean vectors) have length and direction
+  - Every points can be used as the start of the vector
+- **Vectors** can be defined by
+  - One point
+  - Polar coordinates
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Vectors -->
+- **Vectors** support some operations
+  - Sum
+  - Difference
+    - opposite of sum
+  - Product of a vector and a number
+  - Scalar product (dot product)
+  - Vector product (cross product)
+
+<img src="imgs/pyth.png" style="float:right">
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Geometry
