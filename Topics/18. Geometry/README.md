@@ -14,12 +14,15 @@
 # Table of Contents
 - Points
 - Lines
-  - Length
   - Intersection
+  - Length of line segment
 - Vectors
 - Triangles
   - Area
 - Trigonometry
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Table of Contents -->
 - Algorithms
   - Closest pair of points
   - Convex hull
@@ -27,6 +30,36 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Points
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Points -->
+- **Points** have no length, area or volume
+- **Point** position can be determined using coordinate system
+  - Cartesian
+  - Polar
+  - ...
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Lines
+## Straight lines
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Lines -->
+- **Lines** have no width and represent straight objects
+- **Lines** can be defined by
+  - Two distinct points - only one lines passes through both of them
+  - Polar coordinates
+  - One point (with some restrictions)
+  - Algebraically with linear equation
+    - `y = ax + b`
+- In 2D plane lines are either parallel or intersect in a single point
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Lines -->
+- A line segment is a finite line
+- Length can be calculated using the Pythagorean theorem
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
 <!-- # Geometry
