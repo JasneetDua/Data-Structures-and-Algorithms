@@ -16,10 +16,10 @@
 - Lines
   - Intersection
   - Length of line segment
-- Vectors
 - Triangles
   - Area
 - Trigonometry
+- Vectors
 
 <!-- attr: { showInPresentation:true } -->
 <!-- # Table of Contents -->
@@ -63,6 +63,31 @@
   - <code>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></code>
 
 <img src="imgs/pyth.png" style="float:right">
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Triangle
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Triangle -->
+- **Triangles** have area
+- **Triangles** are contained by a single plane
+- **Triangles** can be defined by
+  - Tree distinct points
+  - Length and angles
+
+<img src="imgs/orthocenter.png" style="float:right">
+
+<!-- attr: { showInPresentation:true } -->
+<!-- # Triangle -->
+- The area of triangles can be calculated in several ways
+  - Using a side and an altitude
+    - the most basic formula
+  - Using the tree sides
+    - Heron's formula
+  - Sides and angles
+    - Trigonometric formulae
+  - Triangle vertex coordinates
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
