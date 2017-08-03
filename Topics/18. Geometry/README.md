@@ -1,7 +1,7 @@
 <!-- section start -->
 <!-- attr: { class:'slide-title', hasScriptWrapper: true, showInPresentation:true } -->
 # Geometry
-## Points and lines Fast ways to search and replace string
+## Points and lines
 
 <div class="signature">
     <p class="signature-course">Data Structures and Algorithms</p>
@@ -66,10 +66,10 @@
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
-# Triangle
+# Triangles
 
 <!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
-<!-- # Triangle -->
+<!-- # Triangles -->
 - **Triangles** have area
 - **Triangles** are contained by a single plane
 - **Triangles** can be defined by
@@ -79,7 +79,7 @@
 <img src="imgs/orthocenter.png" style="float:right">
 
 <!-- attr: { showInPresentation:true } -->
-<!-- # Triangle -->
+<!-- # Triangles -->
 - The area of triangles can be calculated in several ways
   - Using a side and an altitude
     - the most basic formula
@@ -88,6 +88,22 @@
   - Sides and angles
     - Trigonometric formulae
   - Triangle vertex coordinates
+
+<!-- section start -->
+<!-- attr: { class:'slide-section', showInPresentation:true } -->
+# Trigonometry
+
+<!-- attr: { showInPresentation:true, hasScriptWrapper:true } -->
+<!-- # Trigonometry -->
+- There are several important functions here
+  - Used for obtaining coefficients from angles
+  - Relations of sides in a right triangle
+- Basic trigonometric functions
+  - `sin`
+  - `cos`
+  - `tg`
+
+<img src="imgs/trigonometry.png" style="position:absolute;right:0;bottom:20%">
 
 <!-- section start -->
 <!-- attr: { class:'slide-section', showInPresentation:true } -->
@@ -114,7 +130,7 @@
 <img src="imgs/pyth.png" style="float:right">
 
 <!-- attr: { class:'slide-section demo', showInPresentation:true } -->
-<!-- # Geometry
+<!-- # Solving geometric tasks
 ## [Demo]() -->
 
 <!-- section start -->
