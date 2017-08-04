@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geometry-Demo", "Geometry-D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosestPairOfPoints", "ClosestPairOfPoints\ClosestPairOfPoints.csproj", "{8A252262-01A6-4784-B1F1-FA711F81A8BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvexHull", "ConvexHull\ConvexHull.csproj", "{BE31BC76-8BD7-45A9-ABB9-D9DC5173034C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperEnvelope", "UpperEnvelope\UpperEnvelope.csproj", "{CDC78298-BF41-4A2B-85FB-6A0E667F3FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{8A252262-01A6-4784-B1F1-FA711F81A8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A252262-01A6-4784-B1F1-FA711F81A8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A252262-01A6-4784-B1F1-FA711F81A8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE31BC76-8BD7-45A9-ABB9-D9DC5173034C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE31BC76-8BD7-45A9-ABB9-D9DC5173034C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE31BC76-8BD7-45A9-ABB9-D9DC5173034C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE31BC76-8BD7-45A9-ABB9-D9DC5173034C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDC78298-BF41-4A2B-85FB-6A0E667F3FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC78298-BF41-4A2B-85FB-6A0E667F3FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC78298-BF41-4A2B-85FB-6A0E667F3FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC78298-BF41-4A2B-85FB-6A0E667F3FC3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
