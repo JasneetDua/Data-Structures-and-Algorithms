@@ -105,6 +105,17 @@ namespace Sticks
 				return;
 			}
 
+			// Stupid fix for intersection
+			point1 = stick2.IntersectWith(stick1);
+			point2 = stick3.IntersectWith(stick2);
+			point3 = stick1.IntersectWith(stick3);
+
+			if(point1 == null || point2 == null || point3 == null)
+			{
+				Console.WriteLine("No triangle.");
+				return;
+			}
+
 			double area = Point.Area(point1, point2, point3);
 			area = Math.Abs(area) / 2;
 
