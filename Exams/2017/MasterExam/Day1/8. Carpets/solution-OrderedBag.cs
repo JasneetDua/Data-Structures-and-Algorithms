@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Wintellect.PowerCollections;
 
-namespace Blq
+namespace Carpets
 {
 	struct SweepPoint
 	{
