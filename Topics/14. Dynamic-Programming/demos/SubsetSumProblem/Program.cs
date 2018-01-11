@@ -47,7 +47,7 @@
             return IsSubsetSumRecursive(set, n - 1, sum) || IsSubsetSumRecursive(set, n - 1, sum - set[n - 1]);
         }
 
-        // Returns true if there is a subset of set[] with sun equal to given sum
+        // Returns true if there is a subset of set[] with sum equal to given sum
         private static bool IsSubsetSum(int[] set, int sum)
         {
             const int NotSet = -1;
