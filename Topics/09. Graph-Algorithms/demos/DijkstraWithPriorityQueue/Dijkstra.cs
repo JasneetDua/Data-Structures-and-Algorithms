@@ -71,7 +71,7 @@
 
             DijkstraAlgorithm(graph, source);
 
-            for (int i = 0; i < nodes.Count; i++)
+            for (int i = 1; i < nodes.Count; i++)
             {
                 Console.Write("Distance from {0} to {1} ", source.Id, i);
                 Console.WriteLine(nodes[i].DijkstraDistance);
